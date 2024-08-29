@@ -393,6 +393,7 @@
 "Assets/Scripts/GameEvent.cs"
 "Assets/Scripts/GameEventListener.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PlayerStats.cs"
 "Assets/Scripts/TeleportUtility.cs"
 -langversion:9.0
 
