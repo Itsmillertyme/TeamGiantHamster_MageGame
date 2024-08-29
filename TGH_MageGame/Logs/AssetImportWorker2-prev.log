@@ -1,0 +1,962 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.1f1 (a6dd9a634651) revision 10935706'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 65475 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+50785
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [34580] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1802877928 [EditorId] 1802877928 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [34580] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1802877928 [EditorId] 1802877928 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 3.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.1f1 (a6dd9a634651)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.014439 seconds.
+- Loaded All Assemblies, in  0.650 seconds
+Native extension for Android target not found
+InvalidOperationException: Cannot process request because the process (6036) has exited.
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access, System.Boolean throwIfExited) [0x0004e] in <e7f9dade5d744f90a9c7d71d829d35f6>:0 
+  at System.Diagnostics.Process.GetProcessHandle (System.Int32 access) [0x00000] in <e7f9dade5d744f90a9c7d71d829d35f6>:0 
+  at System.Diagnostics.Process.Kill () [0x00002] in <e7f9dade5d744f90a9c7d71d829d35f6>:0 
+  at (wrapper remoting-invoke-with-check) System.Diagnostics.Process.Kill()
+  at UnityEditor.Android.AndroidDeploymentTargetsExtension.GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext context, UnityEditor.ProgressHandler progressHandler) [0x0014a] in <244ccb05dbb44d50bab3b8d11bc45cd9>:0 
+  at UnityEditor.Android.TargetScanWorker.ScanSync () [0x00039] in <244ccb05dbb44d50bab3b8d11bc45cd9>:0 
+  at UnityEditor.Android.TargetExtension.OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[] usbDevices) [0x00081] in <244ccb05dbb44d50bab3b8d11bc45cd9>:0 
+  at UnityEditor.Android.TargetExtension.OnLoad () [0x000ad] in <244ccb05dbb44d50bab3b8d11bc45cd9>:0 
+  at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x000b9] in <dd62d83a4bae432a9f10f9df151ae3a2>:0 
+
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  2.830 seconds
+Domain Reload Profiling: 3473ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (275ms)
+			TypeCache.Refresh (273ms)
+				TypeCache.ScanAssembly (253ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2830ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2756ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2506ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (10ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.036 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.771 seconds
+Domain Reload Profiling: 1799ms
+	BeginReloadAssembly (382ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (528ms)
+		LoadAssemblies (439ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (184ms)
+				TypeCache.ScanAssembly (168ms)
+			BuildScriptInfoCaches (21ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (772ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (529ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (395ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3521 unused Assets / (1.2 MB). Loaded Objects now: 4084.
+Memory consumption went from 118.2 MB to 117.0 MB.
+Total: 10.147400 ms (FindLiveObjects: 1.242400 ms CreateObjectMapping: 0.833600 ms MarkObjects: 6.240600 ms  DeleteObjects: 1.829600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 208474.409415 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Wall_Drain_01.prefab
+  artifactKey: Guid(158f0597a61d84640ba15940f59deafd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Wall_Drain_01.prefab using Guid(158f0597a61d84640ba15940f59deafd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f851a813a7b976bc3210fcc15801d63') in 0.0843966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.255913 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Wall_Door_Big_01.prefab
+  artifactKey: Guid(d2f04099be0a70a4384bd1b4db1847a0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Wall_Door_Big_01.prefab using Guid(d2f04099be0a70a4384bd1b4db1847a0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b42baedc20edbe8465885a218a0e6977') in 0.0072945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.148516 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_01.prefab
+  artifactKey: Guid(4d6639c7f60166a43baf85bec91aef02) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_01.prefab using Guid(4d6639c7f60166a43baf85bec91aef02) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '29932f7b03a964f86486bf8666700891') in 0.0178573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.803249 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.prefab
+  artifactKey: Guid(16616e3e8e5b6c5409be853b11851363) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.prefab using Guid(16616e3e8e5b6c5409be853b11851363) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '52396d65a5bc69d9e4ebcb5fc3f17f1c') in 0.0084595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.516348 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Wall_01.prefab
+  artifactKey: Guid(7653382798b984645a9049d7c5e2ffc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Wall_01.prefab using Guid(7653382798b984645a9049d7c5e2ffc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37685c944b62422b4a5cd0d319f1eabd') in 0.0267976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.747558 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_01.prefab
+  artifactKey: Guid(4d6639c7f60166a43baf85bec91aef02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_01.prefab using Guid(4d6639c7f60166a43baf85bec91aef02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ac65328750309b34bb5921685e56dbc') in 0.0017466 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.713473 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_03.prefab
+  artifactKey: Guid(52c52383cc81af0428564736c00bfd61) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_03.prefab using Guid(52c52383cc81af0428564736c00bfd61) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7bd93fca72e5eab8ffda6a0741e7392b') in 0.0075267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.339134 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_Hatch_01.prefab
+  artifactKey: Guid(ba20d72891d7dc24cafd85e487a65a9b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_Hatch_01.prefab using Guid(ba20d72891d7dc24cafd85e487a65a9b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bd6de773738b842329c79fd1870f4f2c') in 0.0069008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.293853 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Wall_Door_01.prefab
+  artifactKey: Guid(930a5b38ea8bd89489e16251a8e80b25) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Wall_Door_01.prefab using Guid(930a5b38ea8bd89489e16251a8e80b25) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a3fced3693ef9d15cc023d1d39297af0') in 0.0073241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.999505 seconds.
+  path: Assets/Scenes/SampleScene 1.unity
+  artifactKey: Guid(fe9d1d8532e8c6940bf963090da41dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene 1.unity using Guid(fe9d1d8532e8c6940bf963090da41dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84c358c2c53145617ed60f06f2fda880') in 0.000596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.122800 seconds.
+  path: Assets/Scenes/SampleScene 1.unity
+  artifactKey: Guid(fe9d1d8532e8c6940bf963090da41dfe) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene 1.unity using Guid(fe9d1d8532e8c6940bf963090da41dfe) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab4d7a79b34a274baec6112f319c4286') in 0.0104381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.061972 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.prefab
+  artifactKey: Guid(16616e3e8e5b6c5409be853b11851363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.prefab using Guid(16616e3e8e5b6c5409be853b11851363) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '226725c51cfc80ba451c148a345bd21e') in 0.001823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.860549 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.fbx
+  artifactKey: Guid(3954b91c2215aaa48bbb830237264d46) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.fbx using Guid(3954b91c2215aaa48bbb830237264d46) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f51cbb50570465d1067f3579ddffc328') in 0.0721945 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.809711 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_03.fbx
+  artifactKey: Guid(6ea8a794c7961c34a9dd409c0d34dce5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_03.fbx using Guid(6ea8a794c7961c34a9dd409c0d34dce5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '011e18d93feeb9c1622e5e07443cf297') in 0.0264313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.664195 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Fall01.fbx
+  artifactKey: Guid(aea48e2ff51aa6b40939f4137190fe1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Fall01.fbx using Guid(aea48e2ff51aa6b40939f4137190fe1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ea9991f3e0956678c6ea4c9a6a946c0') in 0.0044817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008201 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx
+  artifactKey: Guid(f2f9a6f31d218ef40871718667ffa92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx using Guid(f2f9a6f31d218ef40871718667ffa92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d835ca3f1c73c06e6538205425f15d6') in 0.0092386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 138
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx
+  artifactKey: Guid(a47cd8049d369014d982ac600e9abb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx using Guid(a47cd8049d369014d982ac600e9abb2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2ee95d148deb825dc7aa61ed971c7ca') in 0.0070109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Run Forward W Weapons W Root.FBX
+  artifactKey: Guid(14e17993b36b4814e893d58ebfc632cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Run Forward W Weapons W Root.FBX using Guid(14e17993b36b4814e893d58ebfc632cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b1c440bc5686a647136689eb57481d1') in 0.1092911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Blonde.prefab
+  artifactKey: Guid(bbf34249dceca7d4180a32d1a2c47900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Blonde.prefab using Guid(bbf34249dceca7d4180a32d1a2c47900) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da0f996c188753ccbdcee29dcdd5062d') in 0.009958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Brown.prefab
+  artifactKey: Guid(dd0a4496dd67cb149a89349a60b6a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Brown.prefab using Guid(dd0a4496dd67cb149a89349a60b6a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af6a75f9da3790d1d867192ad23ce4b3') in 0.0096408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Brown.prefab
+  artifactKey: Guid(19af5208cfe64f24b95f7fb89858d18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Brown.prefab using Guid(19af5208cfe64f24b95f7fb89858d18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a7433b10b0e5587a760f967ed4eff7b') in 0.0091598 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Blonde.prefab
+  artifactKey: Guid(b1e3fcb5712b6494fa527cfbd74a5849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Blonde.prefab using Guid(b1e3fcb5712b6494fa527cfbd74a5849) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5531ade2ccba8d2ed07d75ae03eff60') in 0.0072293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx
+  artifactKey: Guid(df9c30d5fc9fee64cae6f05b9418faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Walk01 [RM].fbx using Guid(df9c30d5fc9fee64cae6f05b9418faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1df3edb7a4a2f20d0ed339cd233b2ba') in 0.007733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 138
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx
+  artifactKey: Guid(9100fffce5667e342a8f3db30ada3271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx using Guid(9100fffce5667e342a8f3db30ada3271) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf32eee079ded26f4015380e8859c1bc') in 0.00631 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Walk Forward In Place.FBX
+  artifactKey: Guid(00820ce73a439f34f809d3408c580bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Walk Forward In Place.FBX using Guid(00820ce73a439f34f809d3408c580bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97069a1a9b52064cc44e841a9d6aa4d4') in 0.0194911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Walk Forward W Root.FBX
+  artifactKey: Guid(6bfb02cdc8d51e34d80dd4abbfe7a470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Walk Forward W Root.FBX using Guid(6bfb02cdc8d51e34d80dd4abbfe7a470) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26459a911cf02aab62290d6c7ca413b5') in 0.0204462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Grey.prefab
+  artifactKey: Guid(4a7c267e9cb7c8244abe4c13e14bfd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Grey.prefab using Guid(4a7c267e9cb7c8244abe4c13e14bfd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '403061345c00751aba6c67c5c850f43b') in 0.0082222 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Nature.prefab
+  artifactKey: Guid(9e82c32a03cea724ea21c4b6ecaf6e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Nature.prefab using Guid(9e82c32a03cea724ea21c4b6ecaf6e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc0f8550cf1f42ff72fbfc204fc67a2f') in 0.0140977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Black.prefab
+  artifactKey: Guid(2b69a82f6be67824fb1b49e87fa85e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Black.prefab using Guid(2b69a82f6be67824fb1b49e87fa85e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31f47d80a590ba908a48c61e248d0512') in 0.0076405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Fire.prefab
+  artifactKey: Guid(69819c5ff6e9ddd45a36969c5396f5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Fire.prefab using Guid(69819c5ff6e9ddd45a36969c5396f5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb71d78c8ccd40884ee4b6ceb4f9dd26') in 0.0094732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Idle.FBX
+  artifactKey: Guid(5ad01fefe87a47841951ec0a3345baa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Idle.FBX using Guid(5ad01fefe87a47841951ec0a3345baa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f25ab6dbaa3119ebb4177cc8dbc779b') in 0.0183273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Orange.prefab
+  artifactKey: Guid(c56a4cea125321d47ad491143678e402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Orange.prefab using Guid(c56a4cea125321d47ad491143678e402) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51634945fcbaf0917c5218b1be5682ec') in 0.0093028 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Face.FBX
+  artifactKey: Guid(a91e2c8bbd0e53447adeb7d239346501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Face.FBX using Guid(a91e2c8bbd0e53447adeb7d239346501) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '723d35121173be2659c546f985a5856a') in 0.0102272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Strafe01 [RM].fbx
+  artifactKey: Guid(63e21129073260449a38d823cd846c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Strafe01 [RM].fbx using Guid(63e21129073260449a38d823cd846c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01ff19d5d02b5e4e982773192547988f') in 0.0056838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 132
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Dark.prefab
+  artifactKey: Guid(8007869db09492e4b80dc19d499c072b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Dark.prefab using Guid(8007869db09492e4b80dc19d499c072b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8182a5391b72cee055b75643f460f0a9') in 0.0071926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.082915 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 03 Black.prefab
+  artifactKey: Guid(694fe910063d6794c986855429c4d3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 03 Black.prefab using Guid(694fe910063d6794c986855429c4d3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cb2b252d0ad6b5c4b772723033b4339') in 0.0111794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 03 Grey.prefab
+  artifactKey: Guid(1bd2d82be8a13354dbd32de98291de6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 03 Grey.prefab using Guid(1bd2d82be8a13354dbd32de98291de6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c4ddbf3d87b1785db4898ae6b45cd49') in 0.0114455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.373362 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Aqua Male Mage 01.prefab
+  artifactKey: Guid(8397df2174fd0a94da6a7b672dc22672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Aqua Male Mage 01.prefab using Guid(8397df2174fd0a94da6a7b672dc22672) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0eab419e98fade6516661cb9f4bb41a1') in 0.0121146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 01.prefab
+  artifactKey: Guid(38c90e7d44bd15246b85a63b7c463abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 01.prefab using Guid(38c90e7d44bd15246b85a63b7c463abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1474a88e4fbe0aaf20fa79989eeefcbf') in 0.0111732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 02.prefab
+  artifactKey: Guid(ab27c1fe05636884cba172afba65a1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 02.prefab using Guid(ab27c1fe05636884cba172afba65a1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '57d9dc440697e226c298a1a6934f21ba') in 0.0094439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001409 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 03.prefab
+  artifactKey: Guid(b63a685dabb116a44b18c5a9e68546d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 03.prefab using Guid(b63a685dabb116a44b18c5a9e68546d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76fa4b060c4e3a7920028ed9458d7127') in 0.0103296 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 01.prefab
+  artifactKey: Guid(d7d602925f55c244089104529f96b3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 01.prefab using Guid(d7d602925f55c244089104529f96b3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bf92098a323bae979470229885c9fc4') in 0.0116413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Fire Male Mage 03.prefab
+  artifactKey: Guid(b5a483033563a33409545e0775ec5903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Fire Male Mage 03.prefab using Guid(b5a483033563a33409545e0775ec5903) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '406ea45502b89dad3b3cff04645a39b3') in 0.0095827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Black.prefab
+  artifactKey: Guid(0e222f1b9776b23428ee5bd2e3aae6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Black.prefab using Guid(0e222f1b9776b23428ee5bd2e3aae6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd938efc75d4374ac39237b6503d375c') in 0.0100901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 03.prefab
+  artifactKey: Guid(628ed55139b7fc84283591999ec8b3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 03.prefab using Guid(628ed55139b7fc84283591999ec8b3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88d7cb5934ded96b254aa996ef4ce3c9') in 0.0103776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 102
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.180979 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Blonde.prefab
+  artifactKey: Guid(0dce5721ce0c50945b68081ef3c4af4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Blonde.prefab using Guid(0dce5721ce0c50945b68081ef3c4af4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71d2b1bb4b611da38703949826b7db85') in 0.0072626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Grey.prefab
+  artifactKey: Guid(98ecf5ed101c0e943847bdd233635087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Grey.prefab using Guid(98ecf5ed101c0e943847bdd233635087) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa0495cd6435a951f7d19f616dbe38bd') in 0.008838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025403 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02  Blonde.prefab
+  artifactKey: Guid(f4dba9b36a49fd04688809001e0ee09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02  Blonde.prefab using Guid(f4dba9b36a49fd04688809001e0ee09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2c66f5250a666df7cce381446ab61e0') in 0.0080219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02 Grey.prefab
+  artifactKey: Guid(372f6bb4ca3de57428d4a1e895b832f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02 Grey.prefab using Guid(372f6bb4ca3de57428d4a1e895b832f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b30dacd02ca7c4a3e90e561f40a07363') in 0.0073048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014144 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair 03.FBX
+  artifactKey: Guid(326dd3652fe0f2d46913d47697b6a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair 03.FBX using Guid(326dd3652fe0f2d46913d47697b6a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '745d388c044c021b5d20a5430f19b697') in 0.0104767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 03 Brown.prefab
+  artifactKey: Guid(20a6e35a31f841e4c969cdd124a8c81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 03 Brown.prefab using Guid(20a6e35a31f841e4c969cdd124a8c81c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa10b7db5ab7aa7fe36cb69feca516fd') in 0.0076083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006064 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 03 Orange.prefab
+  artifactKey: Guid(418e8be779f6bdc439ee14bf0aedd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 03 Orange.prefab using Guid(418e8be779f6bdc439ee14bf0aedd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0227f1e585a2a20ca6cbc7aaf827c1d1') in 0.0076274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Black.prefab
+  artifactKey: Guid(33891c239f057434ba29d7cdc90cb746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Black.prefab using Guid(33891c239f057434ba29d7cdc90cb746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41154f5ac3b9325ea32675c483b7e636') in 0.0086963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Blonde.prefab
+  artifactKey: Guid(27aa8de094d2d9243b4d048736c25124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Blonde.prefab using Guid(27aa8de094d2d9243b4d048736c25124) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb18d4062aed647d0d698eb61bfd10af') in 0.0071191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair For Hat.FBX
+  artifactKey: Guid(fa7d444caf65ba04ea2f6cd7b9946a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair For Hat.FBX using Guid(fa7d444caf65ba04ea2f6cd7b9946a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b984ccdee691ad91f96e150b51920e5d') in 0.0098293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Grey.prefab
+  artifactKey: Guid(4e5bb197bcd14864a9b3f19dfa4deaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Grey.prefab using Guid(4e5bb197bcd14864a9b3f19dfa4deaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d8f168b9004b164b82c24af889e9bdc') in 0.0079742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Orange.prefab
+  artifactKey: Guid(ead1969b384681b449849f38b06fc1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Orange.prefab using Guid(ead1969b384681b449849f38b06fc1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e315d1eaf0d137815d9e12bb79dcd7f') in 0.0082815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Head 01.FBX
+  artifactKey: Guid(a50e3f7f3e580c843a6a31d558faccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Head 01.FBX using Guid(a50e3f7f3e580c843a6a31d558faccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94a6b870dbd424ac2f2f14a26cbb7c61') in 0.0106935 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.111430 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 01 Tan.prefab
+  artifactKey: Guid(4d6ca77f379c30046adc5978d5f0e638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 01 Tan.prefab using Guid(4d6ca77f379c30046adc5978d5f0e638) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8e554db853577c57d036e217ecf033b') in 0.0086047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 02 Fair.prefab
+  artifactKey: Guid(953828d771bf03a498dcac53c0e22c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 02 Fair.prefab using Guid(953828d771bf03a498dcac53c0e22c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cad5ad5a5d1efa1ff8f1e67eb98dd2d') in 0.0085757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Hood Shadow.FBX
+  artifactKey: Guid(85332ee8bdfed744c9a509fb2252a1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Hood Shadow.FBX using Guid(85332ee8bdfed744c9a509fb2252a1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7565c9e7cfdd64efe4b9bdf9365a4114') in 0.0100178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020761 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Aqua.prefab
+  artifactKey: Guid(7a45bd5f6d6fdf9498e9422a3608f116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Aqua.prefab using Guid(7a45bd5f6d6fdf9498e9422a3608f116) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c42fd0c7adb2c9510f01e2e6c270366') in 0.0104463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Nature.prefab
+  artifactKey: Guid(cc2fbc21553a77b47858129f37bbf843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Nature.prefab using Guid(cc2fbc21553a77b47858129f37bbf843) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b85fab3af3595117847303b2abee7ff4') in 0.0120278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Male Mage 01.FBX
+  artifactKey: Guid(9882e54ca7c74394a83a739e993aafbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Male Mage 01.FBX using Guid(9882e54ca7c74394a83a739e993aafbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e965408f7f446985fca153024502f25') in 0.0175139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 90
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.fbx
+  artifactKey: Guid(3954b91c2215aaa48bbb830237264d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_02.fbx using Guid(3954b91c2215aaa48bbb830237264d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12db9601e8974eb98cc6d1682bb1796f') in 0.0380443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/02 Customized Sample Prefabs/Male Mage 01.prefab
+  artifactKey: Guid(53ce17ff98122ea45a85638e22a63bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/02 Customized Sample Prefabs/Male Mage 01.prefab using Guid(53ce17ff98122ea45a85638e22a63bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1a15e4a57dd335b3b993a719d2a54bf') in 0.0297417 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 188
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spellbook Ancient Aqua.prefab
+  artifactKey: Guid(2f5af0968f702f84381ab4d70a2c82b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spellbook Ancient Aqua.prefab using Guid(2f5af0968f702f84381ab4d70a2c82b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2de07d363fc79bf0fe1abbff25acd4dc') in 0.0102913 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Spellbook Ancient.FBX
+  artifactKey: Guid(8d32d1e6d17c30048a85a74ac65c4521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Spellbook Ancient.FBX using Guid(8d32d1e6d17c30048a85a74ac65c4521) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a903c9c8f54f2a6c018e4a2ca625409') in 0.0099949 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_Hatch_01.prefab
+  artifactKey: Guid(ba20d72891d7dc24cafd85e487a65a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_Hatch_01.prefab using Guid(ba20d72891d7dc24cafd85e487a65a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1017d030052f7b6936082a461d5b064e') in 0.002212 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Magic Scroll.FBX
+  artifactKey: Guid(0675ad578b1d63b45a77052e6135aaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Magic Scroll.FBX using Guid(0675ad578b1d63b45a77052e6135aaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e44a6e1950c201f1b521960939717b86') in 0.0096825 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Fire.prefab
+  artifactKey: Guid(64a678e500a3558418d4bd1749deb96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Fire.prefab using Guid(64a678e500a3558418d4bd1749deb96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea6893bc60b49cc698a1bbb30f260249') in 0.0109773 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_03.fbx
+  artifactKey: Guid(6ea8a794c7961c34a9dd409c0d34dce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Synty Studios/SM_Bld_Castle_Floor_Wood_03.fbx using Guid(6ea8a794c7961c34a9dd409c0d34dce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a11efb9e2026658ee9c1df2bfbe6e763') in 0.0140377 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.066967 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spellbook Ancient Fire.prefab
+  artifactKey: Guid(53ea3f2c63056a9418c392f08a1984ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spellbook Ancient Fire.prefab using Guid(53ea3f2c63056a9418c392f08a1984ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e6107f51177fb78761ae7accd4c0019') in 0.009275 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Dark.prefab
+  artifactKey: Guid(d022cc27c93deb643bda5a0550d6e530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Dark.prefab using Guid(d022cc27c93deb643bda5a0550d6e530) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e52bb88818696f03c8c18b20725326e7') in 0.0417129 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006888 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Fire.prefab
+  artifactKey: Guid(2483c6fe01e4f7e4aa9c471407916169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Fire.prefab using Guid(2483c6fe01e4f7e4aa9c471407916169) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b97976c6b0b93d1f12637b4a44f02fe6') in 0.0172436 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Fire Male Mage 01.prefab
+  artifactKey: Guid(5ee3879366a88eb43a3f1a05073b2203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Fire Male Mage 01.prefab using Guid(5ee3879366a88eb43a3f1a05073b2203) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99040ebe7817578e967ae2b09a179776') in 0.0161237 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 203
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Nature Male Mage 03.prefab
+  artifactKey: Guid(a598defc181fa6d459d991bcb3507d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Nature Male Mage 03.prefab using Guid(a598defc181fa6d459d991bcb3507d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d0cf5da3c780a423541ade197448344') in 0.0165989 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 203
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Dark Male Mage 02.prefab
+  artifactKey: Guid(b5decfe150fd42344a9aab912077756e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Dark Male Mage 02.prefab using Guid(b5decfe150fd42344a9aab912077756e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f1a7b2ed985e89e6e1a31ae2adb4c19') in 0.0166173 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 203
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Dark.prefab
+  artifactKey: Guid(72118eceb16bcea4d8daf9dcbdc87a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Dark.prefab using Guid(72118eceb16bcea4d8daf9dcbdc87a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15bdeba59a94cf16afed2825ed9751cc') in 0.0113724 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 01.prefab
+  artifactKey: Guid(b89b09bae10edb34c89b143865098803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 01.prefab using Guid(b89b09bae10edb34c89b143865098803) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cd41d7a26947437f1beaca2cb164016') in 0.0156643 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 203
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Nature Male Mage 02.prefab
+  artifactKey: Guid(db2c0b9ebe6a20c4897b6800058278c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Nature Male Mage 02.prefab using Guid(db2c0b9ebe6a20c4897b6800058278c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d66e232b0bc9a12c1d4ec6b7f6e8b24') in 0.0129435 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 203
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Ordinary.prefab
+  artifactKey: Guid(3ca76ec4ef0c2854a8ea22b755594214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Ordinary.prefab using Guid(3ca76ec4ef0c2854a8ea22b755594214) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27e4805d566a2ac1007e0d327f4436a2') in 0.0096694 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 02.prefab
+  artifactKey: Guid(1c9148cda341c104092679be18077b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 02.prefab using Guid(1c9148cda341c104092679be18077b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fa220dacaa2b273c085c6ff1aa8ab0f') in 0.0143056 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 203
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Aqua.prefab
+  artifactKey: Guid(1ee9b6848b145ec488157aab2e6f74ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Aqua.prefab using Guid(1ee9b6848b145ec488157aab2e6f74ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e581d70a21a2b11b17f878e415e8da78') in 0.0116828 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.711455 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Wand Solar.FBX
+  artifactKey: Guid(db56e422314ebd3448619d96161a7e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Wand Solar.FBX using Guid(db56e422314ebd3448619d96161a7e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a09fd72c484dfcc15484f633fdef227') in 0.0113517 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039572 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Solar Nature.prefab
+  artifactKey: Guid(fa7e14f9f9e27c14882cd4a634dc6fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Solar Nature.prefab using Guid(fa7e14f9f9e27c14882cd4a634dc6fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d42759d43cd4016c5df77be2fad3170') in 0.0083955 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
