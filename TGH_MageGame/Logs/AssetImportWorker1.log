@@ -15,7 +15,7 @@ C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50464
+50785
 -job-worker-count
 5
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3664] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 243900429 [EditorId] 243900429 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [3664] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 243900429 [EditorId] 243900429 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22972] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 3403268111 [EditorId] 3403268111 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22972] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 3403268111 [EditorId] 3403268111 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 2.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.1f1 (a6dd9a634651)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -96,45 +96,45 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.011795 seconds.
-- Loaded All Assemblies, in  0.513 seconds
+Registered in 0.013824 seconds.
+- Loaded All Assemblies, in  0.490 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 353 ms
+Android Extension - Scanning For ADB Devices 359 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.780 seconds
-Domain Reload Profiling: 1287ms
-	BeginReloadAssembly (166ms)
+- Finished resetting the current domain, in  0.776 seconds
+Domain Reload Profiling: 1261ms
+	BeginReloadAssembly (160ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (45ms)
+	RebuildCommonClasses (47ms)
 	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (216ms)
-		LoadAssemblies (161ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (195ms)
+		LoadAssemblies (156ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (211ms)
-			TypeCache.Refresh (210ms)
-				TypeCache.ScanAssembly (195ms)
+		AnalyzeDomain (191ms)
+			TypeCache.Refresh (189ms)
+				TypeCache.ScanAssembly (174ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (781ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (777ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (724ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (486ms)
+			InitializePlatformSupportModulesInManaged (492ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (172ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -157,75 +157,1072 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.958 seconds
-Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.966 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.707 seconds
-Domain Reload Profiling: 1654ms
-	BeginReloadAssembly (346ms)
+- Finished resetting the current domain, in  0.693 seconds
+Domain Reload Profiling: 1651ms
+	BeginReloadAssembly (345ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (498ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (506ms)
 		LoadAssemblies (417ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (209ms)
-			TypeCache.Refresh (180ms)
-				TypeCache.ScanAssembly (164ms)
-			BuildScriptInfoCaches (20ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (708ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (181ms)
+				TypeCache.ScanAssembly (163ms)
+			BuildScriptInfoCaches (22ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (694ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (490ms)
+		SetupLoadedEditorAssemblies (480ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (367ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
+			ProcessInitializeOnLoadAttributes (360ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
 			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3521 unused Assets / (1.0 MB). Loaded Objects now: 4084.
-Memory consumption went from 118.2 MB to 117.1 MB.
-Total: 5.438200 ms (FindLiveObjects: 0.393400 ms CreateObjectMapping: 0.391000 ms MarkObjects: 3.409500 ms  DeleteObjects: 1.242900 ms)
+Unloading 3521 unused Assets / (1.1 MB). Loaded Objects now: 4084.
+Memory consumption went from 118.1 MB to 117.0 MB.
+Total: 5.751100 ms (FindLiveObjects: 0.423100 ms CreateObjectMapping: 0.459000 ms MarkObjects: 3.822800 ms  DeleteObjects: 1.045200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 200955.928711 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations/Idles
-  artifactKey: Guid(647ace299c4c83d4db99e696afe53d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Idles using Guid(647ace299c4c83d4db99e696afe53d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac1705ffbcf07aecd4e02f452caa1531') in 0.0056546 seconds
+  Time since last request: 208447.984058 seconds.
+  path: Assets/Materials/floorMat.mat
+  artifactKey: Guid(449c93c38f83b724da4342e821840af6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/floorMat.mat using Guid(449c93c38f83b724da4342e821840af6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd63221666f206fa33151a29e3b43634f') in 0.1418868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Cute series demo assets/Cute Perspective.asset
+  artifactKey: Guid(f8a1aa32b7c7d5949971e46db0f6f7e8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Cute series demo assets/Cute Perspective.asset using Guid(f8a1aa32b7c7d5949971e46db0f6f7e8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '33bcdadc8c48c5555b76422edfde88f9') in 0.007006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Materials/Spirited Crystals Aqua.mat
+  artifactKey: Guid(e52efffc1abc8e246ab934a297887288) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Materials/Spirited Crystals Aqua.mat using Guid(e52efffc1abc8e246ab934a297887288) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec0cee99a472ec35fc39705c6512a05e') in 0.0137923 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Spirited Crystals.controller
+  artifactKey: Guid(2b9e0366ce648a740949b2cabd803879) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Spirited Crystals.controller using Guid(2b9e0366ce648a740949b2cabd803879) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e7e65cd785581e9850ea2828b7e207ba') in 0.0078977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 02 Orange.mat
+  artifactKey: Guid(3f7aafce9309b2d4f8bf48e4a9fa3be4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 02 Orange.mat using Guid(3f7aafce9309b2d4f8bf48e4a9fa3be4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '576c52dc29b91ad3062f56697897ebe4') in 0.0099753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Fair Dark.mat
+  artifactKey: Guid(8a9edcf2dbd584546b8aa4e4e90f445d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Fair Dark.mat using Guid(8a9edcf2dbd584546b8aa4e4e90f445d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '547db3f13b74015b754bcc98c15d0eef') in 0.0081258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Fire Male Mage 03.prefab
+  artifactKey: Guid(b5a483033563a33409545e0775ec5903) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Fire Male Mage 03.prefab using Guid(b5a483033563a33409545e0775ec5903) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89a36e78c01d9e43a9a20cdac689ba21') in 0.0205293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scripts/AnimatorForward.cs
+  artifactKey: Guid(a2ff17511085d4648815a69fe50412f4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/AnimatorForward.cs using Guid(a2ff17511085d4648815a69fe50412f4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b12e2b4b2a0a5e9cf99b8ddfaeaeaad0') in 0.0049065 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions
-  artifactKey: Guid(2cb279c410b7a3e4dbf4aab42283effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions using Guid(2cb279c410b7a3e4dbf4aab42283effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd94fce5832aa86d3a19b2a6fd6c3b78b') in 0.0007231 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000129 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/02 Customized Sample Prefabs/Male Mage 03.prefab
+  artifactKey: Guid(388dc932b21f1344fb3fa4f788797fad) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/02 Customized Sample Prefabs/Male Mage 03.prefab using Guid(388dc932b21f1344fb3fa4f788797fad) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c8ffe7b817591eae7e6b958182578c41') in 0.0230805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 171
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Kevin Iglesias/Basic Motions/Animations
-  artifactKey: Guid(6232eb274a17a9b408d3695f78bc25ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kevin Iglesias/Basic Motions/Animations using Guid(6232eb274a17a9b408d3695f78bc25ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0636f2d623eb5e9731548abebb0ec367') in 0.0005935 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Dark Male Mage 01.prefab
+  artifactKey: Guid(3fa02aff571501540921275ebb764f37) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Dark Male Mage 01.prefab using Guid(3fa02aff571501540921275ebb764f37) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b37cd8a549d7906abe3da7979528fba') in 0.0121838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Male Main Rig.FBX
+  artifactKey: Guid(f6605568d3cd20e4db1a0b19cfe83787) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Male Main Rig.FBX using Guid(f6605568d3cd20e4db1a0b19cfe83787) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '48eec1347e7b0778846e605c0d8a386f') in 0.0447952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Sandbox.unity
+  artifactKey: Guid(a78e6a3a24f616340bc9a966c79679d4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/Sandbox.unity using Guid(a78e6a3a24f616340bc9a966c79679d4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec52469c9685bb2e10890eb8ceb8bb39') in 0.0130702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Character Demo.controller
+  artifactKey: Guid(3bb24ae9e7a90cc4badcfb074957b299) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Character Demo.controller using Guid(3bb24ae9e7a90cc4badcfb074957b299) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '08816d01405388e6bd3bc0bc99cd4038') in 0.0090266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 03.prefab
+  artifactKey: Guid(628ed55139b7fc84283591999ec8b3c4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 03.prefab using Guid(628ed55139b7fc84283591999ec8b3c4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '166b6859ebf9e448e0c39502cc394fa7') in 0.0093582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Brown.mat
+  artifactKey: Guid(d94bb7403ed7ce742aaaaa7ced255fb7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Brown.mat using Guid(d94bb7403ed7ce742aaaaa7ced255fb7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cccf4bb78bd39a3f6965a619b1934092') in 0.0067482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair 04.FBX
+  artifactKey: Guid(d3106f502034190449a656b4e177eaed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair 04.FBX using Guid(d3106f502034190449a656b4e177eaed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1265be96257325b61149b9cfb032df03') in 0.0161567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 02 Brown.mat
+  artifactKey: Guid(302b258549df3a647bc96d72e927bed6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 02 Brown.mat using Guid(302b258549df3a647bc96d72e927bed6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2e0e5b93318b42dcdec5b8c456c51360') in 0.0065099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Scenes/Character Bases.unity
+  artifactKey: Guid(3e92992f6222b5347b20f4afa3ed5763) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Scenes/Character Bases.unity using Guid(3e92992f6222b5347b20f4afa3ed5763) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c7e825299aca9050dae566bc0bcf19dc') in 0.0157384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Aqua Male Mage 02.prefab
+  artifactKey: Guid(b0a1d03046f2d4348b7050704b3423b9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Aqua Male Mage 02.prefab using Guid(b0a1d03046f2d4348b7050704b3423b9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c457dc8a6a7eb35aa23b7f47688e1f9') in 0.009393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 01.prefab
+  artifactKey: Guid(b89b09bae10edb34c89b143865098803) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 01.prefab using Guid(b89b09bae10edb34c89b143865098803) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'af5c7c6a82ced4334d53b39f30243ee5') in 0.009969 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Black.mat
+  artifactKey: Guid(14612870cb138e74bbc15d0c2b578007) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Black.mat using Guid(14612870cb138e74bbc15d0c2b578007) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbb34ec23a4007e5b8f53e072418d0a0') in 0.0101753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Wand Illusion.FBX
+  artifactKey: Guid(62f0cc9ecdda2bd4bad5d7c134d7f685) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Wand Illusion.FBX using Guid(62f0cc9ecdda2bd4bad5d7c134d7f685) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cdc938ed0b65f65262421bae5d625eb2') in 0.0216208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Face.FBX
+  artifactKey: Guid(a91e2c8bbd0e53447adeb7d239346501) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Face.FBX using Guid(a91e2c8bbd0e53447adeb7d239346501) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '93eba2eedd06da799d818b4a7a8e6934') in 0.0197979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Materials/Spirited Crystals Fire.mat
+  artifactKey: Guid(ce298ee94aff77445a5442b52dc9d07d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Materials/Spirited Crystals Fire.mat using Guid(ce298ee94aff77445a5442b52dc9d07d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '424d12b3180389b9eb94809fb12d22a1') in 0.0087027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 02.prefab
+  artifactKey: Guid(1c9148cda341c104092679be18077b79) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Aqua Male Mage 02.prefab using Guid(1c9148cda341c104092679be18077b79) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8190e9e6afb3226d1e1cc1400ff18874') in 0.0113921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Idle.FBX
+  artifactKey: Guid(5ad01fefe87a47841951ec0a3345baa0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Idle.FBX using Guid(5ad01fefe87a47841951ec0a3345baa0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2614ef703092139897d0e1b6edb60d8') in 0.041583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Hair Black.mat
+  artifactKey: Guid(998b2df159628e84bb56ab465f92ac32) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Hair Black.mat using Guid(998b2df159628e84bb56ab465f92ac32) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e24b0d4bd404ffacbbe6e2144df3587') in 0.0101382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 01 Orange.mat
+  artifactKey: Guid(75060dba742f2f94b8726af8a3b05781) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 01 Orange.mat using Guid(75060dba742f2f94b8726af8a3b05781) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f02521711bf1ab5c51c3fc5c8a156d22') in 0.0065845 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Fire.psd
+  artifactKey: Guid(88e166531e161164e9ed91b7b35cdb93) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Fire.psd using Guid(88e166531e161164e9ed91b7b35cdb93) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa59e362caa1df40ade9d436c10ad7f1') in 0.048204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Brown.psd
+  artifactKey: Guid(65f8c67cbb45a274380c27f99c7eb74c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Brown.psd using Guid(65f8c67cbb45a274380c27f99c7eb74c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3f9f4d6570523f7c95fbc0dc34f1b9c3') in 0.017627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Hair Brown.mat
+  artifactKey: Guid(82724d203eb9e7b44808338d84896f32) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Hair Brown.mat using Guid(82724d203eb9e7b44808338d84896f32) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e988c19c672139ce1382e4ac13addab9') in 0.0086597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Dark.psd
+  artifactKey: Guid(4f5dd95fcef233242988b4f8407c5312) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Dark.psd using Guid(4f5dd95fcef233242988b4f8407c5312) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c773453b418ce2826c3a3f8b97b296d') in 0.0213449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Weapons and Props.mat
+  artifactKey: Guid(35c81461f83c1864599cad9751c3cef1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Weapons and Props.mat using Guid(35c81461f83c1864599cad9751c3cef1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '072c8ac199fc20b54406ea650e74c6f2') in 0.0091925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Orange.psd
+  artifactKey: Guid(c9633cf78b7462946b446fa3a71ed3d7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Orange.psd using Guid(c9633cf78b7462946b446fa3a71ed3d7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '779c18077581688d91f9ecb0a14eecd9') in 0.015922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx
+  artifactKey: Guid(f2f9a6f31d218ef40871718667ffa92b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01.fbx using Guid(f2f9a6f31d218ef40871718667ffa92b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'be119f842cb877027ef118e5e9f16d48') in 0.0811195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 139
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Tan Dark.mat
+  artifactKey: Guid(4360653e63b9db04ab1e4dd7670b3183) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Tan Dark.mat using Guid(4360653e63b9db04ab1e4dd7670b3183) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4d06c5c046e0f4a8db44d9d7b55f5120') in 0.0061247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Black.psd
+  artifactKey: Guid(5b8b426e4f7e30744a74c02b1e5c343d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Black.psd using Guid(5b8b426e4f7e30744a74c02b1e5c343d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cba051d6e7679611c123701576a8011e') in 0.0158524 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx
+  artifactKey: Guid(a47cd8049d369014d982ac600e9abb2e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01 [RM].fbx using Guid(a47cd8049d369014d982ac600e9abb2e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '97bbdb3152e02c8b0f7d5c732188beeb') in 0.065451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Blonde.psd
+  artifactKey: Guid(2be79e4465ceb514794cc7014ebb7e08) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Blonde.psd using Guid(2be79e4465ceb514794cc7014ebb7e08) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1bec23fd956aa9f0deebc6c396fb927f') in 0.0198027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Orange.psd
+  artifactKey: Guid(6d24b044cdc0395408b5c32d28102ab6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Orange.psd using Guid(6d24b044cdc0395408b5c32d28102ab6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '43143c11c55e238a0c2d50e907d51a26') in 0.0205745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Grey.psd
+  artifactKey: Guid(8f3b7ef7428c9b74da80dfe5d278fffe) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Grey.psd using Guid(8f3b7ef7428c9b74da80dfe5d278fffe) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a657321039a23e52c510d6ecc1a20f11') in 0.0150084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Grey.psd
+  artifactKey: Guid(1dcb44fc3fa29a349a952bc75a65983b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Grey.psd using Guid(1dcb44fc3fa29a349a952bc75a65983b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fb7d68ba4fd749c83d81a6d4f9b8b16c') in 0.0183021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Hair Dark.psd
+  artifactKey: Guid(0de9e396a30ebf346bedab6900cc4b15) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Hair Dark.psd using Guid(0de9e396a30ebf346bedab6900cc4b15) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0275e336a55bdcb30b1bd6f4b6e2c9cf') in 0.0173941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx
+  artifactKey: Guid(9100fffce5667e342a8f3db30ada3271) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Sprint01.fbx using Guid(9100fffce5667e342a8f3db30ada3271) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9f10084ea08bebbf864850c0ec690377') in 0.0725805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Tan Nature.mat
+  artifactKey: Guid(4ec42e2d15e863b4dbb2f00ac77082c5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Tan Nature.mat using Guid(4ec42e2d15e863b4dbb2f00ac77082c5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1d332fdf5f5b616291f9a8187cf2a0d7') in 0.009404 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Tan Dark.psd
+  artifactKey: Guid(933f1be8135958b46a6eff346dc82f6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Tan Dark.psd using Guid(933f1be8135958b46a6eff346dc82f6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '591e947598e21abefbf4e5e4ea314d9f') in 0.0205744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Nature.psd
+  artifactKey: Guid(f9dcb94833b77f242bb596fa67bca1aa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Nature.psd using Guid(f9dcb94833b77f242bb596fa67bca1aa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c2626639bcc1e3d3fca75aac3abc6fa1') in 0.0206799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Hair Light.psd
+  artifactKey: Guid(adbdc4444c226aa42a01786a62b158fa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Hair Light.psd using Guid(adbdc4444c226aa42a01786a62b158fa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f841107286a8deb3873752434507cf7') in 0.0185246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Nature.prefab
+  artifactKey: Guid(9e82c32a03cea724ea21c4b6ecaf6e34) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Nature.prefab using Guid(9e82c32a03cea724ea21c4b6ecaf6e34) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '455e0dc3f7f9222abcb1cd56e12844bc') in 0.0109139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Brown.prefab
+  artifactKey: Guid(dd0a4496dd67cb149a89349a60b6a5cd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Brown.prefab using Guid(dd0a4496dd67cb149a89349a60b6a5cd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a6e6a56a8b1c45f68bba842e7be6744') in 0.0090008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Orange.prefab
+  artifactKey: Guid(c56a4cea125321d47ad491143678e402) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Orange.prefab using Guid(c56a4cea125321d47ad491143678e402) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a6e4dabd248a9d5f3294f614271b0d64') in 0.0105551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Nature.prefab
+  artifactKey: Guid(826d8feff10639e42ab78318db6d2c0d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Nature.prefab using Guid(826d8feff10639e42ab78318db6d2c0d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b28b757b7e5e31258d793462c7866e25') in 0.009634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Fire.prefab
+  artifactKey: Guid(64a678e500a3558418d4bd1749deb96d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Fire.prefab using Guid(64a678e500a3558418d4bd1749deb96d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a66fb79e478922e6e6edfb80e6d5d298') in 0.0116574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Dark.prefab
+  artifactKey: Guid(72118eceb16bcea4d8daf9dcbdc87a39) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Dark.prefab using Guid(72118eceb16bcea4d8daf9dcbdc87a39) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '79b21108408bdda28aad886982eeab81') in 0.0070514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Dark.prefab
+  artifactKey: Guid(b1e9dc841b72023438fdbc1bfefa837f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Dark.prefab using Guid(b1e9dc841b72023438fdbc1bfefa837f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2f7b1660b7d1271b57de5b83ee885673') in 0.0128585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Fire.prefab
+  artifactKey: Guid(83eadbc6dce987343a2fa97913875b62) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Fire.prefab using Guid(83eadbc6dce987343a2fa97913875b62) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4215b43c14a9d85426be3dcba5478d9f') in 0.0101585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spellbook Ancient Aqua.prefab
+  artifactKey: Guid(2f5af0968f702f84381ab4d70a2c82b4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spellbook Ancient Aqua.prefab using Guid(2f5af0968f702f84381ab4d70a2c82b4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4eb795e1b0ba6b244c5567d088d44792') in 0.0072429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Fire.prefab
+  artifactKey: Guid(2483c6fe01e4f7e4aa9c471407916169) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Fire.prefab using Guid(2483c6fe01e4f7e4aa9c471407916169) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a6ffda9f2618c63e20045e9199ad6310') in 0.0111944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Aqua.prefab
+  artifactKey: Guid(07cfb98e04d90f149987b797123dbcb0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Back Props (+Back)/Spirited Crystals Aqua.prefab using Guid(07cfb98e04d90f149987b797123dbcb0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8dccbb6593a6f682d67b3c9dfc1f1a0c') in 0.012584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/02 Customized Sample Prefabs/Male Mage 01.prefab
+  artifactKey: Guid(53ce17ff98122ea45a85638e22a63bc8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/02 Customized Sample Prefabs/Male Mage 01.prefab using Guid(53ce17ff98122ea45a85638e22a63bc8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ebaa560a847180d437e505d1c854fc99') in 0.0173983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 148
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Prefabs/BasicMotionsDummy.prefab
+  artifactKey: Guid(4a076a09e2096f140b4008b73dea295f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Kevin Iglesias/Basic Motions/Prefabs/BasicMotionsDummy.prefab using Guid(4a076a09e2096f140b4008b73dea295f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd9fe8b5e0e5da3434c1c5040d3e8b47f') in 0.0098704 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Head 02.FBX
+  artifactKey: Guid(db280b8e73afaef4abdcbc7e2ef8cbac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Head 02.FBX using Guid(db280b8e73afaef4abdcbc7e2ef8cbac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0fae2ce5ebb4fddb560c5abdf55efb17') in 0.0122573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Aqua.prefab
+  artifactKey: Guid(1ee9b6848b145ec488157aab2e6f74ca) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Illusion Aqua.prefab using Guid(1ee9b6848b145ec488157aab2e6f74ca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3a2773790edd03be25d86254832776fd') in 0.0098173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 02.prefab
+  artifactKey: Guid(040e9dc4a91e8e04f8cbd393266af6f6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 02.prefab using Guid(040e9dc4a91e8e04f8cbd393266af6f6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81685cc21c191f284cbf2a722f30992e') in 0.0082322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 03 Grey.psd
+  artifactKey: Guid(0fb34d667931c0140b9af9b2ea8052d2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 03 Grey.psd using Guid(0fb34d667931c0140b9af9b2ea8052d2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1d21c23a9c4345501b9aadc5e0f29581') in 0.0200161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Black.psd
+  artifactKey: Guid(3378566dbeb6a9c48b00a8a2f780c4cc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 02 Black.psd using Guid(3378566dbeb6a9c48b00a8a2f780c4cc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '66cb1d1653757b373d5f8dcfdf64f405') in 0.0200292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Fair Nature.mat
+  artifactKey: Guid(d027e556141828245a28e5cffcfd23d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Fair Nature.mat using Guid(d027e556141828245a28e5cffcfd23d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '99101870788c92f876f03c9f5b023a02') in 0.006102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx
+  artifactKey: Guid(1b868613f10ae8747a1790c8b79c439a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Movement/BasicMotions@Run01 [RM].fbx using Guid(1b868613f10ae8747a1790c8b79c439a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7da6bff595c54f6987218f64e5cdee34') in 0.100555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 139
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Fire Male Mage 03.prefab
+  artifactKey: Guid(1015b2984d1b5d843b55dfed531281c3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Fire Male Mage 03.prefab using Guid(1015b2984d1b5d843b55dfed531281c3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '614e6a3a39878560edaa020559c91d20') in 0.0096768 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Orange.mat
+  artifactKey: Guid(e4d88460544f0444bae5a65dcde5b943) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Orange.mat using Guid(e4d88460544f0444bae5a65dcde5b943) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5a5094f02c71cfe6efc335c2b8c62c4d') in 0.007816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Tan Aqua.mat
+  artifactKey: Guid(cfd6aa3629cb83240856b88a91bc72b8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Tan Aqua.mat using Guid(cfd6aa3629cb83240856b88a91bc72b8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90b2f8f4bb1f2ab095a0f175813aad69') in 0.0072488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Cute series demo assets/Ground.mat
+  artifactKey: Guid(f37ea2bd19136a2469ed0e0758f4ce30) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Cute series demo assets/Ground.mat using Guid(f37ea2bd19136a2469ed0e0758f4ce30) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3b46a30908033e9096e756f7b5777dd2') in 0.0063098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/00 Tutorials/Cute Series Character Pack's Guide.pdf
+  artifactKey: Guid(c620eaaac56cc424a8e61eb28364bec1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/00 Tutorials/Cute Series Character Pack's Guide.pdf using Guid(c620eaaac56cc424a8e61eb28364bec1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f5a7120789b815a8b3ea920ca69ecd3') in 0.0036197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 02.prefab
+  artifactKey: Guid(ab27c1fe05636884cba172afba65a1c9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 02.prefab using Guid(ab27c1fe05636884cba172afba65a1c9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e9af49c72928e213bf7621e1bb763f1b') in 0.0096453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair For Hat.FBX
+  artifactKey: Guid(fa7d444caf65ba04ea2f6cd7b9946a40) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/FBX/Hair For Hat.FBX using Guid(fa7d444caf65ba04ea2f6cd7b9946a40) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbf09e4cac0e68494d710b2a58057a83') in 0.0192838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Blonde.mat
+  artifactKey: Guid(87e67fa05d1590b4a929c9700355c0c3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Blonde.mat using Guid(87e67fa05d1590b4a929c9700355c0c3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2bf50cac49eef443422bbe61a2362d49') in 0.0065514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Fair Aqua.mat
+  artifactKey: Guid(7d64267e5eb8ca74d8c9c25ffd8dcd35) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Fair Aqua.mat using Guid(7d64267e5eb8ca74d8c9c25ffd8dcd35) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7fdebc1299b5e9c15fe7a97ceb0b2c02') in 0.0081249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9cbe51927ae4a60295ff7417b54cf104') in 0.0053096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Solar Nature.prefab
+  artifactKey: Guid(fa7e14f9f9e27c14882cd4a634dc6fa4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Solar Nature.prefab using Guid(fa7e14f9f9e27c14882cd4a634dc6fa4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c9093cce276bed52c9a29b36fc496ec8') in 0.0113862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Dark.prefab
+  artifactKey: Guid(8007869db09492e4b80dc19d499c072b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Crown Halo Dark.prefab using Guid(8007869db09492e4b80dc19d499c072b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '880bdce88e73a5f00cb4d2ca76b0221a') in 0.0069651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 02 Grey.mat
+  artifactKey: Guid(93a4c16d2fa42684b97c969160e5a5c7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 02 Grey.mat using Guid(93a4c16d2fa42684b97c969160e5a5c7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8ec8efa4a88189c44b402d5267bf08d4') in 0.0078118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 01.prefab
+  artifactKey: Guid(d7d602925f55c244089104529f96b3c8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Nature Male Mage 01.prefab using Guid(d7d602925f55c244089104529f96b3c8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fa44508861f1eeb2b5c03601ee1a027c') in 0.0106369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Nature.prefab
+  artifactKey: Guid(cc2fbc21553a77b47858129f37bbf843) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Head Dress (+ Head )/Hood Shadow Nature.prefab using Guid(cc2fbc21553a77b47858129f37bbf843) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9e27e158579ed145c6c3db6be7e33c4d') in 0.0094327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Aqua Male Mage 03.prefab
+  artifactKey: Guid(fd804b53666764447821ee82d2586844) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Aqua Male Mage 03.prefab using Guid(fd804b53666764447821ee82d2586844) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b46f5e4d82498902f942e9608893a529') in 0.0118735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Black.prefab
+  artifactKey: Guid(2b69a82f6be67824fb1b49e87fa85e9e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 02 Black.prefab using Guid(2b69a82f6be67824fb1b49e87fa85e9e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce5ce49dd192a36c484dd1852cb9b063') in 0.0067786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/FBX/Male Mage 01.FBX
+  artifactKey: Guid(9882e54ca7c74394a83a739e993aafbd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/FBX/Male Mage 01.FBX using Guid(9882e54ca7c74394a83a739e993aafbd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '53f4535192a9b8e00ca04ae5bd63b1b8') in 0.0229265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Blonde.psd
+  artifactKey: Guid(a470ee1f65eaaa846b14242e8741d2f8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 01 Blonde.psd using Guid(a470ee1f65eaaa846b14242e8741d2f8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f4e50f7c8c4ba6fe3c585ff1b1524ba') in 0.0209041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Grey.prefab
+  artifactKey: Guid(98ecf5ed101c0e943847bdd233635087) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Grey.prefab using Guid(98ecf5ed101c0e943847bdd233635087) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9af883087f7709fc5cc2f51f781b9b72') in 0.0081805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Brown.prefab
+  artifactKey: Guid(97f24e200b7c398448f6ff7dbd4542a7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Brown.prefab using Guid(97f24e200b7c398448f6ff7dbd4542a7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b7813a966aa8b8c07ffd5cecc5b0fbec') in 0.0138185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02  Blonde.prefab
+  artifactKey: Guid(f4dba9b36a49fd04688809001e0ee09c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02  Blonde.prefab using Guid(f4dba9b36a49fd04688809001e0ee09c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3dfe87ae7f2cdde49b45fd80e86d1c40') in 0.0091471 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Blonde.prefab
+  artifactKey: Guid(27aa8de094d2d9243b4d048736c25124) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Blonde.prefab using Guid(27aa8de094d2d9243b4d048736c25124) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '158e8af7a66fe3160761f4bd67740e9b') in 0.0094208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 03 Brown.prefab
+  artifactKey: Guid(20a6e35a31f841e4c969cdd124a8c81c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 03 Brown.prefab using Guid(20a6e35a31f841e4c969cdd124a8c81c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c00a6f848fddbcdee235d3e155d2c657') in 0.0094294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 03 Grey.prefab
+  artifactKey: Guid(1bd2d82be8a13354dbd32de98291de6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 03 Grey.prefab using Guid(1bd2d82be8a13354dbd32de98291de6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c2c1f45983d145add1a5b44c8c82690') in 0.008514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Orange.prefab
+  artifactKey: Guid(42f65287e535a3449aee2f9a0f6cd60d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 01 Orange.prefab using Guid(42f65287e535a3449aee2f9a0f6cd60d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ea15a7fb80585d9182287e04b6496576') in 0.0089444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 02 Tan.prefab
+  artifactKey: Guid(310f7b67f4adba7419d00e67cdd36f35) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 02 Tan.prefab using Guid(310f7b67f4adba7419d00e67cdd36f35) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6d1aeadebb04995f0947b3985f33d4bc') in 0.0102182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 02 Fair.prefab
+  artifactKey: Guid(953828d771bf03a498dcac53c0e22c39) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 02 Fair.prefab using Guid(953828d771bf03a498dcac53c0e22c39) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '80e837ff089dabd3fc54b7a089936e05') in 0.0090878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02 Brown.prefab
+  artifactKey: Guid(4e33960e529136b4986d5336e09b8177) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02 Brown.prefab using Guid(4e33960e529136b4986d5336e09b8177) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b32ac29e403a3d9d15ded974dcfa30b') in 0.0115561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02 Orange.prefab
+  artifactKey: Guid(6fe5c8b4d443bf7418703756093959eb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 02 Orange.prefab using Guid(6fe5c8b4d443bf7418703756093959eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'acc45f3defcc5b00fac9548c3e5c574b') in 0.0099243 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 01 Tan.prefab
+  artifactKey: Guid(4d6ca77f379c30046adc5978d5f0e638) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 01 Tan.prefab using Guid(4d6ca77f379c30046adc5978d5f0e638) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd1b31c2beb707bf3e08e06599e0615a3') in 0.0104008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 01 Fair.prefab
+  artifactKey: Guid(74832b4893f7e104a8e8419ebe82d0d9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Heads  (+ Head )/Head 01 Fair.prefab using Guid(74832b4893f7e104a8e8419ebe82d0d9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '61fca15b2e459f43e38549c955118321') in 0.0116117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Black.prefab
+  artifactKey: Guid(33891c239f057434ba29d7cdc90cb746) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Black.prefab using Guid(33891c239f057434ba29d7cdc90cb746) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35eec00927926323e63dfbbd243d1bfe') in 0.0127131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Brown.prefab
+  artifactKey: Guid(dea8ec8dada0f1642a6706cabe8d4848) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Brown.prefab using Guid(dea8ec8dada0f1642a6706cabe8d4848) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2ff41005e6e859506a81583110d1bd65') in 0.0095117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Grey.prefab
+  artifactKey: Guid(24e3e079f7017f342ae860563c626ae4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Grey.prefab using Guid(24e3e079f7017f342ae860563c626ae4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3a3848f9c781d811f706f21c359c5fd6') in 0.0088721 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Grey.mat
+  artifactKey: Guid(6f68e99ad295fbe4781613d59cc14de5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Materials/Face Male 03 Grey.mat using Guid(6f68e99ad295fbe4781613d59cc14de5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '85c6f2b316223928f8e5dfa6a4f712cf') in 0.0077483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Walk Forward In Place.FBX
+  artifactKey: Guid(00820ce73a439f34f809d3408c580bbd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Animators and Animations/Char@Walk Forward In Place.FBX using Guid(00820ce73a439f34f809d3408c580bbd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e1f9dcef2ecc937eda98161309de8134') in 0.0358445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 03 Orange.psd
+  artifactKey: Guid(9b6ac32f7b225c74fb635d606b8e68c8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 03 Orange.psd using Guid(9b6ac32f7b225c74fb635d606b8e68c8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d3713ed5cf64c9ace391a2ea9a8976c') in 0.0201678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Brown.prefab
+  artifactKey: Guid(e9eec5f1cfc561c44bee7a8286c6daa4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair 04 Brown.prefab using Guid(e9eec5f1cfc561c44bee7a8286c6daa4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '64764dce3592f0f87878e3e95ee186c2') in 0.0068518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Fire Male Mage 01.prefab
+  artifactKey: Guid(5ee3879366a88eb43a3f1a05073b2203) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Tan Fire Male Mage 01.prefab using Guid(5ee3879366a88eb43a3f1a05073b2203) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '942f28edccc9bd1d66a110e4bbb25b8f') in 0.0083373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Blonde.prefab
+  artifactKey: Guid(b1e3fcb5712b6494fa527cfbd74a5849) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Faces (+ Head)/Face Male 01 Blonde.prefab using Guid(b1e3fcb5712b6494fa527cfbd74a5849) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '58a445b94f2207578cf52bc8ee3a4766') in 0.0108876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 03.prefab
+  artifactKey: Guid(b63a685dabb116a44b18c5a9e68546d7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/01 Drag Character Base to Scene/Fair Dark Male Mage 03.prefab using Guid(b63a685dabb116a44b18c5a9e68546d7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '834a3df025bb931b5d9fd4b584e640cf') in 0.0118246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Aqua.psd
+  artifactKey: Guid(12cc2fcb1e5105542819f46af6a76675) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Fair Aqua.psd using Guid(12cc2fcb1e5105542819f46af6a76675) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e874d1ee0fe66cd53e6371da41037ab4') in 0.0192272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Orange.prefab
+  artifactKey: Guid(ead1969b384681b449849f38b06fc1a9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Standard Hair (+ Head )/Hair For Hat Orange.prefab using Guid(ead1969b384681b449849f38b06fc1a9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '216cbf8cb1ef515b54ddaa62331ef505') in 0.0098105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 03 Brown.psd
+  artifactKey: Guid(79bf1966598360c439a027225bf58182) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Male Mage Pack 01 Cute Series/Standard Assets Files/Textures/Face Male 03 Brown.psd using Guid(79bf1966598360c439a027225bf58182) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6a322e0b42db4c782ffcf98b7e713b40') in 0.0222515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

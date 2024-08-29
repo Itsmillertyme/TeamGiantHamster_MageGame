@@ -1,0 +1,453 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.1f1 (a6dd9a634651) revision 10935706'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 65475 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+50785
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14264] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1447137491 [EditorId] 1447137491 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14264] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1447137491 [EditorId] 1447137491 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 3.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.1f1 (a6dd9a634651)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.013397 seconds.
+- Loaded All Assemblies, in  0.491 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 394 ms
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.800 seconds
+Domain Reload Profiling: 1285ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (192ms)
+		LoadAssemblies (155ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (188ms)
+			TypeCache.Refresh (187ms)
+				TypeCache.ScanAssembly (171ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (744ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (516ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (156ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.071 seconds
+Refreshing native plugins compatible for Editor in 2.48 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.827 seconds
+Domain Reload Profiling: 1890ms
+	BeginReloadAssembly (402ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (557ms)
+		LoadAssemblies (445ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (217ms)
+				TypeCache.ScanAssembly (196ms)
+			BuildScriptInfoCaches (22ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (828ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (575ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (98ms)
+			ProcessInitializeOnLoadAttributes (404ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3521 unused Assets / (1.1 MB). Loaded Objects now: 4084.
+Memory consumption went from 118.2 MB to 117.1 MB.
+Total: 4.825900 ms (FindLiveObjects: 0.404000 ms CreateObjectMapping: 0.412400 ms MarkObjects: 3.119200 ms  DeleteObjects: 0.888800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 208707.631956 seconds.
+  path: Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Solar Dark.prefab
+  artifactKey: Guid(9f2e298f22b14f843b8fca7e12498d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Male Mage Pack 01 Cute Series/01 Customize Character Here/02 Attach Weapons and Accessories/Right Weapons (+R hand)/Wand Solar Dark.prefab using Guid(9f2e298f22b14f843b8fca7e12498d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50ce4f57a9f3e696470b71530a091263') in 0.1113959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 1647.161449 seconds.
+  path: Assets/PolygonFantasyKingdom/Textures/Castle/PolygonFantasyKingdon_Texture_Wall_Brick_Normal.png
+  artifactKey: Guid(2201873fd1cce694bb2347a8c13e652d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Textures/Castle/PolygonFantasyKingdon_Texture_Wall_Brick_Normal.png using Guid(2201873fd1cce694bb2347a8c13e652d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ac39b7c9226dc9c69cb1ea913cf923a') in 0.27007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/PolygonFantasyKingdom
+  artifactKey: Guid(3e1d62960018de94bade0722b4583caf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom using Guid(3e1d62960018de94bade0722b4583caf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0f9b1289738414ce472799ae862e0d5') in 0.004909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Floor_Wood_Hatch_01.fbx
+  artifactKey: Guid(4e87bdb38276ac842a5c8a4e1dc681bf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Floor_Wood_Hatch_01.fbx using Guid(4e87bdb38276ac842a5c8a4e1dc681bf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '49d7663bcfc90fe80e74afd48a840e5e') in 0.0608682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Floor_Wood_Hatch_01_Convex.asset
+  artifactKey: Guid(484a32a05b9fbca449f981a0f4de0524) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Floor_Wood_Hatch_01_Convex.asset using Guid(484a32a05b9fbca449f981a0f4de0524) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dc7b927a0c8c4dc92f1feedaed66dabe') in 0.0081963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Drain_01_Convex.asset
+  artifactKey: Guid(877af7216619fb94cb4c63a329c7b029) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Drain_01_Convex.asset using Guid(877af7216619fb94cb4c63a329c7b029) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab874fbaf035a9834e54b8acf7307245') in 0.0061692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Floor_Wood_01_Convex.asset
+  artifactKey: Guid(c5e57b37f0a7f134a99abc794c620750) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Floor_Wood_01_Convex.asset using Guid(c5e57b37f0a7f134a99abc794c620750) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd209b620e88ed9594fbbcddf56170b4a') in 0.0057058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Floor_Stone_03_Convex.asset
+  artifactKey: Guid(37de86ad52561974186319dc18022292) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Floor_Stone_03_Convex.asset using Guid(37de86ad52561974186319dc18022292) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0478f10e11d2057190718c44e5b4d885') in 0.0065462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Wall_01.fbx
+  artifactKey: Guid(31ed01fa252a151428a8f3961f0d1ae8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Wall_01.fbx using Guid(31ed01fa252a151428a8f3961f0d1ae8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '88c8b261d63a68af08616fff21445161') in 0.0206844 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Wall_Drain_01.prefab
+  artifactKey: Guid(ab2add33e0da526489f8c182369aed72) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Wall_Drain_01.prefab using Guid(ab2add33e0da526489f8c182369aed72) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9b16f1d9dfdfbbea9cf8261660232083') in 0.0198181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/SM_Bld_Stairs_Straight_Wide_Edges_03.fbx
+  artifactKey: Guid(1dcaa02d6a931bf439319e9d6f7063ca) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/SM_Bld_Stairs_Straight_Wide_Edges_03.fbx using Guid(1dcaa02d6a931bf439319e9d6f7063ca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '94c7ccb520aa4e37068d077ef7a99c13') in 0.0193219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Floor_Stone_01.fbx
+  artifactKey: Guid(330f28cd7e6595245aff28cfd94e9d13) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Floor_Stone_01.fbx using Guid(330f28cd7e6595245aff28cfd94e9d13) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f3b698c6951439e9264353f74841d2ae') in 0.019135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Wall_Door_Big_01.prefab
+  artifactKey: Guid(a9495ed720c4d56408a3d9cbdd3e638e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Wall_Door_Big_01.prefab using Guid(a9495ed720c4d56408a3d9cbdd3e638e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3f9dfc4b9c7ff6841ccc6c288204c4e1') in 0.0116691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Floor_Wood_02.fbx
+  artifactKey: Guid(25961942c7832314087a03aa611bf4bf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Floor_Wood_02.fbx using Guid(25961942c7832314087a03aa611bf4bf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bdd261baca0798c851ec3d24e01f0527') in 0.0187526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/PolygonFantasyKingdom/Textures/Castle/PolygonFantasyKingdon_Texture_Wall_Brick_01.png
+  artifactKey: Guid(24f1ea296c9e695449086de7c2eca5e4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Textures/Castle/PolygonFantasyKingdon_Texture_Wall_Brick_01.png using Guid(24f1ea296c9e695449086de7c2eca5e4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc04efa96ca34852a4f47170134b31e4') in 0.021252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Collision
+  artifactKey: Guid(06222b15e027b5c4fbf0ecf019924fbe) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Collision using Guid(06222b15e027b5c4fbf0ecf019924fbe) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7c6c67082ca7015d851fac6a0c8a18a6') in 0.0031979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs
+  artifactKey: Guid(cec66ae6e0602e54abef562650168b28) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs using Guid(cec66ae6e0602e54abef562650168b28) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f73c1ab0d3738b74bada697196f1abc6') in 0.0039448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Wood_Hatch_01.prefab
+  artifactKey: Guid(1e16596543a5a854c8b6d069be583a7e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Wood_Hatch_01.prefab using Guid(1e16596543a5a854c8b6d069be583a7e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9e487360f529da473866675678c05621') in 0.0195013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Wood_03.prefab
+  artifactKey: Guid(faadd9d98aa1fe647aaf4f25cdf314b3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Wood_03.prefab using Guid(faadd9d98aa1fe647aaf4f25cdf314b3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5d76f0635eaa5f3270c6a2c9dd199daa') in 0.0127919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Bridge_01_Convex.asset
+  artifactKey: Guid(fb45837e0624b3b42835228978d3e990) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Bridge_01_Convex.asset using Guid(fb45837e0624b3b42835228978d3e990) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'df072fce08c27e09ed30efad4f5790ca') in 0.0057483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 7.asset
+  artifactKey: Guid(695638b506453554a861c00813680032) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 7.asset using Guid(695638b506453554a861c00813680032) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f532de790e8a11930d4ef4141347d1d9') in 0.0056641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Wall_Cut_04.prefab
+  artifactKey: Guid(e9206c45d7e720a44973fba18dc5dac2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Wall_Cut_04.prefab using Guid(e9206c45d7e720a44973fba18dc5dac2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2be3b48c6933a28ee3f609a4a21e4099') in 0.0102641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Stone_01.prefab
+  artifactKey: Guid(32ea7ec0924eccb4688c22639285aed1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Stone_01.prefab using Guid(32ea7ec0924eccb4688c22639285aed1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e8cb41ad96ab4849a159efa1dba19372') in 0.0108689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Wood_02.prefab
+  artifactKey: Guid(69b44126a11b643488d608b81e3217bb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Castle_Floor_Wood_02.prefab using Guid(69b44126a11b643488d608b81e3217bb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed11c74b73e0e33f997a85c668cab96d') in 0.0110826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Battlements_06_Half.fbx
+  artifactKey: Guid(a2111f88a6593b94da65e94c605c4219) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/SM_Bld_Castle_Battlements_06_Half.fbx using Guid(a2111f88a6593b94da65e94c605c4219) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbf5e1788be5df3f1861d803ac159ec0') in 0.0193009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 6.asset
+  artifactKey: Guid(0c4b092e625f8ea4eada0fdd7786180d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Models/Convex/SM_Bld_Castle_Wall_Door_Big_01_Convex 6.asset using Guid(0c4b092e625f8ea4eada0fdd7786180d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bcd0661568b648369f4169b73918ab46') in 0.0060039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Bridge_01.prefab
+  artifactKey: Guid(3c3791d604bc6104fa09b77432654cb6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/PolygonFantasyKingdom/Prefabs/Castle/SM_Bld_Bridge_01.prefab using Guid(3c3791d604bc6104fa09b77432654cb6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '31daa0277f04310c24cd7d1e5fa8bd0f') in 0.009711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
