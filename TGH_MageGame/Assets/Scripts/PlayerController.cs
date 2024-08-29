@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Move() {
+        //Lock Z position top 0
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
         //Read values from inputController for movement
         float movementInput = moveAction.ReadValue<float>();
@@ -71,24 +73,5 @@ public class PlayerController : MonoBehaviour {
 
         //set animator parameters
         animator.SetFloat(velocityHash, velocity);
-
-        //scale velocity
-        float playerSpeed;
-        if (velocity < .6) {
-            playerSpeed = (-speed / 2) * velocity;
-        }
-        else {
-            playerSpeed = -speed * velocity;
-        }
-
-        //manually reset player model position
-        playerModel.transform.localPosition = Vector3.zero;
-        playerModel.transform.localRotation = Quaternion.Euler(new Vector3(0, -90, 0));
-
-        //setup actual movement vector
-        Vector3 movement = new Vector3(playerSpeed, 0, 0);
-
-        //move character
-        characterController.Move(movement);
     }
 }
