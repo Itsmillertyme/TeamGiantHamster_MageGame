@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] float movementSpeed = 1.0f;
     [SerializeField] float sprintSpeed = 3.0f;
     [SerializeField] float jumpPower = 1.0f;
-    [SerializeField][Range(0.1f, 9.8f)] float gravity;
+    [SerializeField][Range(0.1f, 9.8f)] float gravity = 9.8f; //SII
     //
     Coroutine turnAnimation;
 
@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour {
 
     //**Utility Methods
     //Wrapper for movement input callbacks
-    void OnMovementInput(InputAction.CallbackContext context) {
+    public void OnMovementInput(InputAction.CallbackContext context) {
         //Read values from Input System
         currentMovementInput = -1 * context.ReadValue<float>();
 
