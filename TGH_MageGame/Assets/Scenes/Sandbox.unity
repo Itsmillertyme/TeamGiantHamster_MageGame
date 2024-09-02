@@ -1197,6 +1197,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 608577610957246743, guid: 53ce17ff98122ea45a85638e22a63bc8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 946140920b63b154ca79b86c759da79b, type: 2}
+    - target: {fileID: 608577610957246743, guid: 53ce17ff98122ea45a85638e22a63bc8, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
@@ -1210,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5181309924361624910, guid: 53ce17ff98122ea45a85638e22a63bc8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.075
       objectReference: {fileID: 0}
     - target: {fileID: 5181309924361624910, guid: 53ce17ff98122ea45a85638e22a63bc8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1474,7 +1478,7 @@ GameObject:
   - component: {fileID: 1455437823}
   - component: {fileID: 1455437825}
   - component: {fileID: 1455437827}
-  - component: {fileID: 1455437831}
+  - component: {fileID: 1455437832}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1491,7 +1495,7 @@ Transform:
   m_GameObject: {fileID: 1455437822}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24, y: 0, z: 0}
+  m_LocalPosition: {x: 24, y: 15.054, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1512,7 +1516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: b6f2181387ebb4f4d9e598f8e2252186, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: d109165b1e5bb884d8bf41512e426023, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -1549,14 +1553,14 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 1.8
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &1455437831
+  m_SkinWidth: 0.03
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0.91, z: 0}
+--- !u!114 &1455437832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1565,15 +1569,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1455437822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63d260db32534f047b61b7349905aed5, type: 3}
+  m_Script: {fileID: 11500000, guid: 106905b87dd402443b53913d71b1f4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerModel: {fileID: 1404769244}
-  speed: 0.5
-  acceleration: 1
-  deceleration: 3
-  jumpPower: 0
-  gravityMultiplier: 0
+  movementSpeed: 3
+  sprintSpeed: 1.5
+  jumpPower: 1
 --- !u!1 &1473441097
 GameObject:
   m_ObjectHideFlags: 0

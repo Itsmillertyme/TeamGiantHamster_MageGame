@@ -2,144 +2,221 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
-/*
- * Author: Jacob M.
- * Date Created:8/27/2024
- * Version: V2
- */
 public class PlayerController : MonoBehaviour {
 
-    //Component references
-    PlayerInput playerInput;
+    ActionAsset actionAsset;
     CharacterController characterController;
     Animator animator;
-    [SerializeField] GameObject playerModel; //SII
 
-    //Input actions
-    InputAction moveAction;
-    InputAction jumpAction;
-
-    //Animations variables
-    int velocityHash;
-    int turnHash;
-
-    //Player Properties
-    float velocity;
-    bool isFacingBackwards = false;
-    bool isGrounded;
-    [SerializeField] float speed;
-    [SerializeField] float acceleration;
-    [SerializeField] float deceleration;
-    [SerializeField] float jumpPower;
-
-    //Miscellaneous
-    float gravity = -9.81f;
-    [SerializeField] float gravityMultiplier;
-
-    //Coroutines
+    float currentMovementInput;
+    Vector3 currentMovement;
+    Vector3 currentRunMovement;
+    Vector3 currentCrouchMovement;
+    bool isMovementPressed;
+    bool isRunPressed;
+    bool isCrouchPressed;
+    bool isFacingBackwards;
+    [SerializeField] GameObject playerModel;
+    [SerializeField] float movementSpeed = 1.0f;
+    [SerializeField] float sprintSpeed = 3.0f;
+    [SerializeField] float jumpPower = 1.0f;
+    [SerializeField][Range(0.1f, 9.8f)] float gravity;
+    //
     Coroutine turnAnimation;
 
+    //Animation Variables
+    int isWalkingHash;
+    int isRunningHash;
+    int isCrouchingHash;
+    int isCrouchWalkingHash;
+    int jumpHash;
+    int turnHash;
 
-    // Start is called before the first frame update
+    //**Unity Methods    
     void Awake() {
-
-        //Cache References
-        playerInput = GetComponent<PlayerInput>();
+        //Initialize
+        actionAsset = new ActionAsset();
         characterController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+        //
+        isWalkingHash = Animator.StringToHash("isWalking");
+        isRunningHash = Animator.StringToHash("isRunning");
+        isCrouchingHash = Animator.StringToHash("isCrouching");
+        isCrouchWalkingHash = Animator.StringToHash("isCrouchWalking");
+        jumpHash = Animator.StringToHash("jump");
+        turnHash = Animator.StringToHash("Turn");
 
-        //Cache animator strings as hashes
-        velocityHash = Animator.StringToHash("Velocity");
-        turnHash = Animator.StringToHash("Walking Turn 180");
+        //Define callbacks
+        actionAsset.Player.Move.started += OnMovementInput;
+        actionAsset.Player.Move.canceled += OnMovementInput;
+        //
+        actionAsset.Player.Run.started += OnRun;
+        actionAsset.Player.Run.canceled += OnRun;
+        //
+        actionAsset.Player.Crouch.started += OnCrouch;
+        actionAsset.Player.Crouch.canceled += OnCrouch;
+        //
+        actionAsset.Player.Jump.started += OnJump;
 
-        //Initialize actions
-        moveAction = playerInput.actions["Move"];
-        jumpAction = playerInput.actions["Jump"];
+
     }
+    //
+    void Update() {
+        HandleGravity();
+        //HandleRotation();
+        HandleAnimation();
 
-    // Update is called once per frame
-    void FixedUpdate() {
-        GroundCheck();
-        //ApplyGravity();
-        Move();
-        Debug.Log(characterController.isGrounded);
-    }
+        //Hacky solution to keep gravity from becoming insane
+        if (currentMovement.y < -gravity) {
+            currentMovement.y = -gravity;
+        }
 
-    //WIP
-    //void ApplyGravity() {
+        //do controller move with updated movement vector
+        if (isRunPressed) {
+            characterController.Move(currentRunMovement * Time.deltaTime);
+        }
+        else if (isCrouchPressed) {
+            characterController.Move(currentCrouchMovement * Time.deltaTime);
+        }
+        else {
+            characterController.Move(currentMovement * Time.deltaTime);
+        }
 
-    //    characterController.Move(new Vector3(0, -0.1f, 0));
-    //}
-
-    public void Move() {
-        //Lock Z position to 0
+        //Snap Z coord to 0
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+    }
+    //
+    private void OnEnable() {
+        //Turn on action assets
+        actionAsset.Player.Enable();
+    }
+    //
+    private void OnDisable() {
+        //Turn off action assets
+        actionAsset.Player.Disable();
+    }
 
-        //Read values from inputController for movement
-        float movementInput = moveAction.ReadValue<float>();
+    //**Utility Methods
+    //Wrapper for movement input callbacks
+    void OnMovementInput(InputAction.CallbackContext context) {
+        //Read values from Input System
+        currentMovementInput = -1 * context.ReadValue<float>();
 
         //Turn animation and flip model
-        if ((movementInput > 0 && !isFacingBackwards) || (movementInput < 0 && isFacingBackwards)) {
+        if ((currentMovementInput > 0 && !isFacingBackwards) || (currentMovementInput < 0 && isFacingBackwards)) {
             if (turnAnimation == null) {
-                turnAnimation = StartCoroutine(TurnModel());
+                turnAnimation = StartCoroutine(TurnModel(context));
             }
         }
 
         //Negate movement while turning
         if (turnAnimation != null) {
-            movementInput = 0;
+            currentMovementInput = 0;
         }
 
-        //get magnitude of input
-        float animationInput = System.Math.Abs(movementInput);
+        //Setup movement vectors, part by part
+        currentMovement.x = currentMovementInput * movementSpeed;
+        currentRunMovement.x = currentMovementInput * sprintSpeed * movementSpeed;
+        currentCrouchMovement.x = currentMovementInput * 0.5f * movementSpeed;
 
-        //Process animation based on input
-        if (animationInput > 0.05 && velocity < 1) {
-            //Acceleration
-            velocity += acceleration * animationInput * Time.deltaTime;
+        //Set flag
+        isMovementPressed = currentMovementInput != 0;
+    }
+    //
+    //Wrapper for run input callbacks
+    public void OnRun(InputAction.CallbackContext context) {
+        isRunPressed = context.ReadValueAsButton();
+    }
+    //
+    //Wrapper for crouch input callbacks
+    public void OnCrouch(InputAction.CallbackContext context) {
+        isCrouchPressed = context.ReadValueAsButton();
+    }
+    //   
+    //Wrapper for jump input callbacks
+    public void OnJump(InputAction.CallbackContext context) {
+        animator.SetTrigger(jumpHash);
+
+        if (characterController.isGrounded) {
+            currentMovement.y += jumpPower;
+            currentRunMovement.y += jumpPower;
+            currentCrouchMovement.y += jumpPower;
         }
-        if (animationInput < 0.05 && velocity > 0) {
-            //Deceleration
-            velocity -= deceleration * Time.deltaTime;
+    }
+    //
+    void HandleAnimation() {
+        //get param values from animator
+        bool isWalking = animator.GetBool(isWalkingHash);
+        bool isRunning = animator.GetBool(isRunningHash);
+        bool isCrouching = animator.GetBool(isCrouchingHash);
+        bool isCrouchWalking = animator.GetBool(isCrouchWalkingHash);
+
+        //start crouch if crouch is pressed while not crouched
+        if (isCrouchPressed && !isCrouching) {
+            animator.SetBool(isCrouchingHash, true);
         }
-        if (animationInput < 0.05 && velocity < 0) {
-            //Set to 0 (negate any fluttering of values)
-            velocity = 0;
+        //Stop crouching if crouching not pressed while already crouching
+        else if (!isCrouchPressed && isCrouching) {
+            animator.SetBool(isCrouchingHash, false);
         }
 
-        //set animator parameters
-        animator.SetFloat(velocityHash, velocity);
-
-
-        ////Implement Gravity WIP
-        //if (!isGrounded) {
-        //    characterController.Move(new Vector3(0, -9.81f, 0) * Time.deltaTime);
+        //Start crouch-walk if movement and crouch pressed while not crouch-walking
+        if ((isMovementPressed && isCrouchPressed) && !isCrouchWalking) {
+            animator.SetBool(isCrouchWalkingHash, true);
+        }
+        //Stop crouch-walk if no movement and crouch pressed while crouch-walking
+        else if ((!isMovementPressed || !isCrouchPressed) && isCrouchWalking) {
+            animator.SetBool(isCrouchWalkingHash, false);
+            //animator.SetBool(isCrouchingHash, true);
+        }
+        //else if ((isMovementPressed && !isCrouchPressed) && isCrouchWalking) {
+        //    animator.SetBool(isCrouchWalkingHash, false);
+        //    animator.SetBool(isCrouchingHash, false);
         //}
 
+        //Start walking if movement pressed while not walking
+        if (isMovementPressed && !isWalking) {
+            animator.SetBool(isWalkingHash, true);
+
+        }
+        //Stop walking is movement not pressed while already wlaking
+        else if (!isMovementPressed && isWalking) {
+            animator.SetBool(isWalkingHash, false);
+        }
+
+        //Start run if movement and run pressed while not currently runnning
+        if ((isMovementPressed && isRunPressed) && !isRunning) {
+            animator.SetBool(isRunningHash, true);
+        }
+        //Stop run if movement or run are not pressed while currently running
+        else if ((!isMovementPressed || !isRunPressed) && isRunning) {
+            animator.SetBool(isRunningHash, false);
+        }
+
+    }
+    //
+    void HandleGravity() {
+        float grav = -gravity;
+        if (characterController.isGrounded) {
+            grav = -0.05f;
+        }
+        currentMovement.y += grav;
+        currentCrouchMovement.y += grav;
+        currentRunMovement.y += grav;
+
+        //Clamp y movement
+        Mathf.Clamp(currentMovement.y, -9.8f, -.01f);
+
     }
 
-    public void Jump(InputAction.CallbackContext context) {
-
-        if (!context.started) return;
-
-        if (!isGrounded) return;
-        //characterController.Move(new Vector3(0, jumpPower, 0));
-
-
-    }
-
-    void GroundCheck() {
-        isGrounded = Physics.Raycast(transform.position, -Vector3.up, 0.01f);
-    }
-
-    IEnumerator TurnModel() {
+    //**Coroutines**
+    IEnumerator TurnModel(InputAction.CallbackContext context) {
 
         //Crossfade into animation
-        animator.CrossFade(turnHash, 0.1f);
+        animator.CrossFade(turnHash, 0.01f);
 
         //wait for it to play
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(.25f);
 
         //set new rotation
         Quaternion newRotation;
@@ -155,6 +232,10 @@ public class PlayerController : MonoBehaviour {
 
         //Clear coroutine object
         turnAnimation = null;
+
+        //Pass input callback context from original button press back into method
+        OnMovementInput(context);
     }
+
 
 }
