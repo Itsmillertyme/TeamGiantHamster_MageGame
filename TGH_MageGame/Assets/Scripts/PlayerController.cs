@@ -134,6 +134,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     IEnumerator TurnModel() {
+
         //Crossfade into animation
         animator.CrossFade(turnHash, 0.1f);
 
