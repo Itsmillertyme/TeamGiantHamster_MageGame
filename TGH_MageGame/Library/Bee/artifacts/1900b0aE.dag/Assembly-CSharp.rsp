@@ -397,6 +397,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerController_OLD.cs"
 "Assets/Scripts/PlayerStats.cs"
+"Assets/Scripts/PlayerStatTester.cs"
 "Assets/Scripts/Spells/ProjectileMover.cs"
 "Assets/Scripts/Spells/SpellBook.cs"
 "Assets/Scripts/Spells/SpellConfiguration.cs"

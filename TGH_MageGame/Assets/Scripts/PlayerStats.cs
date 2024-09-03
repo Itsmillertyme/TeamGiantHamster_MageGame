@@ -1,10 +1,12 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.IO.Enumeration;
 using UnityEngine;
+[CreateAssetMenu]
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : ScriptableObject
 {
     // The base stats the player initially will have at the start of a run.
     public int baseHealth = 100;
@@ -12,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public int baseAttackSpeed = 5;
     public int baseDefence = 5;
     public int baseMovementSpeed = 5;
+    public int baseMana = 100;
 
     // Stores the total equipment modifier that will be added to each stat for the final calculations.
     /*
@@ -24,7 +27,8 @@ public class PlayerStats : MonoBehaviour
     public int attackDamageUpgrade = 1;
     public int attackSpeedUpgrade = 1;
     public int defenceUpgrade = 1;
-    public int movementSpeedUpgrade = 1; // It may be better to have movement speed upgrades be intentional only instead of every level up increasing movement speed.
+    public int movementSpeedUpgrade = 0; // It may be better to have movement speed upgrades be intentional only instead of every level up increasing movement speed.
+    public int manaUpgrade = 5;
 
     // Keeps track of current level, experience, and skill points.
     int level = 1;
@@ -38,6 +42,7 @@ public class PlayerStats : MonoBehaviour
     int bonusAttackSpeed = 0;
     int bonusDefence = 0;
     int bonusMovementSpeed = 0;
+    int bonusMana = 0;
 
     // These variables will store the maximum possible of stats at a given moment.
     int maxHealth;
@@ -45,9 +50,11 @@ public class PlayerStats : MonoBehaviour
     int maxAttackSpeed;
     int maxDefence;
     int maxMovementSpeed;
+    int maxMana;
 
-    // Stores the current health
+    // Stores the current health and mana
     int currentHealth;
+    int currentMana;
 
     private void Start()
     {
@@ -57,7 +64,10 @@ public class PlayerStats : MonoBehaviour
         maxAttackSpeed = baseAttackSpeed;
         maxDefence = baseDefence;
         maxMovementSpeed = baseMovementSpeed;
+        maxMana = baseMana;
         currentHealth = maxHealth;
+        currentMana = maxMana;
+
     }
 
     // Methods that will be called whenever the maximum value of a stat should change
@@ -66,7 +76,7 @@ public class PlayerStats : MonoBehaviour
         int oldMax = maxHealth;
         maxHealth = baseHealth + (healthUpgrade * (level - 1)) + bonusHealth;
 
-        if (currentHealth == oldMax)
+        if (currentHealth >= oldMax)
         {
             currentHealth = maxHealth;
         }
@@ -85,7 +95,7 @@ public class PlayerStats : MonoBehaviour
 
 
         // Right now the idea for defence is that it will reduce a percent of damage so 100 will be the max since that will reduce 100% of damage
-        if (maxDefence < 100)
+        if (maxDefence > 100)
         {
             maxDefence = 100;
         }
@@ -94,35 +104,57 @@ public class PlayerStats : MonoBehaviour
     {
         maxMovementSpeed = baseMovementSpeed + (movementSpeedUpgrade * (level - 1)) + bonusMovementSpeed;
     }
+    void updateMaxMana()
+    {
+        int oldMax = maxMana;
+        maxMana = baseMana + (manaUpgrade * (level - 1)) + bonusMana;
+
+        if (currentMana >= oldMax)
+        {
+            currentMana = maxMana;
+        }
+
+    }
 
     // Methods for applying the bonus from the skill tree or other sources
-    void updateBonusHealth(int bonus)
+    public void updateBonusHealth(int bonus)
     {
         bonusHealth += bonus;
         updateMaxHealth();
     }
-    void updateBonusAttackDamage(int bonus)
+    public void updateBonusAttackDamage(int bonus)
     {
         bonusAttackDamage += bonus;
         updateMaxAttackDamage();
     }
-    void updateBonusAttackSpeed(int bonus)
+    public void updateBonusAttackSpeed(int bonus)
     {
         bonusAttackSpeed += bonus;
         updateMaxAttackSpeed();
     }
-    void updateBonusDefence(int bonus)
+    public void updateBonusDefence(int bonus)
     {
         bonusDefence += bonus;
         updateMaxDefence();
     }
-    void updateBonusMovementSpeed(int bonus)
+    public void updateBonusMovementSpeed(int bonus)
     {
         bonusMovementSpeed += bonus;
         updateMaxMovementSpeed();
     }
+    public void updateBonusMana(int bonus)
+    {
+        bonusMana += bonus;
+        updateMaxMana();
+    }
+    
+    // Functions for spending skillpoints
+    public void spendSkillpoint()
+    {
+        skillPoints--;
+    }
     // The value of amount will be equal to the amount healed or damage dealt
-    void updateCurrentHealth(int amount)
+    public void updateCurrentHealth(int amount)
     {
         if (amount >= 0)
         {
@@ -130,41 +162,122 @@ public class PlayerStats : MonoBehaviour
         }
         else if (amount < 0)
         {
-            {
-                currentHealth += (maxDefence / 100) * amount;
-            }
-            if (currentHealth > maxHealth)
-            {
-                currentHealth = maxHealth;
-            }
+            currentHealth += (maxDefence / 100) * amount;
         }
 
-        // The function for updating experience and levels
-        void updateExperience(int exp)
+        if (currentHealth > maxHealth)
         {
-            experience += exp;
+            currentHealth = maxHealth;
+        }
+    }
+    public void updateCurrentMana(int amount)
+    {
+        currentMana += amount;
+
+        if (currentMana > maxMana)
+        {
+            currentMana = maxMana;
+        }
+    }
+
+    // The function for updating experience and levels
+    public void updateExperience(int exp)
+    {
+        experience += exp;
+
+        if (experience >= experienceForNextLevel)
+        {
+            experience = experience - experienceForNextLevel;
+            experienceForNextLevel = (int)(experienceForNextLevel * 1.05);
+
+            level++;
+            skillPoints += 3;
+
+            // Calls function again if there is enough exp for another level up
 
             if (experience >= experienceForNextLevel)
             {
-                experience = experience - experienceForNextLevel;
-                experienceForNextLevel = experienceForNextLevel * 2;
-
-                level++;
-                skillPoints += 3;
-
-                // Calls function again if there is enough exp for another level up
-
-                if (experience >= experienceForNextLevel)
-                {
-                    updateExperience(0);
-                }
+                updateExperience(0);
             }
-
-            updateMaxHealth();
-            updateMaxAttackDamage();
-            updateMaxAttackSpeed();
-            updateMaxDefence();
-            updateMaxMovementSpeed();
         }
+
+        updateMaxHealth();
+        updateMaxAttackDamage();
+        updateMaxAttackSpeed();
+        updateMaxDefence();
+        updateMaxMovementSpeed();
+        updateMaxMana();
+    }
+
+    // Resets all stats to default values
+    public void resetToDefault()
+    {
+        bonusHealth = 0;
+        bonusAttackDamage = 0;
+        bonusAttackSpeed = 0;
+        bonusDefence = 0;
+        bonusMovementSpeed = 0;
+        bonusMana = 0;
+        level = 1;
+        experience = 0;
+        experienceForNextLevel = 100;
+        skillPoints = 0;
+        updateMaxHealth();
+        updateMaxAttackDamage();
+        updateMaxAttackSpeed();
+        updateMaxDefence();
+        updateMaxMovementSpeed();
+        updateMaxMana();
+
+    }
+
+    // Functions that allow the stats to be gotten
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
+    public int getMaxAttackDamage()
+    {
+        return maxAttackDamage;
+    }
+    public int getMaxAttackSpeed()
+    {
+        return maxAttackSpeed;
+    }
+    public int getMaxDefence()
+    {
+        return maxDefence;
+    }
+    public int getMaxMovementSpeed()
+    {
+        return maxMovementSpeed;
+    }
+    public int getMaxMana()
+    {
+        return maxMana;
+    }
+    public int getCurrentHealth()
+    {
+        return currentHealth;
+    }
+    public int getCurrentMana()
+    {
+        return currentMana;
+    }
+    public int getLevel()
+    {
+        return level;
+    }
+    public int getExperience()
+    {
+        return experience;
+    }
+    public int getExperienceForNextLevel()
+    {
+        return experienceForNextLevel;
+    }
+    public int getSkillPoints()
+    {
+        return skillPoints;
     }
 }
