@@ -89,6 +89,15 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""845d6790-0121-4bf7-a953-880aaf6128ae"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -183,11 +192,22 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cbd4130a-456f-4ade-8835-27ac48f78105"",
-                    ""path"": ""<Mouse>/middleButton"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Melee"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5315795-ae95-4933-9c05-7e2318fa9943"",
+                    ""path"": ""<Keyboard>/leftAlt"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -205,6 +225,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
         m_Player_Cast = m_Player.FindAction("Cast", throwIfNotFound: true);
         m_Player_Block = m_Player.FindAction("Block", throwIfNotFound: true);
         m_Player_Melee = m_Player.FindAction("Melee", throwIfNotFound: true);
+        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -273,6 +294,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Cast;
     private readonly InputAction m_Player_Block;
     private readonly InputAction m_Player_Melee;
+    private readonly InputAction m_Player_Dash;
     public struct PlayerActions
     {
         private @ActionAsset m_Wrapper;
@@ -284,6 +306,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
         public InputAction @Cast => m_Wrapper.m_Player_Cast;
         public InputAction @Block => m_Wrapper.m_Player_Block;
         public InputAction @Melee => m_Wrapper.m_Player_Melee;
+        public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -314,6 +337,9 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
             @Melee.started += instance.OnMelee;
             @Melee.performed += instance.OnMelee;
             @Melee.canceled += instance.OnMelee;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -339,6 +365,9 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
             @Melee.started -= instance.OnMelee;
             @Melee.performed -= instance.OnMelee;
             @Melee.canceled -= instance.OnMelee;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -365,5 +394,6 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
         void OnCast(InputAction.CallbackContext context);
         void OnBlock(InputAction.CallbackContext context);
         void OnMelee(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }
