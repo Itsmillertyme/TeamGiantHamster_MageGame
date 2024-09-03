@@ -39,10 +39,12 @@ public class PlayerController : MonoBehaviour {
     int isRunningHash;
     int isCrouchingHash;
     int isCrouchWalkingHash;
+    int landedHash;
     int jumpHash;
     int turnHash;
     //
     Coroutine turnAnimation;
+    Coroutine jumpAnimation;
 
     //**Unity Methods    
     void Awake() {
@@ -55,7 +57,8 @@ public class PlayerController : MonoBehaviour {
         isRunningHash = Animator.StringToHash("isRunning");
         isCrouchingHash = Animator.StringToHash("isCrouching");
         isCrouchWalkingHash = Animator.StringToHash("isCrouchWalking");
-        jumpHash = Animator.StringToHash("jump");
+        landedHash = Animator.StringToHash("landed");
+        jumpHash = Animator.StringToHash("Jump");
         turnHash = Animator.StringToHash("Turn");
 
         //Define callbacks
@@ -225,12 +228,18 @@ public class PlayerController : MonoBehaviour {
     void HandleJump() {
         if (!isJumping && characterController.isGrounded && isJumpPressed) {
             isJumping = true;
-            currentMovement.y = initJumpVelocity;
-            currentRunMovement.y = initJumpVelocity;
-            currentCrouchMovement.y = initJumpVelocity;
+            //currentMovement.y = initJumpVelocity;
+            //currentRunMovement.y = initJumpVelocity;
+            //currentCrouchMovement.y = initJumpVelocity;
+            //trigger animation coruotine
+            jumpAnimation = StartCoroutine(JumpAnim());
+
+            //animator.CrossFade(jumpHash, 0.01f);
+            //Debug.Break();
         }
         else if (!isJumpPressed && characterController.isGrounded && isJumping) {
             isJumping = false;
+            animator.SetTrigger(landedHash);
         }
     }
 
@@ -262,5 +271,26 @@ public class PlayerController : MonoBehaviour {
         OnMovementInput(context);
     }
 
+    IEnumerator JumpAnim() {
+        //play animation at 10th frame
+        animator.Play(jumpHash, 0, 10 / 71f);
 
+        //drop player model slightly
+        Vector3 temp = playerModel.transform.localPosition;
+        playerModel.transform.localPosition = new Vector3(temp.x, -0.237f, temp.z);
+
+        //wait for animation 4 frames
+        yield return new WaitForSeconds(2 / 30f);
+
+        //apply upward force
+        currentMovement.y = initJumpVelocity;
+        currentRunMovement.y = initJumpVelocity;
+        currentCrouchMovement.y = initJumpVelocity;
+
+        //reset player model
+        playerModel.transform.localPosition = temp;
+
+        //clear coroutine variables
+        jumpAnimation = null;
+    }
 }
