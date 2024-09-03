@@ -393,6 +393,7 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/GameEvent.cs"
 "Assets/Scripts/GameEventListener.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerController_OLD.cs"
 "Assets/Scripts/PlayerStats.cs"

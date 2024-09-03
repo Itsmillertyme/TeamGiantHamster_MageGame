@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     ActionAsset actionAsset;
     CharacterController characterController;
     Animator animator;
+    [SerializeField] GameObject playerModel;
 
     float currentMovementInput;
     Vector3 currentMovement;
@@ -16,13 +17,22 @@ public class PlayerController : MonoBehaviour {
     bool isRunPressed;
     bool isCrouchPressed;
     bool isFacingBackwards;
-    [SerializeField] GameObject playerModel;
+    bool isJumpPressed = false;
+
+    //Jump Varbiables
+    [SerializeField] float maxJumpHeight; //SII
+    [SerializeField] float maxJumpTime; //SII
+    float initJumpVelocity;
+    bool isJumping = false;
+
+    //Movement Varbiables
     [SerializeField] float movementSpeed = 1.0f;
     [SerializeField] float sprintSpeed = 3.0f;
-    [SerializeField] float jumpPower = 1.0f;
-    [SerializeField][Range(0.1f, 9.8f)] float gravity = 9.8f; //SII
-    //
-    Coroutine turnAnimation;
+
+    //Gravity Variables
+    [SerializeField][Range(-0.1f, -20f)] float gravity = -9.8f; //SII
+    float groundedGravity = -0.05f;
+
 
     //Animation Variables
     int isWalkingHash;
@@ -31,6 +41,8 @@ public class PlayerController : MonoBehaviour {
     int isCrouchWalkingHash;
     int jumpHash;
     int turnHash;
+    //
+    Coroutine turnAnimation;
 
     //**Unity Methods    
     void Awake() {
@@ -57,19 +69,14 @@ public class PlayerController : MonoBehaviour {
         actionAsset.Player.Crouch.canceled += OnCrouch;
         //
         actionAsset.Player.Jump.started += OnJump;
+        actionAsset.Player.Jump.canceled += OnJump;
 
-
+        SetupJumpVariables();
     }
     //
     void Update() {
-        HandleGravity();
-        //HandleRotation();
-        HandleAnimation();
 
-        //Hacky solution to keep gravity from becoming insane
-        if (currentMovement.y < -gravity) {
-            currentMovement.y = -gravity;
-        }
+        HandleAnimation();
 
         //do controller move with updated movement vector
         if (isRunPressed) {
@@ -81,6 +88,9 @@ public class PlayerController : MonoBehaviour {
         else {
             characterController.Move(currentMovement * Time.deltaTime);
         }
+
+        HandleGravity();
+        HandleJump();
 
         //Snap Z coord to 0
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
@@ -135,13 +145,9 @@ public class PlayerController : MonoBehaviour {
     //   
     //Wrapper for jump input callbacks
     public void OnJump(InputAction.CallbackContext context) {
-        animator.SetTrigger(jumpHash);
+        isJumpPressed = context.ReadValueAsButton();
 
-        if (characterController.isGrounded) {
-            currentMovement.y += jumpPower;
-            currentRunMovement.y += jumpPower;
-            currentCrouchMovement.y += jumpPower;
-        }
+        //animator.SetTrigger(jumpHash);
     }
     //
     void HandleAnimation() {
@@ -196,17 +202,36 @@ public class PlayerController : MonoBehaviour {
     }
     //
     void HandleGravity() {
-        float grav = -gravity;
+        //Sets gravity every frame
         if (characterController.isGrounded) {
-            grav = -0.05f;
+            currentMovement.y = groundedGravity;
+            currentCrouchMovement.y = groundedGravity;
+            currentRunMovement.y = groundedGravity;
         }
-        currentMovement.y += grav;
-        currentCrouchMovement.y += grav;
-        currentRunMovement.y += grav;
-
-        //Clamp y movement
-        Mathf.Clamp(currentMovement.y, -9.8f, -.01f);
-
+        //applies gravity every frame
+        else {
+            currentMovement.y += gravity * Time.deltaTime;
+            currentCrouchMovement.y += gravity * Time.deltaTime;
+            currentRunMovement.y += gravity * Time.deltaTime;
+        }
+    }
+    //
+    void SetupJumpVariables() {
+        float timeToApex = maxJumpTime / 2;
+        gravity = (-2 * maxJumpHeight) / Mathf.Pow(timeToApex, 2);
+        initJumpVelocity = (2 * maxJumpHeight) / timeToApex;
+    }
+    //
+    void HandleJump() {
+        if (!isJumping && characterController.isGrounded && isJumpPressed) {
+            isJumping = true;
+            currentMovement.y = initJumpVelocity;
+            currentRunMovement.y = initJumpVelocity;
+            currentCrouchMovement.y = initJumpVelocity;
+        }
+        else if (!isJumpPressed && characterController.isGrounded && isJumping) {
+            isJumping = false;
+        }
     }
 
     //**Coroutines**
