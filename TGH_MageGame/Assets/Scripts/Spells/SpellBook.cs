@@ -8,13 +8,16 @@ public class SpellBook : MonoBehaviour
     [SerializeField] private List<Spell> spellBook;
     [SerializeField] private int activeSpell;
 
+    [SerializeField] private Transform spawnPosition;
+
     private float scrollValue; // driven
 
     void Update()
     {
         scrollValue = Input.mouseScrollDelta.y;
 
-        if (Input.GetKeyDown(KeyCode.L))
+        // TEMP WORKAROUND UNTIL INPUT SYSTEM METHOD IS PRESENT
+        if (Input.GetKeyDown(KeyCode.L) || Input.GetMouseButtonDown(0))
         {
             Cast();
         }
@@ -26,7 +29,7 @@ public class SpellBook : MonoBehaviour
 
     private void Cast()
     {
-        spellBook[activeSpell].Cast();
+        spellBook[activeSpell].Cast(spawnPosition);
     }
 
     // untested
