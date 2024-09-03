@@ -65,11 +65,12 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellBook.cs" />
-    <Compile Include="Assets\Scripts\Spells\Spell.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\TeleportUtility.cs" />
     <Compile Include="Assets\Scripts\PlayerController_OLD.cs" />
+    <Compile Include="Assets\Scripts\Spells\SpellConfiguration.cs" />
     <Compile Include="Assets\Scripts\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Spells\ProjectileMover.cs" />
     <Compile Include="Assets\Scripts\AnimatorForward.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
