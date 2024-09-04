@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
     Camera cam;
     [SerializeField] Canvas hud;
+    [SerializeField] RectTransform crosshair;
 
     private void Awake() {
         //Initialize
@@ -16,6 +18,19 @@ public class GameManager : MonoBehaviour {
             int temp = int.Parse(btn.GetComponentInChildren<TextMeshProUGUI>().text);
             btn.onClick.AddListener(delegate { SetCameraDistance(temp); });
         }
+
+        //Hide mouse
+        Cursor.visible = false;
+    }
+
+    private void Update() {
+
+        //set crosshair position
+        crosshair.anchoredPosition = Mouse.current.position.ReadValue();
+    }
+
+    private void OnApplicationFocus(bool focus) {
+        Cursor.visible = false;
     }
 
     public void SetCameraDistance(int location) {

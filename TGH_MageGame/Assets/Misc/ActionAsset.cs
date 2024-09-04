@@ -115,7 +115,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e29ab8b6-f53e-40cc-ae62-d5b5cc09c8f2"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
