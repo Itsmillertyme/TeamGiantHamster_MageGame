@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class SpellBook : MonoBehaviour
@@ -10,7 +11,20 @@ public class SpellBook : MonoBehaviour
 
     [SerializeField] private Transform spawnPosition;
 
-    private float scrollValue; // driven
+    [SerializeField] private UnityEvent ActiveSpellSwitched;
+
+    // GETTERS
+    public int ActiveSpell => activeSpell; 
+
+    // DRIVEN
+    #region DRIVEN
+    private float scrollValue;
+    #endregion
+
+    private void Start()
+    {
+        Debug.LogWarning("Spellbook scrolling is backwards");
+    }
 
     void Update()
     {
@@ -55,9 +69,15 @@ public class SpellBook : MonoBehaviour
                 activeSpell = spellBook.Count - 1;
             }
         }
+
+        // RAISE AN EVENT THAT THE SPELL SELECTION HAS CHANGED
+        ActiveSpellSwitched.Invoke();
     }
 
-
+    public string GetSpellUIData()
+    {
+        return $"{spellBook[activeSpell].Name}";
+    }
     // update active spell
     // shoot using enum to determine method
 }

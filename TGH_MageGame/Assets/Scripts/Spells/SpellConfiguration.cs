@@ -27,7 +27,9 @@ public class Spell : ScriptableObject
     [SerializeField] private float range;
 
     [Header("Prefab")]
-    [SerializeField] private GameObject spawnObject;
+    [SerializeField] private GameObject spawnObjectLvl1;
+    [SerializeField] private GameObject spawnObjectLvl2;
+    [SerializeField] private GameObject spawnObjectLvl3;
     [Header("SFX")]
     [SerializeField] private AudioClip spawnSFX;
     [SerializeField] private AudioClip hitSFX;
@@ -48,6 +50,8 @@ public class Spell : ScriptableObject
     public float MoveSpeed => moveSpeed;
     public int LifeSpan => lifeSpan;
 
+    public string Name => name;
+
     // FOR RESETTING SO
     public void ResetBaseStats()
     {
@@ -56,7 +60,21 @@ public class Spell : ScriptableObject
 
     public void Cast(Transform spawnPosition)
     {
-        GameObject projectile = Instantiate(spawnObject, spawnPosition.transform.position, spawnPosition.transform.rotation);
-        
+        switch (currentLevel)
+        {
+            case 1:
+                Instantiate(spawnObjectLvl1, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                break;
+            case 2:
+                Instantiate(spawnObjectLvl2, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                break;
+            case 3:
+                Instantiate(spawnObjectLvl3, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                break;
+            default: 
+                Instantiate(spawnObjectLvl1, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                break;
+        }
+
     }
 }

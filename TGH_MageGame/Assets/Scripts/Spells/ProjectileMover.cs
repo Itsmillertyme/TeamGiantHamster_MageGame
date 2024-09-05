@@ -6,6 +6,11 @@ public class ProjectileMover : MonoBehaviour
 {
     [SerializeField] private Spell spellCasted;
 
+    private void Start()
+    {
+        Destroy(this.gameObject, spellCasted.LifeSpan);
+        }
+
     private void Update()
     {
         Move();

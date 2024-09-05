@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e683368085be5a54694cf64e445de0e1, type: 3}
+  m_Name: Spell 1 Config
+  m_EditorClassIdentifier: 
+  name: Blast
+  description: A low cost attack with relatively good output
+  loreText: Our hero's first learned spell!
+  currentLevel: 1
+  maxLevel: 3
+  projectileCount: 3
+  manaCost: 5
+  damage: 7
+  lifeSpan: 3
+  damageDuration: 0
+  moveSpeed: 8
+  impactForce: 0.2
+  range: 25
+  spawnObjectLvl1: {fileID: 3749226296805990834, guid: 6e7ee72289f06084e9733622b9545ab8, type: 3}
+  spawnObjectLvl2: {fileID: 1261645403529470534, guid: 170aabef6ec6bce4c9d7dc9b3a9590a5, type: 3}
+  spawnObjectLvl3: {fileID: 8334082122703048805, guid: a73fab02b75c8d04699efaea213f4c07, type: 3}
+  spawnSFX: {fileID: 0}
+  hitSFX: {fileID: 0}
+  castAnimation: {fileID: 7400004, guid: 4accf136b05606f46a0657e3c51271ff, type: 3}
+  spawnFX: {fileID: 0}
+  hitFX: {fileID: 0}
+  icon: {fileID: 0}
+  isUnlocked: 1
