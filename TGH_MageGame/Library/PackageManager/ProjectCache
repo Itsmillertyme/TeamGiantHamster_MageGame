@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638609859466039339
+      ticks: 638609223839702690
     m_Hash: 2985071716
   m_LockFileStatus:
     m_FilePath: C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638609859466044335
+      ticks: 638609223839702690
     m_Hash: 1841786607
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -116,11 +116,13 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     compatible:
     - 2.2.0
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     recommended: 2.2.0
     deprecated: []
   dependencies: []
