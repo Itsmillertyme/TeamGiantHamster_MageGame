@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Spells\SpellBook.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\TeleportUtility.cs" />
+    <Compile Include="Assets\Scripts\MousePositionTracking.cs" />
     <Compile Include="Assets\Scripts\PlayerController_OLD.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellConfiguration.cs" />
     <Compile Include="Assets\Scripts\GameEvent.cs" />
@@ -896,6 +897,10 @@
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{542F74AB-B360-B81E-16C7-D13D5F0E8374}</Project>
       <Name>UnityEngine.UI.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.Player.csproj">
+      <Project>{8690DB43-353C-DDFF-8E49-02D857D8FB1B}</Project>
+      <Name>Cinemachine.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.ForUI.Player.csproj">
       <Project>{8177C1FB-FD25-DDA8-D1E4-6A1586F8E4E7}</Project>

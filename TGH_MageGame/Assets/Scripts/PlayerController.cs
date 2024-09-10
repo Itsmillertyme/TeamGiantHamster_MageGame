@@ -4,6 +4,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
 
+    //base  y = .91, h = 1.8
+    //crouch y = ..71, h = 1.4
+
     ActionAsset actionAsset;
     CharacterController characterController;
     [SerializeField] MousePositionTracking mousePositionTracker;
@@ -74,6 +77,9 @@ public class PlayerController : MonoBehaviour {
         //
         actionAsset.Player.Jump.started += OnJump;
         actionAsset.Player.Jump.canceled += OnJump;
+        //
+        actionAsset.Player.MoveCamera.performed += Camera.main.GetComponent<CameraController>().CycleCameraPosition;
+
 
         SetupJumpVariables();
     }
@@ -151,8 +157,6 @@ public class PlayerController : MonoBehaviour {
     //Wrapper for jump input callbacks
     public void OnJump(InputAction.CallbackContext context) {
         isJumpPressed = context.ReadValueAsButton();
-
-        //animator.SetTrigger(jumpHash);
     }
     //
     void HandleAnimation() {
@@ -165,10 +169,16 @@ public class PlayerController : MonoBehaviour {
         //start crouch if crouch is pressed while not crouched
         if (isCrouchPressed && !isCrouching) {
             animator.SetBool(isCrouchingHash, true);
+            //set player collider smaller
+            characterController.height = 1.4f;
+            characterController.center = new Vector3(-.06f, .65f, 0);
         }
         //Stop crouching if crouching not pressed while already crouching
         else if (!isCrouchPressed && isCrouching) {
             animator.SetBool(isCrouchingHash, false);
+            //reset player collider
+            characterController.height = 1.8f;
+            characterController.center = new Vector3(0, .91f, 0);
         }
 
         //Start crouch-walk if movement and crouch pressed while not crouch-walking
@@ -230,18 +240,11 @@ public class PlayerController : MonoBehaviour {
     void HandleJump() {
         if (!isJumping && characterController.isGrounded && isJumpPressed) {
             isJumping = true;
-            //currentMovement.y = initJumpVelocity;
-            //currentRunMovement.y = initJumpVelocity;
-            //currentCrouchMovement.y = initJumpVelocity;
-            //trigger animation coruotine
             jumpAnimation = StartCoroutine(JumpAnim());
-
-            //animator.CrossFade(jumpHash, 0.01f);
-            //Debug.Break();
         }
         else if (!isJumpPressed && characterController.isGrounded && isJumping) {
             isJumping = false;
-            animator.SetTrigger(landedHash);
+            animator.SetBool(landedHash, true);
         }
     }
 
@@ -288,6 +291,9 @@ public class PlayerController : MonoBehaviour {
         currentMovement.y = initJumpVelocity;
         currentRunMovement.y = initJumpVelocity;
         currentCrouchMovement.y = initJumpVelocity;
+
+        //set animation bool
+        animator.SetBool(landedHash, false);
 
         //reset player model
         playerModel.transform.localPosition = temp;
