@@ -5,21 +5,24 @@ using UnityEngine;
 public class ProjectileMover : MonoBehaviour
 {
     [SerializeField] private Spell spellCasted;
+    [SerializeField] private MousePositionTracking mousePositionTracker;
+    private Vector3 moveDirection;
 
     private void Start()
     {
+        Vector3 targetPosition = mousePositionTracker.CurrentPosition;
+        moveDirection = (targetPosition - transform.position).normalized;
         Destroy(this.gameObject, spellCasted.LifeSpan);
-        }
+    }
 
     private void Update()
     {
         Move();
-        Destroy(gameObject, spellCasted.LifeSpan);
     }
 
     private void Move()
     {  
-        // MOVE FORWARD THEN DESTORY AFTER SO LONG
-        transform.position += transform.forward * spellCasted.MoveSpeed * Time.deltaTime;
+        // MOVE TOWARD TARGET
+        transform.position += moveDirection * spellCasted.MoveSpeed * Time.deltaTime;
     }
 }

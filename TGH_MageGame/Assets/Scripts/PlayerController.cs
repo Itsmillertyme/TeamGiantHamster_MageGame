@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 
     ActionAsset actionAsset;
     CharacterController characterController;
+    [SerializeField] MousePositionTracking mousePositionTracker;
     Animator animator;
     [SerializeField] GameObject playerModel;
 
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour {
     void Update() {
 
         HandleAnimation();
+        mousePositionTracker.GetMousePosition();
 
         //do controller move with updated movement vector
         if (isRunPressed) {

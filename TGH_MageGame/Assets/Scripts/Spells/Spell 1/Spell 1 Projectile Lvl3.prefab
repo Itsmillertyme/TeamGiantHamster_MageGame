@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellCasted: {fileID: 11400000, guid: 23d516d05a48a794cabc4ffbf906b161, type: 2}
+  mousePositionTracker: {fileID: 11400000, guid: 5ac736863d4e7334481b10c040001176, type: 2}
 --- !u!1 &700614151575701681
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellCasted: {fileID: 11400000, guid: 23d516d05a48a794cabc4ffbf906b161, type: 2}
+  mousePositionTracker: {fileID: 11400000, guid: 5ac736863d4e7334481b10c040001176, type: 2}
 --- !u!1 &4925561379948782210
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellCasted: {fileID: 11400000, guid: 23d516d05a48a794cabc4ffbf906b161, type: 2}
+  mousePositionTracker: {fileID: 11400000, guid: 5ac736863d4e7334481b10c040001176, type: 2}
 --- !u!1 &8334082122703048805
 GameObject:
   m_ObjectHideFlags: 0

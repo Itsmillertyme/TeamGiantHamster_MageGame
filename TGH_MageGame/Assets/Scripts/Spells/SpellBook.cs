@@ -14,16 +14,19 @@ public class SpellBook : MonoBehaviour
     [SerializeField] private UnityEvent ActiveSpellSwitched;
 
     // GETTERS
-    public int ActiveSpell => activeSpell; 
+    public int ActiveSpell => activeSpell;
 
     // DRIVEN
     #region DRIVEN
-    private float scrollValue;
+    [Header("Debugging")]
+    [SerializeField] private float scrollValue;
+    private Coroutine castDelay;
+    [SerializeField] private bool isReadyToCast;
     #endregion
 
     private void Start()
     {
-        Debug.LogWarning("Spellbook scrolling is backwards");
+        isReadyToCast = true;
     }
 
     void Update()
@@ -43,14 +46,26 @@ public class SpellBook : MonoBehaviour
 
     private void Cast()
     {
-        spellBook[activeSpell].Cast(spawnPosition);
+        if (isReadyToCast)
+        {
+
+            spellBook[activeSpell].Cast(spawnPosition);
+            castDelay = StartCoroutine(CastDelay());
+        }
     }
 
-    // untested
+    public IEnumerator CastDelay()
+    {
+        isReadyToCast = false;
+        yield return new WaitForSeconds(spellBook[ActiveSpell].CastDelayTime);
+        isReadyToCast = true;
+    }
+
+    // SPELL INVENTORY CYCLING
     private void SetSpell()
     {
         // if 
-        if (scrollValue > 0f)
+        if (scrollValue < 0f)
         {
             activeSpell++;
 
@@ -60,7 +75,7 @@ public class SpellBook : MonoBehaviour
             }
         }
 
-        else if (scrollValue < 0f)
+        else if (scrollValue > 0f)
         {
             activeSpell--;
 
@@ -74,10 +89,17 @@ public class SpellBook : MonoBehaviour
         ActiveSpellSwitched.Invoke();
     }
 
+    // GETS ACTIVE SPELL TO USE IN UI TEXT
     public string GetSpellUIData()
     {
         return $"{spellBook[activeSpell].Name}";
     }
     // update active spell
     // shoot using enum to determine method
+
+    // GETTER FOR ACTIVE SPELL ANIMATION
+    public AnimationClip GetSpellAnimation()
+    {
+        return spellBook[activeSpell].CastAnimation;
+    }
 }

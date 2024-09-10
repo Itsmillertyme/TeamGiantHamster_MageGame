@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2023.2/staging' branch; Version is '2023.2.1f1 (a6dd9a634651) revision 10935706'; Using compiler version '193431935'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 16301 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 65475 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -9,15 +9,15 @@ C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker2
+AssetImportWorker0
 -projectPath
 C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
 -logFile
-Logs/AssetImportWorker2.log
+Logs/AssetImportWorker0.log
 -srvPort
-53192
+56391
 -job-worker-count
-3
+5
 -background-job-worker-count
 8
 -asset-garbage-collectors
@@ -58,12 +58,12 @@ C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33832] Host "[IP] 10.0.0.60 [Port] 0 [Flags] 2 [Guid] 1821733793 [EditorId] 1821733793 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3QQLMJ7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [33832] Host "[IP] 10.0.0.60 [Port] 0 [Flags] 2 [Guid] 1821733793 [EditorId] 1821733793 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3QQLMJ7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
-[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Player connection [11356] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1186550058 [EditorId] 1186550058 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11356] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1186550058 [EditorId] 1186550058 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 8.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.1f1 (a6dd9a634651)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -71,15 +71,15 @@ Initialize engine version: 2023.2.1f1 (a6dd9a634651)
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
-    Vendor:   Intel
-    VRAM:     8150 MB
-    Driver:   27.20.100.9316
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3623
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -96,47 +96,47 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.053151 seconds.
-- Loaded All Assemblies, in  3.835 seconds
+Registered in 0.014826 seconds.
+- Loaded All Assemblies, in  0.537 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 2280 ms
+Android Extension - Scanning For ADB Devices 378 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  5.370 seconds
-Domain Reload Profiling: 9180ms
-	BeginReloadAssembly (1232ms)
+- Finished resetting the current domain, in  0.832 seconds
+Domain Reload Profiling: 1363ms
+	BeginReloadAssembly (168ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (5ms)
-	RebuildCommonClasses (399ms)
-	RebuildNativeTypeToScriptingClass (92ms)
-	initialDomainReloadingComplete (471ms)
-	LoadAllAssembliesAndSetupDomain (1614ms)
-		LoadAssemblies (1236ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (226ms)
+		LoadAssemblies (163ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1574ms)
-			TypeCache.Refresh (1568ms)
-				TypeCache.ScanAssembly (1433ms)
-			BuildScriptInfoCaches (1ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (5372ms)
+		AnalyzeDomain (221ms)
+			TypeCache.Refresh (220ms)
+				TypeCache.ScanAssembly (200ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (833ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (5002ms)
+		SetupLoadedEditorAssemblies (773ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3158ms)
-			SetLoadedEditorAssemblies (32ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (1383ms)
-			ProcessInitializeOnLoadMethodAttributes (377ms)
+			InitializePlatformSupportModulesInManaged (523ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (181ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -157,133 +157,141 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  5.264 seconds
-Refreshing native plugins compatible for Editor in 3.91 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.993 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.776 seconds
-Domain Reload Profiling: 8025ms
-	BeginReloadAssembly (2151ms)
+- Finished resetting the current domain, in  0.732 seconds
+Domain Reload Profiling: 1715ms
+	BeginReloadAssembly (363ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (41ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (200ms)
-	RebuildCommonClasses (248ms)
-	RebuildNativeTypeToScriptingClass (89ms)
-	initialDomainReloadingComplete (253ms)
-	LoadAllAssembliesAndSetupDomain (2506ms)
-		LoadAssemblies (1997ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (516ms)
+		LoadAssemblies (430ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1209ms)
-			TypeCache.Refresh (1000ms)
-				TypeCache.ScanAssembly (913ms)
-			BuildScriptInfoCaches (115ms)
-			ResolveRequiredComponents (78ms)
-	FinalizeReload (2777ms)
+		AnalyzeDomain (209ms)
+			TypeCache.Refresh (176ms)
+				TypeCache.ScanAssembly (158ms)
+			BuildScriptInfoCaches (25ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (732ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1778ms)
+		SetupLoadedEditorAssemblies (505ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (59ms)
-			SetLoadedEditorAssemblies (29ms)
-			BeforeProcessingInitializeOnLoad (161ms)
-			ProcessInitializeOnLoadAttributes (1462ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (387ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3533 unused Assets / (1.3 MB). Loaded Objects now: 4113.
-Memory consumption went from 122.6 MB to 121.3 MB.
-Total: 15.477200 ms (FindLiveObjects: 0.814000 ms CreateObjectMapping: 0.755900 ms MarkObjects: 10.816200 ms  DeleteObjects: 3.088500 ms)
+Unloading 3533 unused Assets / (1.2 MB). Loaded Objects now: 4113.
+Memory consumption went from 122.7 MB to 121.5 MB.
+Total: 5.409200 ms (FindLiveObjects: 0.407800 ms CreateObjectMapping: 0.439900 ms MarkObjects: 3.500900 ms  DeleteObjects: 1.059400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1307632.436483 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Basic Motions/Misc/BasicMotions@FallOnGround01.fbx
-  artifactKey: Guid(499ba6fc6b236c6498137f17f871a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Basic Motions/Misc/BasicMotions@FallOnGround01.fbx using Guid(499ba6fc6b236c6498137f17f871a7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8f8f5c442ffa1d961a7310c1ab28b35') in 0.1416021 seconds
+  Time since last request: 1278174.553837 seconds.
+  path: Assets/Scripts/Spells/ProjectileMover.cs
+  artifactKey: Guid(f3c8abe18248f69419ed5c8d3cb04e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spells/ProjectileMover.cs using Guid(f3c8abe18248f69419ed5c8d3cb04e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '758988f3d3a88f9a3941c25995743280') in 0.0058299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/Spells/Spell Switched.asset
+  artifactKey: Guid(7e05ee028a4aeb941b428e30ae75ec2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spells/Spell Switched.asset using Guid(7e05ee028a4aeb941b428e30ae75ec2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc618710176106220cbf77999c071b6d') in 0.0182749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.338414 seconds.
+  path: Assets/Scripts/Spells/Spell 1
+  artifactKey: Guid(0b78f27d6e5651a41a9d08cddf89f799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spells/Spell 1 using Guid(0b78f27d6e5651a41a9d08cddf89f799) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94f62306b76fe8a4401275189981ec17') in 0.0005784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.725694 seconds.
+  path: Assets/Scripts/Spells/Spell 1/Spell 1 Config.asset
+  artifactKey: Guid(23d516d05a48a794cabc4ffbf906b161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Spells/Spell 1/Spell 1 Config.asset using Guid(23d516d05a48a794cabc4ffbf906b161) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2822bb4e305de44b14cb95a529a19a2') in 0.0051446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 51
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.378755 seconds.
+  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack01.fbx
+  artifactKey: Guid(4accf136b05606f46a0657e3c51271ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack01.fbx using Guid(4accf136b05606f46a0657e3c51271ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '827ff7b0edca7572cfb0bcc63aff3c59') in 0.0213938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 134
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.919332 seconds.
+  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack02.fbx
+  artifactKey: Guid(552a5a0580ffcfb4c926e37b0c1a66c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack02.fbx using Guid(552a5a0580ffcfb4c926e37b0c1a66c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ea8277baf41bd44ab094a4e7fb77c4a') in 0.0052323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 134
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004788 seconds.
+  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack06.fbx
+  artifactKey: Guid(3cc5873bf26448e4989a6a05c7e03cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack06.fbx using Guid(3cc5873bf26448e4989a6a05c7e03cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db64ca812e450d4e8bb0dd8b20e34968') in 0.0056725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004239 seconds.
+  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Damage02.fbx
+  artifactKey: Guid(6b2393f327547ea4498a862b150e49e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Damage02.fbx using Guid(6b2393f327547ea4498a862b150e49e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7c4770462654eef360540b646e5bfd4') in 0.005145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Death02.fbx
+  artifactKey: Guid(cba80e0a413d5b042b0cee61337e6b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Death02.fbx using Guid(cba80e0a413d5b042b0cee61337e6b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0fb08448643723bf9a6025df8c78d5e') in 0.0057465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Block01.fbx
+  artifactKey: Guid(10655c54dd2b9254bab9b3eab928cb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Block01.fbx using Guid(10655c54dd2b9254bab9b3eab928cb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a2925f86090354fc38fa2c7efa5376b') in 0.0039032 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 132
 
 ========================================================================
 Received Import Request.
-  Time since last request: 142.870309 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations
-  artifactKey: Guid(5316f933a06dbf5448d0fcfe18dbd4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations using Guid(5316f933a06dbf5448d0fcfe18dbd4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a12862ebe27a8a3ae0f7edd9df802e98') in 0.0020581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.851596 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat
-  artifactKey: Guid(fda0d964ef87a6e42aef51ecf1cfa0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat using Guid(fda0d964ef87a6e42aef51ecf1cfa0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '497e888c536d4f9e7dd6fb65b92d117a') in 0.0013003 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.197121 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack01.fbx
-  artifactKey: Guid(4accf136b05606f46a0657e3c51271ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack01.fbx using Guid(4accf136b05606f46a0657e3c51271ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1df98dfd6969167b092e371d5038b60f') in 0.0573217 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 134
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.017250 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack06.fbx
-  artifactKey: Guid(3cc5873bf26448e4989a6a05c7e03cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack06.fbx using Guid(3cc5873bf26448e4989a6a05c7e03cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d132fcb2d89fece5265c37498a75099') in 0.0277508 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Damage02.fbx
-  artifactKey: Guid(6b2393f327547ea4498a862b150e49e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Damage02.fbx using Guid(6b2393f327547ea4498a862b150e49e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b55e7880e1be44942050bdac3f7ff2a4') in 0.0142183 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@CombatIdle01.fbx
-  artifactKey: Guid(8c95c6e0639287743848e008a8ddd412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@CombatIdle01.fbx using Guid(8c95c6e0639287743848e008a8ddd412) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd720b006433cb8ec99e64d89051132b6') in 0.0136719 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack03.fbx
-  artifactKey: Guid(e0ba9eae5e5fa254885fd371f59f9ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack03.fbx using Guid(e0ba9eae5e5fa254885fd371f59f9ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f846ec2b3cde4746141ae8ea53f999a') in 0.009593 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
+  Time since last request: 0.000014 seconds.
   path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Death01.fbx
   artifactKey: Guid(3dfbfda5fa22b704d9dfaab0963cb397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Death01.fbx using Guid(3dfbfda5fa22b704d9dfaab0963cb397) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fe26d66423ce3c54fb4a1804282deeb') in 0.0143135 seconds
+Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Death01.fbx using Guid(3dfbfda5fa22b704d9dfaab0963cb397) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa53695737499fafb891ca49b3b22121') in 0.0050219 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 133
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack05.fbx
-  artifactKey: Guid(37c5ae9c72b731541b3683f31ed9cc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/Kevin Iglesias/Mage Cast Animations/Combat/Mage@Attack05.fbx using Guid(37c5ae9c72b731541b3683f31ed9cc3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c95be9952e75e0bad980de29a1cf97a') in 0.0228387 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 134
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellCasted: {fileID: 11400000, guid: 23d516d05a48a794cabc4ffbf906b161, type: 2}
+  mousePositionTracker: {fileID: 11400000, guid: 5ac736863d4e7334481b10c040001176, type: 2}
 --- !u!1 &9094284409533455406
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,3 +526,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellCasted: {fileID: 11400000, guid: 23d516d05a48a794cabc4ffbf906b161, type: 2}
+  mousePositionTracker: {fileID: 11400000, guid: 5ac736863d4e7334481b10c040001176, type: 2}

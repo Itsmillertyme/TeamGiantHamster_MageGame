@@ -21,6 +21,7 @@ MonoBehaviour:
   manaCost: 5
   damage: 7
   lifeSpan: 3
+  castDelayTime: 0.5
   damageDuration: 0
   moveSpeed: 8
   impactForce: 0.2
