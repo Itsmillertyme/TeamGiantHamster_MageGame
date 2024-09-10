@@ -1046,25 +1046,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{C58257E7-19D0-87C5-D093-AB55BE78D80C}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
       <Project>{B278917A-A8A5-4C0C-9DA9-0BF426DD5E0A}</Project>
       <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{77D3744B-A92F-73B6-477D-5123DB120736}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
+    <ProjectReference Include="Unity.InputSystem.csproj">
+      <Project>{28D6C2C7-999C-DAF0-829A-B68F87BD79E2}</Project>
+      <Name>Unity.InputSystem</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
       <Project>{09A6EC5D-0C74-9BCE-C814-B4D93A7EAE4E}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{B5C5C40E-C855-B9D8-3A8C-60E716DACE9D}</Project>
-      <Name>Cinemachine</Name>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{77D3744B-A92F-73B6-477D-5123DB120736}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{C58257E7-19D0-87C5-D093-AB55BE78D80C}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{A82CA381-4CDF-36BA-4A17-606A5B94D5B9}</Project>
@@ -1146,9 +1146,9 @@
       <Project>{5729411C-2231-B398-0428-20D9AC195CF9}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{28D6C2C7-999C-DAF0-829A-B68F87BD79E2}</Project>
-      <Name>Unity.InputSystem</Name>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{B5C5C40E-C855-B9D8-3A8C-60E716DACE9D}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

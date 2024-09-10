@@ -894,13 +894,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.InputSystem.Player.csproj">
+      <Project>{4C9AEB7C-EC81-ED6B-7D18-1C59555D1717}</Project>
+      <Name>Unity.InputSystem.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{542F74AB-B360-B81E-16C7-D13D5F0E8374}</Project>
       <Name>UnityEngine.UI.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.Player.csproj">
-      <Project>{8690DB43-353C-DDFF-8E49-02D857D8FB1B}</Project>
-      <Name>Cinemachine.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.ForUI.Player.csproj">
       <Project>{8177C1FB-FD25-DDA8-D1E4-6A1586F8E4E7}</Project>
@@ -926,9 +926,9 @@
       <Project>{ABB36360-0315-EE1D-B26D-0DFA04203999}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.InputSystem.Player.csproj">
-      <Project>{4C9AEB7C-EC81-ED6B-7D18-1C59555D1717}</Project>
-      <Name>Unity.InputSystem.Player</Name>
+    <ProjectReference Include="Cinemachine.Player.csproj">
+      <Project>{8690DB43-353C-DDFF-8E49-02D857D8FB1B}</Project>
+      <Name>Cinemachine.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
