@@ -396,6 +396,7 @@
 "Assets/Scripts/GameEvent.cs"
 "Assets/Scripts/GameEventListener.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/MouseFollower.cs"
 "Assets/Scripts/MousePositionTracking.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerController_OLD.cs"

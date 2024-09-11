@@ -107,6 +107,15 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""DEVBREAK"",
+                    ""type"": ""Button"",
+                    ""id"": ""bd792491-9502-447c-a921-a320be48e987"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -230,6 +239,17 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
                     ""action"": ""MoveCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d78bfe6b-49e2-4982-96f5-ce32dc028e27"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DEVBREAK"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -247,6 +267,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
         m_Player_Melee = m_Player.FindAction("Melee", throwIfNotFound: true);
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_MoveCamera = m_Player.FindAction("MoveCamera", throwIfNotFound: true);
+        m_Player_DEVBREAK = m_Player.FindAction("DEVBREAK", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -317,6 +338,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Melee;
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_MoveCamera;
+    private readonly InputAction m_Player_DEVBREAK;
     public struct PlayerActions
     {
         private @ActionAsset m_Wrapper;
@@ -330,6 +352,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
         public InputAction @Melee => m_Wrapper.m_Player_Melee;
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputAction @MoveCamera => m_Wrapper.m_Player_MoveCamera;
+        public InputAction @DEVBREAK => m_Wrapper.m_Player_DEVBREAK;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -366,6 +389,9 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
             @MoveCamera.started += instance.OnMoveCamera;
             @MoveCamera.performed += instance.OnMoveCamera;
             @MoveCamera.canceled += instance.OnMoveCamera;
+            @DEVBREAK.started += instance.OnDEVBREAK;
+            @DEVBREAK.performed += instance.OnDEVBREAK;
+            @DEVBREAK.canceled += instance.OnDEVBREAK;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -397,6 +423,9 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
             @MoveCamera.started -= instance.OnMoveCamera;
             @MoveCamera.performed -= instance.OnMoveCamera;
             @MoveCamera.canceled -= instance.OnMoveCamera;
+            @DEVBREAK.started -= instance.OnDEVBREAK;
+            @DEVBREAK.performed -= instance.OnDEVBREAK;
+            @DEVBREAK.canceled -= instance.OnDEVBREAK;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -425,5 +454,6 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
         void OnMelee(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
         void OnMoveCamera(InputAction.CallbackContext context);
+        void OnDEVBREAK(InputAction.CallbackContext context);
     }
 }

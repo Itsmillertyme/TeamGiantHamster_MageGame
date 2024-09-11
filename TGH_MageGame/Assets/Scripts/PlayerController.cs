@@ -79,6 +79,8 @@ public class PlayerController : MonoBehaviour {
         actionAsset.Player.Jump.canceled += OnJump;
         //
         actionAsset.Player.MoveCamera.performed += Camera.main.GetComponent<CameraController>().CycleCameraPosition;
+        //
+        actionAsset.Player.DEVBREAK.performed += Devbreak;
 
 
         SetupJumpVariables();
@@ -246,6 +248,11 @@ public class PlayerController : MonoBehaviour {
             isJumping = false;
             animator.SetBool(landedHash, true);
         }
+    }
+    //
+    //DEV ONLY - DELETE BEFORE FINAL BUILD
+    void Devbreak(InputAction.CallbackContext context) {
+        Debug.Break();
     }
 
     //**Coroutines**
