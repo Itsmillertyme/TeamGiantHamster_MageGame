@@ -1,13 +1,21 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.IO.Enumeration;
 using UnityEngine;
+using UnityEngine.Events;
+
 [CreateAssetMenu]
 
 public class PlayerStats : ScriptableObject
 {
+    [System.NonSerialized]
+    public UnityEvent<int> currentHealthChangeEvent;
+    [System.NonSerializedAttribute]
+    public UnityEvent<int> currentManaChangeEvent;
+
     // The base stats the player initially will have at the start of a run.
     public int baseHealth = 100;
     public int baseAttackDamage = 5;
@@ -15,12 +23,6 @@ public class PlayerStats : ScriptableObject
     public int baseDefence = 5;
     public int baseMovementSpeed = 5;
     public int baseMana = 100;
-
-    // Stores the total equipment modifier that will be added to each stat for the final calculations.
-    /*
-     * Waiting to see how we handle equipment before doing anything with this
-     * since depending on how we handle equipment this could drastically change.
-     */
 
     // Stores the amount stats upgrade on level up.
     public int healthUpgrade = 5;
@@ -56,9 +58,9 @@ public class PlayerStats : ScriptableObject
     int currentHealth;
     int currentMana;
 
-    private void Start()
+    private void OnEnable()
     {
-        // initialzes the max value of each stat at the beginning of the game.
+        // Initialzes the max value of each stat at the beginning of the game.
         maxHealth = baseHealth;
         maxAttackDamage = baseAttackDamage;
         maxAttackSpeed = baseAttackSpeed;
@@ -67,7 +69,14 @@ public class PlayerStats : ScriptableObject
         maxMana = baseMana;
         currentHealth = maxHealth;
         currentMana = maxMana;
-
+        if (currentHealthChangeEvent == null)
+        {
+            currentHealthChangeEvent = new UnityEvent<int>();
+        }
+        if (currentManaChangeEvent == null)
+        {
+            currentManaChangeEvent = new UnityEvent<int>();
+        }
     }
 
     // Methods that will be called whenever the maximum value of a stat should change
@@ -162,13 +171,21 @@ public class PlayerStats : ScriptableObject
         }
         else if (amount < 0)
         {
-            currentHealth += (maxDefence / 100) * amount;
+            if (maxDefence > 0)
+            {
+                currentHealth += (int)((1f - ((float)maxDefence/100)) *  amount);
+            }
+            else
+            {
+                currentHealth += amount;
+            }
         }
 
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
+        currentHealthChangeEvent.Invoke(currentHealth);
     }
     public void updateCurrentMana(int amount)
     {
@@ -178,6 +195,7 @@ public class PlayerStats : ScriptableObject
         {
             currentMana = maxMana;
         }
+        currentManaChangeEvent.Invoke(currentMana);
     }
 
     // The function for updating experience and levels
