@@ -4,15 +4,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
 
-    //base  y = .91, h = 1.8
-    //crouch y = ..71, h = 1.4
-
+    //Component references
     ActionAsset actionAsset;
     CharacterController characterController;
-    [SerializeField] MousePositionTracking mousePositionTracker;
     Animator animator;
+    [SerializeField] MousePositionTracking mousePositionTracker;
     [SerializeField] GameObject playerModel;
+    [SerializeField] Transform projectileSpawn;
 
+    //Player variables
     float currentMovementInput;
     Vector3 currentMovement;
     Vector3 currentRunMovement;
@@ -45,7 +45,9 @@ public class PlayerController : MonoBehaviour {
     int isCrouchWalkingHash;
     int landedHash;
     int jumpHash;
+    int fallHash;
     int turnHash;
+    int walkHash;
     //
     Coroutine turnAnimation;
     Coroutine jumpAnimation;
@@ -61,9 +63,13 @@ public class PlayerController : MonoBehaviour {
         isRunningHash = Animator.StringToHash("isRunning");
         isCrouchingHash = Animator.StringToHash("isCrouching");
         isCrouchWalkingHash = Animator.StringToHash("isCrouchWalking");
-        landedHash = Animator.StringToHash("landed");
+        landedHash = Animator.StringToHash("isLanded");
         jumpHash = Animator.StringToHash("Jump");
+        fallHash = Animator.StringToHash("Fall");
         turnHash = Animator.StringToHash("Turn");
+        walkHash = Animator.StringToHash("Walk");
+        //
+        animator.SetBool(landedHash, true);
 
         //Define callbacks
         actionAsset.Player.Move.started += OnMovementInput;
@@ -88,6 +94,9 @@ public class PlayerController : MonoBehaviour {
     //
     void Update() {
 
+        //DEV ONLY
+        SetupJumpVariables();
+
         HandleAnimation();
         mousePositionTracker.GetMousePosition();
 
@@ -102,8 +111,32 @@ public class PlayerController : MonoBehaviour {
             characterController.Move(currentMovement * Time.deltaTime);
         }
 
+
+        //Facing player based on Mouse position
+        if ((!isFacingBackwards && Input.mousePosition.x < Screen.width / 2f) || (isFacingBackwards && Input.mousePosition.x > Screen.width / 2f)) {
+            if (turnAnimation == null) {
+                turnAnimation = StartCoroutine(TurnModel());
+            }
+        }
+
         HandleGravity();
         HandleJump();
+
+        if (jumpAnimation == null && !characterController.isGrounded) {
+            //not landed
+            animator.SetBool(landedHash, false);
+            //crossfade into falling
+            animator.CrossFade(fallHash, 0.01f);
+
+        }
+        else if (characterController.isGrounded && !animator.GetBool(landedHash)) {
+            if (isMovementPressed) {
+                animator.CrossFade(walkHash, 0.01f);
+            }
+
+            //not landed
+            animator.SetBool(landedHash, true);
+        }
 
         //Snap Z coord to 0
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
@@ -125,12 +158,6 @@ public class PlayerController : MonoBehaviour {
         //Read values from Input System
         currentMovementInput = -1 * context.ReadValue<float>();
 
-        //Turn animation and flip model
-        if ((currentMovementInput > 0 && !isFacingBackwards) || (currentMovementInput < 0 && isFacingBackwards)) {
-            if (turnAnimation == null) {
-                turnAnimation = StartCoroutine(TurnModel(context));
-            }
-        }
 
         //Negate movement while turning
         if (turnAnimation != null) {
@@ -246,7 +273,12 @@ public class PlayerController : MonoBehaviour {
         }
         else if (!isJumpPressed && characterController.isGrounded && isJumping) {
             isJumping = false;
+
+            if (isMovementPressed) {
+                animator.CrossFade(walkHash, 0.01f);
+            }
             animator.SetBool(landedHash, true);
+
         }
     }
     //
@@ -256,13 +288,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     //**Coroutines**
-    IEnumerator TurnModel(InputAction.CallbackContext context) {
-
-        //Crossfade into animation
-        animator.CrossFade(turnHash, 0.01f);
-
-        //wait for it to play
-        yield return new WaitForSeconds(.25f);
+    IEnumerator TurnModel() {
 
         //set new rotation
         Quaternion newRotation;
@@ -274,13 +300,19 @@ public class PlayerController : MonoBehaviour {
             isFacingBackwards = true;
             newRotation = Quaternion.Euler(0, 90, 0);
         }
+
+        //Crossfade into animation
+        animator.CrossFade(turnHash, 0.01f);
+
+        //wait for it to play
+        yield return new WaitForSeconds(.2f);
+
+
         playerModel.transform.localRotation = newRotation;
 
         //Clear coroutine object
         turnAnimation = null;
 
-        //Pass input callback context from original button press back into method
-        OnMovementInput(context);
     }
 
     IEnumerator JumpAnim() {

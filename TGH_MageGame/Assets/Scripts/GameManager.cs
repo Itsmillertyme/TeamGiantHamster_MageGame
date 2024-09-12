@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class GameManager_EMPTY : MonoBehaviour {
+public class GameManager : MonoBehaviour {
 
     [SerializeField] Canvas hud;
     [SerializeField] RectTransform crosshair;

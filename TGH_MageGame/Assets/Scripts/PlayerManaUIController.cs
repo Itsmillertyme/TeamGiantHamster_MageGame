@@ -1,41 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public class PlayerManaUIController : MonoBehaviour
-{
+public class PlayerManaUIController : MonoBehaviour {
     [SerializeField]
-    public Text currentManaText;
+    public TextMeshProUGUI currentManaText;
     [SerializeField]
     private PlayerStats playerStats;
 
-    private void Start()
-    {
-        currentManaText.text = "Current Mana:\n" + playerStats.getCurrentMana();
+    private void Start() {
+        currentManaText.text = "Mana:\n" + playerStats.getCurrentMana();
     }
 
-    private void OnEnable()
-    {
+    private void OnEnable() {
         playerStats.currentManaChangeEvent.AddListener(updateCurrentManaText);
     }
-    private void OnDisable()
-    {
+    private void OnDisable() {
         playerStats.currentManaChangeEvent.RemoveListener(updateCurrentManaText);
     }
 
-    private void updateCurrentManaText(int mana)
-    {
-        currentManaText.text = "Current Mana:\n" + mana;
+    private void updateCurrentManaText(int mana) {
+        currentManaText.text = "Mana:\n" + mana;
+        GetComponent<Image>().fillAmount = mana / 100f;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.N))
-        {
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.N)) {
             playerStats.updateCurrentMana(-5);
         }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
+        if (Input.GetKeyDown(KeyCode.M)) {
             playerStats.updateCurrentMana(5);
         }
     }
