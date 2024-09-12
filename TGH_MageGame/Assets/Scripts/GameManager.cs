@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +12,8 @@ public class GameManager : MonoBehaviour {
 
     //DEV ONLY - REMOVE BEFORE BUILD
     Transform debugObject;
+    [Header("Bugs / Issues")]
+    [SerializeField] private List<string> knownBugs = new List<string>();
 
     private void Awake() {
         //Hide mouse
@@ -18,6 +22,14 @@ public class GameManager : MonoBehaviour {
         //DEV ONLY - REMOVE BEFORE BUILD - setup debug object
         debugObject = new GameObject().transform;
         debugObject.name = "DEBUG - OBJECT";
+
+        foreach (string bug in knownBugs)
+        {
+            if (bug != "")
+            {
+                Debug.LogWarning(bug);
+            }
+        }
     }
 
     private void Update() {

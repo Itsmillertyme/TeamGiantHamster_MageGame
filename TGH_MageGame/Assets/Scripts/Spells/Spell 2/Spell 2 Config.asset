@@ -20,19 +20,13 @@ MonoBehaviour:
   maxLevel: 3
   projectileCount: 1
   manaCost: 15
-  damage: 3
-  lifeSpan: 1
-  damageDuration: 0
-  moveSpeed: 5
-  impactForce: 0
-  range: 25
-  spawnObjectLvl1: {fileID: 3342534944113219164, guid: 4307da026eaa6374a985a27d94033a6c, type: 3}
-  spawnObjectLvl2: {fileID: 3342534944113219164, guid: 4307da026eaa6374a985a27d94033a6c, type: 3}
-  spawnObjectLvl3: {fileID: 3342534944113219164, guid: 4307da026eaa6374a985a27d94033a6c, type: 3}
-  spawnSFX: {fileID: 0}
-  hitSFX: {fileID: 0}
+  damage: 20
+  lifeSpan: 3
+  castDelayTime: 1
+  moveSpeed: 50
+  spawnObjectLvl1: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
+  spawnObjectLvl2: {fileID: 0}
+  spawnObjectLvl3: {fileID: 0}
   castAnimation: {fileID: 0}
-  spawnFX: {fileID: 0}
-  hitFX: {fileID: 0}
-  icon: {fileID: 0}
-  isUnlocked: 0
+  isUnlocked: 1
+  targetPosition: {x: 0, y: 0, z: 0}
