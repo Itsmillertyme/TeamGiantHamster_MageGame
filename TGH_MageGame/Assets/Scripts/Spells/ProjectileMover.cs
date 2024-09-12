@@ -15,7 +15,7 @@ public class ProjectileMover : MonoBehaviour
     private void Start()
     {
         moveDirection = (targetPosition - transform.position).normalized;
-        Destroy(this.gameObject, lifeSpan);
+        Destroy(gameObject, lifeSpan);
     }
 
     private void Update()
@@ -48,14 +48,20 @@ public class ProjectileMover : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.ToString());
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyHealth>().RemoveFromHealth(damage);
+            Debug.Log("Collision with enemy");
+        }
+
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Collision with player");
         }
         else
         {
-            Destroy(gameObject, lifeSpan);
+            Destroy(gameObject);
+            Debug.Log("Collision with environment");
         }
     }
 }

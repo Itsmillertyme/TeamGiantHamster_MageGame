@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\spells\\projectilemover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\projectilemover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\temporary enemy shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporary enemy shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|c:\\users\\corya\\documents\\github\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\mousepositiontracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mousepositiontracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|c:\\users\\corya\\documents\\github\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\spells\\spellconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\spells\\spellconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,27 +27,15 @@
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\spells\\projectilemover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\projectilemover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|c:\\users\\corya\\documents\\github\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\spells\\spell ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\spells\\spell ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spell ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|c:\\users\\corya\\documents\\github\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\temporary enemy shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\temporary enemy shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\debugmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\debugmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|c:\\users\\corya\\documents\\github\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MousePositionTracking.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\MousePositionTracking.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MousePositionTracking.cs",
@@ -91,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "SpellConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\SpellConfiguration.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\SpellConfiguration.cs",
@@ -99,12 +99,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Spells\\SpellConfiguration.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAuwE8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:54:30.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:54:30.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SpellBook.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\SpellBook.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\SpellBook.cs",
@@ -112,18 +111,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Spells\\SpellBook.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAYwDUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:16:04.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:16:04.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Temporary Enemy Shoot.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Temporary Enemy Shoot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Temporary Enemy Shoot.cs",
               "ToolTip": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Temporary Enemy Shoot.cs",
               "RelativeToolTip": "Assets\\Scripts\\Temporary Enemy Shoot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T17:46:41.052Z",
               "EditorCaption": ""
@@ -138,12 +136,11 @@
               "RelativeToolTip": "Assets\\Scripts\\EnemyHealth.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:42:12.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T17:42:12.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -156,13 +153,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ProjectileMover.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\ProjectileMover.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\ProjectileMover.cs",
               "ToolTip": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\ProjectileMover.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spells\\ProjectileMover.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwD8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T17:16:09.479Z",
               "EditorCaption": ""
@@ -177,8 +174,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerStats.cs",
               "ViewState": "AQIAAK4AAAAAAAAAAAAuwDkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T20:47:02.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T20:47:02.054Z"
             },
             {
               "$type": "Document",
@@ -194,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DebugMenuController.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\DebugMenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DebugMenuController.cs",
@@ -202,12 +198,11 @@
               "RelativeToolTip": "Assets\\Scripts\\DebugMenuController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:48:28.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T16:48:28.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Spell UI.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\Spell UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\Spell UI.cs",
@@ -215,8 +210,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Spells\\Spell UI.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T18:26:36.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T18:26:36.532Z"
             },
             {
               "$type": "Document",
@@ -228,8 +222,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerManaUIController.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T22:32:06.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T22:32:06.527Z"
             },
             {
               "$type": "Document",
@@ -241,8 +234,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerHealthUIController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T21:12:20.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T21:12:20.042Z"
             },
             {
               "$type": "Document",
