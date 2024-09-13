@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5671084199697224883}
   - component: {fileID: 3988834075773593456}
   - component: {fileID: 321793857850848124}
+  - component: {fileID: -3355182507354069518}
   m_Layer: 0
   m_Name: Spell 1 Projectile Lvl1
   m_TagString: Untagged
@@ -101,7 +102,7 @@ SphereCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -245,5 +246,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c8abe18248f69419ed5c8d3cb04e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellCasted: {fileID: 11400000, guid: 23d516d05a48a794cabc4ffbf906b161, type: 2}
-  mousePositionTracker: {fileID: 11400000, guid: 5ac736863d4e7334481b10c040001176, type: 2}
+--- !u!54 &-3355182507354069518
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3749226296805990834}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

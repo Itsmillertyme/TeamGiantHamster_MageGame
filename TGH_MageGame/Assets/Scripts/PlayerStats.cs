@@ -55,7 +55,10 @@ public class PlayerStats : ScriptableObject
     int maxMana;
 
     // Stores the current health and mana
+    [Header("Current Attributes")]
+    [SerializeField]
     int currentHealth;
+    [SerializeField]
     int currentMana;
 
     private void OnEnable()

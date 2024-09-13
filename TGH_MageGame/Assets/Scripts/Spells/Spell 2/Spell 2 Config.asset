@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e683368085be5a54694cf64e445de0e1, type: 3}
   m_Name: Spell 2 Config
   m_EditorClassIdentifier: 
-  name: WIP
+  name: Ray
   description: A projectile that does continuous damage while in contact with an
     enemy
   loreText: 
@@ -20,19 +20,13 @@ MonoBehaviour:
   maxLevel: 3
   projectileCount: 1
   manaCost: 15
-  damage: 3
+  damage: 20
   lifeSpan: 1
-  damageDuration: 0
-  moveSpeed: 5
-  impactForce: 0
-  range: 25
-  spawnObjectLvl1: {fileID: 3342534944113219164, guid: 4307da026eaa6374a985a27d94033a6c, type: 3}
-  spawnObjectLvl2: {fileID: 3342534944113219164, guid: 4307da026eaa6374a985a27d94033a6c, type: 3}
-  spawnObjectLvl3: {fileID: 3342534944113219164, guid: 4307da026eaa6374a985a27d94033a6c, type: 3}
-  spawnSFX: {fileID: 0}
-  hitSFX: {fileID: 0}
+  castDelayTime: 1
+  moveSpeed: 35
+  spawnObjectLvl1: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
+  spawnObjectLvl2: {fileID: 0}
+  spawnObjectLvl3: {fileID: 0}
   castAnimation: {fileID: 0}
-  spawnFX: {fileID: 0}
-  hitFX: {fileID: 0}
-  icon: {fileID: 0}
-  isUnlocked: 0
+  isUnlocked: 1
+  targetPosition: {x: 12.319885, y: 15.68961, z: -0.0000371933}
