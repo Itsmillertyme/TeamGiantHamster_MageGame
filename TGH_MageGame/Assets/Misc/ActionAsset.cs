@@ -145,7 +145,7 @@ public partial class @ActionAsset: IInputActionCollection2, IDisposable
                     ""name"": ""1D Axis"",
                     ""id"": ""59d0a3ee-8e75-428a-b57e-e8fe46aa8c24"",
                     ""path"": ""1DAxis"",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Move"",

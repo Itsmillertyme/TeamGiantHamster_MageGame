@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour {
     bool isMovementPressed;
     bool isRunPressed;
     bool isCrouchPressed;
-    bool isFacingBackwards;
+    bool isBlockPressed;
+    bool isFacingLeft;
+    bool wasFlippedLastFrame;
     bool isJumpPressed = false;
 
     //Jump Varbiables
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour {
     //Movement Varbiables
     [SerializeField] float movementSpeed = 1.0f;
     [SerializeField] float sprintSpeed = 3.0f;
+    [SerializeField] float dashForce;
 
     //Gravity Variables
     [SerializeField][Range(-0.1f, -20f)] float gravity = -9.8f; //SII
@@ -42,15 +45,21 @@ public class PlayerController : MonoBehaviour {
     int isWalkingHash;
     int isRunningHash;
     int isCrouchingHash;
-    int isCrouchWalkingHash;
+    int isBackwardWalkingHash;
+    int isBlockingHash;
     int landedHash;
     int jumpHash;
     int fallHash;
     int turnHash;
     int walkHash;
+    int blockHash;
+    int meleeHash;
+    int dashForwardHash;
+    int dashbackwardHash;
     //
     Coroutine turnAnimation;
     Coroutine jumpAnimation;
+    Coroutine dashAnimation;
 
     //**Unity Methods    
     void Awake() {
@@ -62,18 +71,25 @@ public class PlayerController : MonoBehaviour {
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
         isCrouchingHash = Animator.StringToHash("isCrouching");
-        isCrouchWalkingHash = Animator.StringToHash("isCrouchWalking");
+        isBackwardWalkingHash = Animator.StringToHash("isBackwardWalking");
+        isBlockingHash = Animator.StringToHash("isBlocking");
         landedHash = Animator.StringToHash("isLanded");
         jumpHash = Animator.StringToHash("Jump");
         fallHash = Animator.StringToHash("Fall");
         turnHash = Animator.StringToHash("Turn");
         walkHash = Animator.StringToHash("Walk");
+        blockHash = Animator.StringToHash("Block");
+        meleeHash = Animator.StringToHash("Melee");
+        dashForwardHash = Animator.StringToHash("Dash_Forward");
+        dashbackwardHash = Animator.StringToHash("Dash_Backward");
         //
         animator.SetBool(landedHash, true);
+
 
         //Define callbacks
         actionAsset.Player.Move.started += OnMovementInput;
         actionAsset.Player.Move.canceled += OnMovementInput;
+        actionAsset.Player.Move.performed += OnMovementInput;
         //
         actionAsset.Player.Run.started += OnRun;
         actionAsset.Player.Run.canceled += OnRun;
@@ -83,6 +99,15 @@ public class PlayerController : MonoBehaviour {
         //
         actionAsset.Player.Jump.started += OnJump;
         actionAsset.Player.Jump.canceled += OnJump;
+        //
+        actionAsset.Player.Block.started += OnBlock;
+        actionAsset.Player.Block.canceled += OnBlock;
+        //
+        actionAsset.Player.Melee.started += OnMelee;
+        //
+        actionAsset.Player.Cast.started += OnCast;
+        //
+        actionAsset.Player.Dash.started += OnDash;
         //
         actionAsset.Player.MoveCamera.performed += Camera.main.GetComponent<CameraController>().CycleCameraPosition;
         //
@@ -101,6 +126,7 @@ public class PlayerController : MonoBehaviour {
         mousePositionTracker.GetMousePosition();
 
         //do controller move with updated movement vector
+
         if (isRunPressed) {
             characterController.Move(currentRunMovement * Time.deltaTime);
         }
@@ -112,10 +138,14 @@ public class PlayerController : MonoBehaviour {
         }
 
 
+        if (wasFlippedLastFrame) {
+            wasFlippedLastFrame = false;
+        }
         //Facing player based on Mouse position
-        if ((!isFacingBackwards && Input.mousePosition.x < Screen.width / 2f) || (isFacingBackwards && Input.mousePosition.x > Screen.width / 2f)) {
+        if ((!isFacingLeft && Input.mousePosition.x < Screen.width / 2f) || (isFacingLeft && Input.mousePosition.x > Screen.width / 2f)) {
             if (turnAnimation == null) {
-                turnAnimation = StartCoroutine(TurnModel());
+                turnAnimation = StartCoroutine(TurnAnim());
+                wasFlippedLastFrame = true;
             }
         }
 
@@ -155,12 +185,14 @@ public class PlayerController : MonoBehaviour {
     //**Utility Methods
     //Wrapper for movement input callbacks
     public void OnMovementInput(InputAction.CallbackContext context) {
+
+
         //Read values from Input System
         currentMovementInput = -1 * context.ReadValue<float>();
 
 
-        //Negate movement while turning
-        if (turnAnimation != null) {
+        //Negate movement while turning or blocking
+        if (turnAnimation != null || isBlockPressed) {
             currentMovementInput = 0;
         }
 
@@ -171,6 +203,8 @@ public class PlayerController : MonoBehaviour {
 
         //Set flag
         isMovementPressed = currentMovementInput != 0;
+
+
     }
     //
     //Wrapper for run input callbacks
@@ -188,12 +222,53 @@ public class PlayerController : MonoBehaviour {
         isJumpPressed = context.ReadValueAsButton();
     }
     //
+    public void OnBlock(InputAction.CallbackContext context) {
+        isBlockPressed = context.ReadValueAsButton();
+    }
+    //
+    public void OnMelee(InputAction.CallbackContext context) {
+        animator.CrossFade(meleeHash, 0.01f);
+    }
+    //
+    public void OnDash(InputAction.CallbackContext context) {
+
+        if (dashAnimation == null) {
+            dashAnimation = StartCoroutine(DashAnim());
+        }
+
+    }
+    //
+    public void OnCast(InputAction.CallbackContext context) {
+
+        GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        if (Vector3.Distance(gm.GetPlayerPivot(), gm.GetMousePositionInWorldSpace()) > Vector3.Distance(gm.GetPlayerPivot(), projectileSpawn.position)) {
+            GetComponent<SpellBook>().Cast();
+        }
+
+
+
+    }
+    //
     void HandleAnimation() {
         //get param values from animator
         bool isWalking = animator.GetBool(isWalkingHash);
         bool isRunning = animator.GetBool(isRunningHash);
         bool isCrouching = animator.GetBool(isCrouchingHash);
-        bool isCrouchWalking = animator.GetBool(isCrouchWalkingHash);
+        bool isBackwardWalking = animator.GetBool(isBackwardWalkingHash);
+        bool isBlocking = animator.GetBool(isBlockingHash);
+        //get current movement direction (Right is "forward" and stored here as a positive 1)
+        float movementDir = currentMovementInput * -1;
+
+
+        if (isBlockPressed && !isBlocking) {
+            animator.SetBool(isBlockingHash, true);
+            animator.CrossFade(blockHash, 0.1f);
+        }
+        else if (!isBlockPressed && isBlocking) {
+            animator.SetBool(isBlockingHash, false);
+        }
+
 
         //start crouch if crouch is pressed while not crouched
         if (isCrouchPressed && !isCrouching) {
@@ -210,37 +285,53 @@ public class PlayerController : MonoBehaviour {
             characterController.center = new Vector3(0, .91f, 0);
         }
 
-        //Start crouch-walk if movement and crouch pressed while not crouch-walking
-        if ((isMovementPressed && isCrouchPressed) && !isCrouchWalking) {
-            animator.SetBool(isCrouchWalkingHash, true);
-        }
-        //Stop crouch-walk if no movement and crouch pressed while crouch-walking
-        else if ((!isMovementPressed || !isCrouchPressed) && isCrouchWalking) {
-            animator.SetBool(isCrouchWalkingHash, false);
-            //animator.SetBool(isCrouchingHash, true);
-        }
-        //else if ((isMovementPressed && !isCrouchPressed) && isCrouchWalking) {
-        //    animator.SetBool(isCrouchWalkingHash, false);
-        //    animator.SetBool(isCrouchingHash, false);
-        //}
-
         //Start walking if movement pressed while not walking
         if (isMovementPressed && !isWalking) {
-            animator.SetBool(isWalkingHash, true);
+
+            //Test direction
+            if (movementDir > 0) {
+                if (!isFacingLeft) {
+                    //Forward towards the right
+                    animator.SetBool(isWalkingHash, true);
+                }
+                else {
+                    //backward towards the right
+                    animator.SetBool(isBackwardWalkingHash, true);
+                }
+
+
+            }
+            else {
+                if (!isFacingLeft) {
+                    //backward towards the left
+                    animator.SetBool(isBackwardWalkingHash, true);
+                }
+                else {
+                    //Forward towards the left
+                    animator.SetBool(isWalkingHash, true);
+                }
+            }
 
         }
-        //Stop walking is movement not pressed while already wlaking
-        else if (!isMovementPressed && isWalking) {
+        //Stop walking in either direction if movement not pressed while already walking
+        else if (!isMovementPressed && (isWalking || isBackwardWalking)) {
             animator.SetBool(isWalkingHash, false);
+            animator.SetBool(isBackwardWalkingHash, false);
         }
 
-        //Start run if movement and run pressed while not currently runnning
+
+        //Start run if movement and run pressed while not currently runnning and facing direction of run
         if ((isMovementPressed && isRunPressed) && !isRunning) {
             animator.SetBool(isRunningHash, true);
         }
         //Stop run if movement or run are not pressed while currently running
         else if ((!isMovementPressed || !isRunPressed) && isRunning) {
             animator.SetBool(isRunningHash, false);
+        }
+
+        //flip run and backward run
+        if (wasFlippedLastFrame) {
+
         }
 
     }
@@ -285,19 +376,29 @@ public class PlayerController : MonoBehaviour {
     //DEV ONLY - DELETE BEFORE FINAL BUILD
     void Devbreak(InputAction.CallbackContext context) {
         Debug.Break();
+        if (!Application.isEditor) {
+            if (Time.timeScale != 0) {
+                Time.timeScale = 0;
+            }
+            else {
+                Time.timeScale = 1;
+            }
+        }
+
+
     }
 
     //**Coroutines**
-    IEnumerator TurnModel() {
+    IEnumerator TurnAnim() {
 
         //set new rotation
         Quaternion newRotation;
-        if (isFacingBackwards) {
-            isFacingBackwards = false;
+        if (isFacingLeft) {
+            isFacingLeft = false;
             newRotation = Quaternion.Euler(0, -90, 0);
         }
         else {
-            isFacingBackwards = true;
+            isFacingLeft = true;
             newRotation = Quaternion.Euler(0, 90, 0);
         }
 
@@ -306,7 +407,6 @@ public class PlayerController : MonoBehaviour {
 
         //wait for it to play
         yield return new WaitForSeconds(.2f);
-
 
         playerModel.transform.localRotation = newRotation;
 
@@ -326,7 +426,7 @@ public class PlayerController : MonoBehaviour {
         //wait for animation 4 frames
         yield return new WaitForSeconds(2 / 30f);
 
-        //apply upward force
+        //apply upward force        
         currentMovement.y = initJumpVelocity;
         currentRunMovement.y = initJumpVelocity;
         currentCrouchMovement.y = initJumpVelocity;
@@ -340,4 +440,34 @@ public class PlayerController : MonoBehaviour {
         //clear coroutine variables
         jumpAnimation = null;
     }
+
+    IEnumerator DashAnim() {
+        animator.CrossFade(dashForwardHash, 0.1f);
+
+        //test direction and flip force
+        if (!isFacingLeft) {
+            dashForce *= -1;
+        }
+
+        //apply dash force        
+        currentMovement.x = dashForce;
+        currentRunMovement.x = dashForce;
+        currentCrouchMovement.x = dashForce;
+
+        //wait for animation
+        yield return new WaitForSeconds(0.4f);
+
+        //reset movement i X dimension
+        currentMovement.x = 0;
+        currentRunMovement.x = 0;
+        currentCrouchMovement.x = 0;
+
+        //reset flipped force
+        if (!isFacingLeft) {
+            dashForce *= -1;
+        }
+
+        dashAnimation = null;
+    }
+
 }

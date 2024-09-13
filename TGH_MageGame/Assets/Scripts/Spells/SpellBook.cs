@@ -1,13 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
-public class SpellBook : MonoBehaviour
-{
+public class SpellBook : MonoBehaviour {
     [Header("Spell List")]
     [SerializeField] private List<Spell> spellBook;
 
@@ -35,30 +31,21 @@ public class SpellBook : MonoBehaviour
     private int activeSpell;
     #endregion
 
-    void Update()
-    {
+    void Update() {
         scrollValue = Input.mouseScrollDelta.y;
 
         // TEMP WORKAROUND UNTIL INPUT SYSTEM METHOD IS PRESENT
-        if (Input.GetMouseButtonDown(0))
-        {
-            Cast();
-        }
-        if (scrollValue != 0) 
-        { 
-            SetSpell(); 
+        if (scrollValue != 0) {
+            SetSpell();
         }
     }
 
-    private void Cast()
-    { 
-        if (isReadyToCast && playerStats.getCurrentMana() >= spellBook[activeSpell].ManaCost)
-        {
+    public void Cast() {
+        if (isReadyToCast && playerStats.getCurrentMana() >= spellBook[activeSpell].ManaCost) {
             GameObject projectile;
             int spellLevel = spellBook[activeSpell].CurrentLevel;
 
-            switch (spellLevel)
-            {
+            switch (spellLevel) {
                 case 1:
                     projectile = Instantiate(spellBook[activeSpell].SpawnObjectLvl1, spawnPosition.transform.position, spawnPosition.transform.rotation);
                     projectile.GetComponent<ProjectileMover>().SetAttributes(spellBook[activeSpell].Damage, spellBook[activeSpell].LifeSpan, spellBook[activeSpell].MoveSpeed, mousePositionTracker.CurrentPosition);
@@ -79,43 +66,35 @@ public class SpellBook : MonoBehaviour
     }
 
     // HANDLES DELAY IN ABILITY TO CAST AGAIN
-    public IEnumerator CastDelay()
-    {
+    public IEnumerator CastDelay() {
         isReadyToCast = false;
         yield return new WaitForSeconds(spellBook[ActiveSpell].CastDelayTime);
         isReadyToCast = true;
     }
 
     // SPELL INVENTORY CYCLING
-    private void SetSpell()
-    {
+    private void SetSpell() {
         // if 
-        if (scrollValue < 0f)
-        {
-            do
-            {
+        if (scrollValue < 0f) {
+            do {
                 activeSpell++;
 
-                if (activeSpell >= spellBook.Count)
-                {
+                if (activeSpell >= spellBook.Count) {
                     activeSpell = 0;
                 }
             }
             while (!spellBook[activeSpell].IsUnlocked);
         }
 
-        else if (scrollValue > 0f)
-        {
-            do
-            {
+        else if (scrollValue > 0f) {
+            do {
                 activeSpell--;
 
-                if (activeSpell < 0)
-                {
+                if (activeSpell < 0) {
                     activeSpell = spellBook.Count - 1;
                 }
             }
-            while (!spellBook[activeSpell].IsUnlocked) ;
+            while (!spellBook[activeSpell].IsUnlocked);
         }
 
         // RAISE AN EVENT THAT THE SPELL SELECTION HAS CHANGED
@@ -123,23 +102,19 @@ public class SpellBook : MonoBehaviour
     }
 
     // GETS ACTIVE SPELL TO USE IN UI TEXT
-    public string GetSpellUIData()
-    {
+    public string GetSpellUIData() {
         return $"{spellBook[activeSpell].Name}";
     }
 
     // GETTER FOR ACTIVE SPELL ANIMATION
-    public AnimationClip GetSpellAnimation()
-    {
+    public AnimationClip GetSpellAnimation() {
         return spellBook[activeSpell].CastAnimation;
     }
 
-    public void LevelUpActiveSpell()
-    {
+    public void LevelUpActiveSpell() {
         spellBook[activeSpell].LevelUp();
     }
-    public void LevelDownActiveSpell()
-    {
+    public void LevelDownActiveSpell() {
         spellBook[activeSpell].LevelDown();
     }
 }

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,9 +8,10 @@ public class GameManager : MonoBehaviour {
     [SerializeField] RectTransform crosshair;
     [SerializeField] Transform projectileSpawn;
     [SerializeField] Transform player;
+    Vector3 playerPivot;
 
     //DEV ONLY - REMOVE BEFORE BUILD
-    Transform debugObject;
+    Transform mousePositionObject;
     [Header("Bugs / Issues")]
     [SerializeField] private List<string> knownBugs = new List<string>();
 
@@ -20,13 +20,11 @@ public class GameManager : MonoBehaviour {
         Cursor.visible = false;
 
         //DEV ONLY - REMOVE BEFORE BUILD - setup debug object
-        debugObject = new GameObject().transform;
-        debugObject.name = "DEBUG - OBJECT";
+        mousePositionObject = new GameObject().transform;
+        mousePositionObject.name = "MousePosObject";
 
-        foreach (string bug in knownBugs)
-        {
-            if (bug != "")
-            {
+        foreach (string bug in knownBugs) {
+            if (bug != "") {
                 Debug.LogWarning(bug);
             }
         }
@@ -49,10 +47,10 @@ public class GameManager : MonoBehaviour {
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Mathf.Abs(Camera.main.transform.position.z)));
 
         //get position in center of player model
-        Vector3 centerMass = new Vector3(player.position.x, player.position.y + 1.162f, 0);
+        playerPivot = new Vector3(player.position.x, player.position.y + 1.162f, 0);
 
         //setup ray 
-        Ray ray = new Ray(centerMass, new Vector3(worldPos.x, worldPos.y, 0) - centerMass);
+        Ray ray = new Ray(playerPivot, new Vector3(worldPos.x, worldPos.y, 0) - playerPivot);
 
         //spell spawn point offset from centermass of player        
         float offset = 1.25f;//DEFAULT IS .783f ONCE SPELL COLLISION DONE
@@ -60,12 +58,20 @@ public class GameManager : MonoBehaviour {
         //move projectile spawn point
         projectileSpawn.transform.position = ray.GetPoint(offset);
 
-        //DEV ONLY - REMOVE BEFORE BUILD - set debug object to world pos of mouse
-        //debugObject.position = new Vector3(worldPos.x, worldPos.y, 0);
+        //set debug object to world pos of mouse
+        mousePositionObject.position = new Vector3(worldPos.x, worldPos.y, 0);
 
         //DEV ONLY - REMOVE BEFORE BUILD - draw ray
         //Debug.DrawRay(centerMass, debugObject.position - centerMass, Color.red);
     }
 
+
+    public Vector3 GetMousePositionInWorldSpace() {
+        return mousePositionObject.position;
+    }
+
+    public Vector3 GetPlayerPivot() {
+        return playerPivot;
+    }
 }
 
