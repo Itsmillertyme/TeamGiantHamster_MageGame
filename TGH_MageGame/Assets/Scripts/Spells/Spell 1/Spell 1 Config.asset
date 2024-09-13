@@ -17,23 +17,14 @@ MonoBehaviour:
   loreText: Our hero's first learned spell!
   currentLevel: 1
   maxLevel: 3
-  projectileCount: 3
   manaCost: 2
-  damage: 7
+  damage: 10
   lifeSpan: 3
   castDelayTime: 0.5
-  damageDuration: 0
   moveSpeed: 10
-  impactForce: 0
-  range: 0
   spawnObjectLvl1: {fileID: 3749226296805990834, guid: 6e7ee72289f06084e9733622b9545ab8, type: 3}
-  spawnObjectLvl2: {fileID: 1261645403529470534, guid: 170aabef6ec6bce4c9d7dc9b3a9590a5, type: 3}
-  spawnObjectLvl3: {fileID: 8334082122703048805, guid: a73fab02b75c8d04699efaea213f4c07, type: 3}
-  spawnSFX: {fileID: 0}
-  hitSFX: {fileID: 0}
+  spawnObjectLvl2: {fileID: 2199366279595633794, guid: 170aabef6ec6bce4c9d7dc9b3a9590a5, type: 3}
+  spawnObjectLvl3: {fileID: 2199366279595633794, guid: f74e8764a33d3324b94932cf21085764, type: 3}
   castAnimation: {fileID: 7400004, guid: 4accf136b05606f46a0657e3c51271ff, type: 3}
-  spawnFX: {fileID: 0}
-  hitFX: {fileID: 0}
-  icon: {fileID: 0}
   isUnlocked: 1
   targetPosition: {x: 0, y: 0, z: 0}

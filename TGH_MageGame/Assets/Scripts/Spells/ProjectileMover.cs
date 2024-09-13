@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ProjectileMover : MonoBehaviour
 {
-    private float lifeSpan;
-    private float moveSpeed;
-    private int damage;
+    [Header("Debugging")]
+    [SerializeField] private float lifeSpan;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private int damage;
+    [SerializeField] PlayerStats playerStats;
     private Vector3 targetPosition;
 
     // 
@@ -51,17 +53,13 @@ public class ProjectileMover : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyHealth>().RemoveFromHealth(damage);
-            Debug.Log("Collision with enemy");
         }
 
         else if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Collision with player");
+            playerStats.updateCurrentHealth(-damage);
         }
-        else
-        {
-            Destroy(gameObject);
-            Debug.Log("Collision with environment");
-        }
+
+        Destroy(gameObject);
     }
 }

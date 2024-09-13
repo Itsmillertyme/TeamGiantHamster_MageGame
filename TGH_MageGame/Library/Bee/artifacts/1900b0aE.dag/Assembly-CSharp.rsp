@@ -396,9 +396,11 @@
 "Assets/Scripts/AnimatorForward.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/DebugMenuController.cs"
-"Assets/Scripts/EnemyHealth.cs"
-"Assets/Scripts/GameEvent.cs"
-"Assets/Scripts/GameEventListener.cs"
+"Assets/Scripts/Enemy/EnemyHealth.cs"
+"Assets/Scripts/Enemy/EnemyHealthUI.cs"
+"Assets/Scripts/Enemy/Temporary Enemy Shoot.cs"
+"Assets/Scripts/Events/GameEvent.cs"
+"Assets/Scripts/Events/GameEventListener.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MouseFollower.cs"
 "Assets/Scripts/MousePositionTracking.cs"
@@ -411,7 +413,6 @@
 "Assets/Scripts/Spells/Spell UI.cs"
 "Assets/Scripts/Spells/SpellBook.cs"
 "Assets/Scripts/Spells/SpellConfiguration.cs"
-"Assets/Scripts/Temporary Enemy Shoot.cs"
 -langversion:9.0
 
 /deterministic

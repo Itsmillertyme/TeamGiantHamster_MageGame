@@ -31,21 +31,16 @@ public class SpellBook : MonoBehaviour
     [Header("Debugging")]
     private float scrollValue;
     private Coroutine castDelay;
-    private bool isReadyToCast;
+    private bool isReadyToCast = true;
     private int activeSpell;
     #endregion
-
-    private void Start()
-    {
-        isReadyToCast = true;
-    }
 
     void Update()
     {
         scrollValue = Input.mouseScrollDelta.y;
 
         // TEMP WORKAROUND UNTIL INPUT SYSTEM METHOD IS PRESENT
-        if (Input.GetKeyDown(KeyCode.L) || Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Cast();
         }
@@ -56,16 +51,34 @@ public class SpellBook : MonoBehaviour
     }
 
     private void Cast()
-    {
-        spellBook[activeSpell].SetTargetPosition(mousePositionTracker.GetMousePosition());
+    { 
         if (isReadyToCast && playerStats.getCurrentMana() >= spellBook[activeSpell].ManaCost)
         {
-            spellBook[activeSpell].Cast(spawnPosition);
+            GameObject projectile;
+            int spellLevel = spellBook[activeSpell].CurrentLevel;
+
+            switch (spellLevel)
+            {
+                case 1:
+                    projectile = Instantiate(spellBook[activeSpell].SpawnObjectLvl1, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                    projectile.GetComponent<ProjectileMover>().SetAttributes(spellBook[activeSpell].Damage, spellBook[activeSpell].LifeSpan, spellBook[activeSpell].MoveSpeed, mousePositionTracker.CurrentPosition);
+                    break;
+                case 2:
+                    projectile = Instantiate(spellBook[activeSpell].SpawnObjectLvl2, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                    projectile.GetComponent<ProjectileMover>().SetAttributes(spellBook[activeSpell].Damage, spellBook[activeSpell].LifeSpan, spellBook[activeSpell].MoveSpeed, mousePositionTracker.CurrentPosition);
+                    break;
+                case 3:
+                    projectile = Instantiate(spellBook[activeSpell].SpawnObjectLvl3, spawnPosition.transform.position, spawnPosition.transform.rotation);
+                    projectile.GetComponent<ProjectileMover>().SetAttributes(spellBook[activeSpell].Damage, spellBook[activeSpell].LifeSpan, spellBook[activeSpell].MoveSpeed, mousePositionTracker.CurrentPosition);
+                    break;
+            }
+
             playerStats.updateCurrentMana(-spellBook[activeSpell].ManaCost);
             castDelay = StartCoroutine(CastDelay());
         }
     }
 
+    // HANDLES DELAY IN ABILITY TO CAST AGAIN
     public IEnumerator CastDelay()
     {
         isReadyToCast = false;
@@ -114,12 +127,19 @@ public class SpellBook : MonoBehaviour
     {
         return $"{spellBook[activeSpell].Name}";
     }
-    // update active spell
-    // shoot using enum to determine method
 
     // GETTER FOR ACTIVE SPELL ANIMATION
     public AnimationClip GetSpellAnimation()
     {
         return spellBook[activeSpell].CastAnimation;
+    }
+
+    public void LevelUpActiveSpell()
+    {
+        spellBook[activeSpell].LevelUp();
+    }
+    public void LevelDownActiveSpell()
+    {
+        spellBook[activeSpell].LevelDown();
     }
 }

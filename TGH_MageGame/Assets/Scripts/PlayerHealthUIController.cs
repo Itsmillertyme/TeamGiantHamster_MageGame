@@ -25,10 +25,10 @@ public class PlayerHealthUIController : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.K)) {
+        if (Input.GetKey(KeyCode.K)) {
             playerStats.updateCurrentHealth(-5);
         }
-        if (Input.GetKeyDown(KeyCode.L)) {
+        if (Input.GetKey(KeyCode.L)) {
             playerStats.updateCurrentHealth(5);
         }
     }

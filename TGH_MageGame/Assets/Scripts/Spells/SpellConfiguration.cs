@@ -12,11 +12,13 @@ public class Spell : ScriptableObject
     [SerializeField] private new string name;
     [SerializeField] private string description;
     [SerializeField] private string loreText;
+
     [Header("Levels")]
     [SerializeField] private int currentLevel;
     [SerializeField] private int maxLevel;
+
     [Header("Spell Attributes")]
-    [SerializeField] private int projectileCount;
+    //[SerializeField] private int projectileCount;
     [SerializeField] private int manaCost;
     [SerializeField] private int damage; // TOTAL COMBINED DAMAGE
     [SerializeField] private float lifeSpan;
@@ -25,6 +27,7 @@ public class Spell : ScriptableObject
     [SerializeField] private float moveSpeed;
     //[SerializeField] private float impactForce;
     //[SerializeField] private float range;
+
     [Header("Prefab")]
     [SerializeField] private GameObject spawnObjectLvl1;
     [SerializeField] private GameObject spawnObjectLvl2;
@@ -32,21 +35,26 @@ public class Spell : ScriptableObject
     //[Header("SFX")]
     //[SerializeField] private AudioClip spawnSFX;
     //[SerializeField] private AudioClip hitSFX;
+
     [Header("Animation")]
     [SerializeField] private AnimationClip castAnimation;
+
     //[Header("FX")]
     //[SerializeField] private ParticleSystem spawnFX;
     //[SerializeField] private ParticleSystem hitFX;
+
     //[Header("UI Icon")]
     //[SerializeField] private Image icon;
-    [SerializeField] private enum MoveMethod { Linear, Curvilinear, Fixed }
-    [SerializeField] private enum Element { Air, Earth, Fire, Water }
+    //[SerializeField] private enum MoveMethod { Linear, Curvilinear, Fixed }
+    //[SerializeField] private enum Element { Air, Earth, Fire, Water }
     [Header("Unlock Status")]
     [SerializeField] private bool isUnlocked;
+
     [Header("Debugging")]
     [SerializeField] private Vector3 targetPosition;
 
-    // GETTER
+    #region // GETTERS
+    public int CurrentLevel => currentLevel;
     public int ManaCost => manaCost;
     public int Damage => damage;
     public float MoveSpeed => moveSpeed;
@@ -55,32 +63,26 @@ public class Spell : ScriptableObject
     public string Name => name;
     public AnimationClip CastAnimation => castAnimation;
     public Vector3 TargetPosition => targetPosition;
-
     public bool IsUnlocked => isUnlocked;
+    public GameObject SpawnObjectLvl1 => spawnObjectLvl1;
+    public GameObject SpawnObjectLvl2 => spawnObjectLvl2;
+    public GameObject SpawnObjectLvl3 => spawnObjectLvl3;
+    #endregion
 
-    public void Cast(Transform spawnPosition)
+    public void LevelUp()
     {
-        GameObject projectile;
-        switch (currentLevel)
+        if (currentLevel < maxLevel)
         {
-            case 1:
-                projectile = Instantiate(spawnObjectLvl1, spawnPosition.transform.position, spawnPosition.transform.rotation);
-                projectile.GetComponent<ProjectileMover>().SetAttributes(Damage, LifeSpan, MoveSpeed, TargetPosition);
-                break;
-            case 2:
-                projectile = Instantiate(spawnObjectLvl2, spawnPosition.transform.position, spawnPosition.transform.rotation);
-                break;
-            case 3:
-                Instantiate(spawnObjectLvl3, spawnPosition.transform.position, spawnPosition.transform.rotation);
-                break;
-            default: 
-                Instantiate(spawnObjectLvl1, spawnPosition.transform.position, spawnPosition.transform.rotation);
-                break;
+            currentLevel++;
         }
     }
 
-    public void SetTargetPosition(Vector3 targetPosition)
+    // TEMP for debugging
+    public void LevelDown()
     {
-        this.targetPosition = targetPosition;
+        if (currentLevel > 1)
+        {
+            currentLevel--;
+        }
     }
 }

@@ -2,8 +2,11 @@ using UnityEngine;
 
 [CreateAssetMenu]
 
-public class MousePositionTracking : ScriptableObject {
+public class MousePositionTracking : ScriptableObject
+{
     [SerializeField] private Vector3 currentPosition;
+
+    // GETTER
     public Vector3 CurrentPosition => currentPosition;
 
     public Vector3 GetMousePosition() {
@@ -14,6 +17,4 @@ public class MousePositionTracking : ScriptableObject {
         currentPosition = Camera.main.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, Camera.main.transform.position.z));
         return currentPosition;
     }
-
-
 }
