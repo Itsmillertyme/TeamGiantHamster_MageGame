@@ -3548,10 +3548,6 @@ MonoBehaviour:
   projectileSpawn: {fileID: 255103196}
   player: {fileID: 1455437823}
   knownBugs:
-  - Projectile shoots backwards if mouse pos is too close to player (between player
-    and spawn pos)
-  - Need action asset code for shoot. currently being worked around by using old
-    input system in spellbook.
   - X is being moved on the spawn position which is causing inaccurate trajectory
   - 'There''s no way to get current health without having a serialized field. Each
     projectile has a hard reference to player stats. '
