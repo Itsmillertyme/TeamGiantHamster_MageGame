@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: 292655169}
   - component: {fileID: 292655168}
   - component: {fileID: 292655171}
+  - component: {fileID: 292655172}
   m_Layer: 0
   m_Name: PrimitiveHUD
   m_TagString: Untagged
@@ -1550,6 +1551,19 @@ MonoBehaviour:
   location3Text: {fileID: 1232777366}
   location4Text: {fileID: 2077548051}
   location5Text: {fileID: 535159430}
+--- !u!114 &292655172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292655166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b48a32e58d4b645b527c1ccc28de3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmpControlsDebug: {fileID: 1461972450}
 --- !u!1 &305393055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,7 +4102,14 @@ MonoBehaviour:
     Dev-Debug -
     I
 
-    Dev-Pause - B'
+    Dev-Pause - B
+
+    Dev-Refill Mana - M
+
+    Dev-Refill Health - L
+
+    Press
+    ''O'' To Hide This Menu'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

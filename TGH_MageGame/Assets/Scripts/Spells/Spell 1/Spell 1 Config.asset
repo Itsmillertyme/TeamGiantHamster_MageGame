@@ -17,11 +17,11 @@ MonoBehaviour:
   loreText: Our hero's first learned spell!
   currentLevel: 1
   maxLevel: 3
-  manaCost: 2
+  manaCost: 1
   damage: 10
   lifeSpan: 3
-  castDelayTime: 0.5
-  moveSpeed: 10
+  castDelayTime: 0.3
+  moveSpeed: 12
   spawnObjectLvl1: {fileID: 3749226296805990834, guid: 6e7ee72289f06084e9733622b9545ab8, type: 3}
   spawnObjectLvl2: {fileID: 2199366279595633794, guid: 170aabef6ec6bce4c9d7dc9b3a9590a5, type: 3}
   spawnObjectLvl3: {fileID: 2199366279595633794, guid: f74e8764a33d3324b94932cf21085764, type: 3}
