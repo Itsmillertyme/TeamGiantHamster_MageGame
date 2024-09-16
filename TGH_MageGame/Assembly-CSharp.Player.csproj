@@ -64,6 +64,7 @@
     <Compile Include="Assets\Misc\ActionAsset.cs" />
     <Compile Include="Assets\Scripts\PlayerHealthUIController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\ObjectHider.cs" />
     <Compile Include="Assets\Scripts\Enemy\Temporary Enemy Shoot.cs" />
     <Compile Include="Assets\Scripts\MouseFollower.cs" />
     <Compile Include="Assets\Scripts\PlayerManaUIController.cs" />
