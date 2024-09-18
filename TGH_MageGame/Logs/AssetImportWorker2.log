@@ -1,0 +1,1075 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.1f1 (a6dd9a634651) revision 10935706'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 65475 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57669
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [28040] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1292760877 [EditorId] 1292760877 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28040] Host "[IP] 10.0.0.40 [Port] 0 [Flags] 2 [Guid] 1292760877 [EditorId] 1292760877 [Version] 1048832 [Id] WindowsEditor(7,Corys-Workstation) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.1f1 (a6dd9a634651)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/corya/Documents/GitHub/TeamGiantHamster_MageGame/TGH_MageGame/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.1f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.016935 seconds.
+- Loaded All Assemblies, in  0.469 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 307 ms
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.699 seconds
+Domain Reload Profiling: 1163ms
+	BeginReloadAssembly (153ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (186ms)
+		LoadAssemblies (148ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (182ms)
+			TypeCache.Refresh (180ms)
+				TypeCache.ScanAssembly (166ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (699ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (647ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (434ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (151ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\corya\Documents\GitHub\TeamGiantHamster_MageGame\TGH_MageGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.922 seconds
+Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.696 seconds
+Domain Reload Profiling: 1609ms
+	BeginReloadAssembly (334ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (483ms)
+		LoadAssemblies (397ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (174ms)
+				TypeCache.ScanAssembly (158ms)
+			BuildScriptInfoCaches (24ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (696ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (484ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (371ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3702 unused Assets / (1.4 MB). Loaded Objects now: 4282.
+Memory consumption went from 125.3 MB to 123.9 MB.
+Total: 5.572200 ms (FindLiveObjects: 0.420300 ms CreateObjectMapping: 0.465500 ms MarkObjects: 3.554700 ms  DeleteObjects: 1.130700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 924.286298 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/Preview.png
+  artifactKey: Guid(e5dee3dd98d541e49af386e86a02951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/Preview.png using Guid(e5dee3dd98d541e49af386e86a02951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4181c5446a12fdaf7787a229758e3e8c') in 0.0641787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.676505 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/Vector
+  artifactKey: Guid(4c22d84866bf22f4fb00e707d2243921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/Vector using Guid(4c22d84866bf22f4fb00e707d2243921) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '102c54774f80cfcf8d66e97559404ed5') in 0.0006199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.769041 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina
+  artifactKey: Guid(4cbc98d07b0fe734cbd8972be971366c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina using Guid(4cbc98d07b0fe734cbd8972be971366c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11bef2944347d5e9c2e51fd2b662c7e7') in 0.0005581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071893 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair001.png
+  artifactKey: Guid(b30ecad4f4d9b7248a87b912c6f6aca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair001.png using Guid(b30ecad4f4d9b7248a87b912c6f6aca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c1f7c5737c0774a73050a2f0092f5c9') in 0.0121351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair005.png
+  artifactKey: Guid(2608f7b74525ad342b5a0e0d3c5beea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair005.png using Guid(2608f7b74525ad342b5a0e0d3c5beea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56fb1ab1f9600145b4608f166ca0ec70') in 0.0156927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair008.png
+  artifactKey: Guid(c65b22e04ea0e4446b404c31ac913137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair008.png using Guid(c65b22e04ea0e4446b404c31ac913137) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fd1f1a3af95246ab5b043dec59e35d3') in 0.0149458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.633882 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair012.png
+  artifactKey: Guid(b39c5736bcc3c2e45a4b453843aa1386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair012.png using Guid(b39c5736bcc3c2e45a4b453843aa1386) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27950c11ae4dd8008fca972712289d8a') in 0.0181242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.444123 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair014.png
+  artifactKey: Guid(d973eaa869304684ab25c7d09975f227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair014.png using Guid(d973eaa869304684ab25c7d09975f227) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4cb49ce6ef9bb8c839be0a0625eb64c') in 0.0104023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.328763 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair016.png
+  artifactKey: Guid(c43d2527780a39347b32389ec4e394ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair016.png using Guid(c43d2527780a39347b32389ec4e394ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94c40d9b30ae3d15cc541d1461e5a3bd') in 0.0112694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.234631 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair018.png
+  artifactKey: Guid(b305f239c8abc9140a993bd19e83b574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair018.png using Guid(b305f239c8abc9140a993bd19e83b574) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abec43f2f1f00d10b14aff1df1e9d094') in 0.0141228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.219813 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair020.png
+  artifactKey: Guid(dd05fcdca5b51f346ae55654f883aa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair020.png using Guid(dd05fcdca5b51f346ae55654f883aa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '991b8d7a031ba8394a918e3d606aca31') in 0.0132742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.607921 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair022.png
+  artifactKey: Guid(4c1761bb001da3142bbe210209e1682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair022.png using Guid(4c1761bb001da3142bbe210209e1682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d3199c73f270ab91edea981a7674397') in 0.0078687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.413306 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair024.png
+  artifactKey: Guid(ff11a14a16cff1341b86525b74066d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair024.png using Guid(ff11a14a16cff1341b86525b74066d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b322242ce1d6564a0aa0d6846ab361e0') in 0.0073845 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.419826 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair026.png
+  artifactKey: Guid(cc25e61403ab3804b91853e4cc60ca1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair026.png using Guid(cc25e61403ab3804b91853e4cc60ca1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4726cecc6c8bd9d9583e03e6a40d060f') in 0.0076973 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087381 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair028.png
+  artifactKey: Guid(fc8b029dcc41fd94e859152677b8b454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair028.png using Guid(fc8b029dcc41fd94e859152677b8b454) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b16287c48e222cf8167bc3309938d3d6') in 0.0078565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.383805 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair030.png
+  artifactKey: Guid(ded6d838cdeb80449a192e837088e110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair030.png using Guid(ded6d838cdeb80449a192e837088e110) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f52366a0d043d6087717059c541b7df') in 0.0178493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.128498 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair032.png
+  artifactKey: Guid(b0b3c23680f248f41b8d474eb0b418f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair032.png using Guid(b0b3c23680f248f41b8d474eb0b418f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06aa7e872a683ab99f1f77261e9b739c') in 0.0088767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.415658 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair034.png
+  artifactKey: Guid(fd47a092dc27b814e9f9795fc750e8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair034.png using Guid(fd47a092dc27b814e9f9795fc750e8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fbf5751493dee99f1b310096fdacfa0') in 0.0082376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.487269 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair036.png
+  artifactKey: Guid(b5ae00c1c63bd2746b2712227cb3231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair036.png using Guid(b5ae00c1c63bd2746b2712227cb3231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cae4f81cbc172c587d409127ca04ad7') in 0.0154905 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.362360 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair038.png
+  artifactKey: Guid(7002252ab92802f4181f5d67c47fc9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair038.png using Guid(7002252ab92802f4181f5d67c47fc9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd894fddd190fc303401d906501c83d5') in 0.0211195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065633 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair040.png
+  artifactKey: Guid(fe83e122eac8d9048bc0775ee3aa649d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair040.png using Guid(fe83e122eac8d9048bc0775ee3aa649d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c5f8d6e4ecb98ba354f7347eee8caab') in 0.008275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.356851 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair042.png
+  artifactKey: Guid(d825d9a210913b64eb52c337d2dba279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair042.png using Guid(d825d9a210913b64eb52c337d2dba279) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d86ebe552ab70e84d763ba7bd30d268') in 0.0075579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.404391 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair044.png
+  artifactKey: Guid(51cb1ae8f9be6be45a44b0e8c181da5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair044.png using Guid(51cb1ae8f9be6be45a44b0e8c181da5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17f6162b94851b037da7a7af905b82d2') in 0.0150807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.732491 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair046.png
+  artifactKey: Guid(78cea380b054a1f49a0e188bbee23cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair046.png using Guid(78cea380b054a1f49a0e188bbee23cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df078e9196b9426a6244f12babe10371') in 0.0207732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064693 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair048.png
+  artifactKey: Guid(fbf773e3a2e425c43a8ed9a2f43699d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair048.png using Guid(fbf773e3a2e425c43a8ed9a2f43699d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30fcfd2097f56f48ecff195de8077165') in 0.0177005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.308305 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair050.png
+  artifactKey: Guid(35114f87654570848bb57b6e19de9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair050.png using Guid(35114f87654570848bb57b6e19de9c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1911a343562d7537ddcb7e950b2af17d') in 0.0102486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.326630 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair052.png
+  artifactKey: Guid(2cb7d1e4d1d4bdc48b4186a06c384e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair052.png using Guid(2cb7d1e4d1d4bdc48b4186a06c384e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fc2515c666f9e0495841a7877e52819') in 0.0129588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.622649 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair054.png
+  artifactKey: Guid(83f289ba8e5e8e84ba3af23cbb18598a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair054.png using Guid(83f289ba8e5e8e84ba3af23cbb18598a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc82028a7b9aa7257dd489ff96f9e19c') in 0.0138594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.449220 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair056.png
+  artifactKey: Guid(1705220920cb3a94aa202e220f75f219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair056.png using Guid(1705220920cb3a94aa202e220f75f219) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '702e15a5d21f26a35d10998d1d20af50') in 0.0091585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.454504 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair058.png
+  artifactKey: Guid(d5e9cfc26f5a9fb46825772121912c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair058.png using Guid(d5e9cfc26f5a9fb46825772121912c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a17aba2d8938602280a8c9f7974199e') in 0.0175775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.874339 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair060.png
+  artifactKey: Guid(57dbd6dade49da9409f08176de82f95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair060.png using Guid(57dbd6dade49da9409f08176de82f95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67321a930228f0c30dc0d7f8cfc0207a') in 0.0085888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900640 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair062.png
+  artifactKey: Guid(7d4e794d029a63f48a4b687d870de43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair062.png using Guid(7d4e794d029a63f48a4b687d870de43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd600fe5a2dfb796f535af02336ed2a2') in 0.007358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.095629 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair064.png
+  artifactKey: Guid(21b65fdff33ecfa41bda59dfff45d743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair064.png using Guid(21b65fdff33ecfa41bda59dfff45d743) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '096db185503771ebbddfd79434651a17') in 0.0073176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.142410 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair066.png
+  artifactKey: Guid(c49b4077163f11c408e668e3fff27ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair066.png using Guid(c49b4077163f11c408e668e3fff27ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4b1f3329d6dd6c624c176ecc6da78db') in 0.0073287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.987204 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair068.png
+  artifactKey: Guid(a4f8a8926eedf4c40b1149ed74ce699d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair068.png using Guid(a4f8a8926eedf4c40b1149ed74ce699d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc523c13dfd3a7f13ee2dcfd1e1cdc2c') in 0.0152113 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.759977 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair070.png
+  artifactKey: Guid(787595dedcae69548b4718b36ea50646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair070.png using Guid(787595dedcae69548b4718b36ea50646) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae49427bf9bb0e5284be1be5655e91e3') in 0.0098081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.363224 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair072.png
+  artifactKey: Guid(df8ec69d299025040b231963428bae7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair072.png using Guid(df8ec69d299025040b231963428bae7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cde48576632be0e1f1ed9cee2007aac6') in 0.010399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.570523 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair074.png
+  artifactKey: Guid(ae837fc6582806e4489d9f7e74eb2a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair074.png using Guid(ae837fc6582806e4489d9f7e74eb2a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b95bef39f5527d9b990cc256faaf17b') in 0.0185027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.496834 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair076.png
+  artifactKey: Guid(e889f066689171948b23ea794caab4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair076.png using Guid(e889f066689171948b23ea794caab4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4ae78640ec41772d915210e99dfdaa0') in 0.0167583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.377122 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair078.png
+  artifactKey: Guid(78ee8445281a0b2498c5355507cfd15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair078.png using Guid(78ee8445281a0b2498c5355507cfd15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '245bf7c7aa13410dbe33e766798ffb3f') in 0.0219821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.458656 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair080.png
+  artifactKey: Guid(250a531d3c1f3504b8c21669b72d9f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair080.png using Guid(250a531d3c1f3504b8c21669b72d9f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6b9d6bfc8225f882fd52d3c63b36f9d') in 0.0177048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.272215 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair082.png
+  artifactKey: Guid(a9548709158a2da4b81cc9d020e7d7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair082.png using Guid(a9548709158a2da4b81cc9d020e7d7c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd709588576d6bfe7bdc1a35bd1522dfd') in 0.0155323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.933732 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair084.png
+  artifactKey: Guid(5634b3a961fdd03418be28f1b8627b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair084.png using Guid(5634b3a961fdd03418be28f1b8627b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b1afbd17393e2a4b83b35c77d45df67') in 0.0139428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.618620 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair086.png
+  artifactKey: Guid(657945a3cc6098149b61a69da77661a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair086.png using Guid(657945a3cc6098149b61a69da77661a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbc95975bd756219a1827e4d72bfa5bd') in 0.013675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.305999 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair088.png
+  artifactKey: Guid(0ea43d665a38c2d4c84c99e75b45266c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair088.png using Guid(0ea43d665a38c2d4c84c99e75b45266c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1b0f11afc1dc99386f53878c3e39fa0') in 0.0134759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.960870 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair090.png
+  artifactKey: Guid(cd11cced25d49c541a4d75713326681e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair090.png using Guid(cd11cced25d49c541a4d75713326681e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f8ce8ddb4cef8665222da563d5d92d9') in 0.0148185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.155066 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair092.png
+  artifactKey: Guid(6c415709936dfa941b223cb578423051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair092.png using Guid(6c415709936dfa941b223cb578423051) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0de4bc614b7c7778b19641b76de78cde') in 0.0268732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.575173 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair094.png
+  artifactKey: Guid(fd5aa73e5118ecb42a2a13a4d6aa396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair094.png using Guid(fd5aa73e5118ecb42a2a13a4d6aa396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8905da2fae41bb92c91dd201897687bf') in 0.0115281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.510168 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair096.png
+  artifactKey: Guid(aeaa8d0564100ae45821bdcd58e69d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair096.png using Guid(aeaa8d0564100ae45821bdcd58e69d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e1b189970b700eb8280972833c36748') in 0.0134145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055421 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair098.png
+  artifactKey: Guid(cc7424a27b9c84944ac44c641ec748d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair098.png using Guid(cc7424a27b9c84944ac44c641ec748d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b7e5f85a186c8cae5a5ccf880467fb8') in 0.0127742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.468653 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair100.png
+  artifactKey: Guid(a04d68621f35f7a44ba9c9297d0dec6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair100.png using Guid(a04d68621f35f7a44ba9c9297d0dec6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a59b6cc8e7b73d35ea2bf544bd947f4') in 0.0116204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.349164 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair102.png
+  artifactKey: Guid(846bbbb64342a9041aa6e7fba0f0e450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair102.png using Guid(846bbbb64342a9041aa6e7fba0f0e450) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0711d9cf81bccc43896f1d7c75acf556') in 0.0132143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.288052 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair104.png
+  artifactKey: Guid(765dd10dcec0c2f40a5db0db0d1d1d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair104.png using Guid(765dd10dcec0c2f40a5db0db0d1d1d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0bbc0ae994257e2e2b67c0dbfa0cf77') in 0.0108134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.635817 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair106.png
+  artifactKey: Guid(c2a855efda251e848bda4f503c9694f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair106.png using Guid(c2a855efda251e848bda4f503c9694f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f14147989112c8a135606e98cfd057e') in 0.0199538 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.592037 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair108.png
+  artifactKey: Guid(2d69a658a21634542a1353734d15df7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair108.png using Guid(2d69a658a21634542a1353734d15df7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3e2e55f483464061a42f3c84ec9f75f') in 0.0191828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.457715 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair110.png
+  artifactKey: Guid(226e67af8db802c4cb0eeda661de4928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair110.png using Guid(226e67af8db802c4cb0eeda661de4928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '461058ed618b21401939e57a02fb16dd') in 0.0095439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.189956 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair112.png
+  artifactKey: Guid(193773bd095d30f41910305a1c00cfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair112.png using Guid(193773bd095d30f41910305a1c00cfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4fdb083f4f1e1e0c1879c8ef581b653') in 0.0183001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.446582 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair114.png
+  artifactKey: Guid(796988c1251c2b5439a619b7bfadd797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair114.png using Guid(796988c1251c2b5439a619b7bfadd797) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ceb3d26cfdb086d38a7f13ed9fc3e9f1') in 0.0199444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026283 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair116.png
+  artifactKey: Guid(223d41da0ace77d4fa0f61385d095a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair116.png using Guid(223d41da0ace77d4fa0f61385d095a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0bdc33521c1ff25223a3aad97ed17d72') in 0.0080826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.402875 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair118.png
+  artifactKey: Guid(31290221731b3f240bdfaf299d5dea04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair118.png using Guid(31290221731b3f240bdfaf299d5dea04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24ad579e71f643d26db8905f1de373ed') in 0.007333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039888 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair120.png
+  artifactKey: Guid(bb3c976844f777f43b0aa5260370fa19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair120.png using Guid(bb3c976844f777f43b0aa5260370fa19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a530a74ec692e8c80284eebebb42d4ac') in 0.0081217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.397169 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair122.png
+  artifactKey: Guid(e7e7fce4d5d94134f957cdd6cdcd9f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair122.png using Guid(e7e7fce4d5d94134f957cdd6cdcd9f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '075680a31e09af2e33082ff9ede7525e') in 0.0080257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.408648 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair124.png
+  artifactKey: Guid(41a0c2346e008e04a9fb71dcf0e8c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair124.png using Guid(41a0c2346e008e04a9fb71dcf0e8c2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2be5f57cf65310919c504cf61f5135b8') in 0.0230538 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049718 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair126.png
+  artifactKey: Guid(e972402f17baf0945b5c767e8676508f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair126.png using Guid(e972402f17baf0945b5c767e8676508f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bda32e5aeaee1e55895ce74fac8dcc8e') in 0.0090017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.359286 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair128.png
+  artifactKey: Guid(cbedf576f1e239e41b359f3d6cd54c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair128.png using Guid(cbedf576f1e239e41b359f3d6cd54c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '545e0ad2fadfe65793f81f72b19cf569') in 0.0074652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.339470 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair130.png
+  artifactKey: Guid(c8b5e28e7c0e897499865874610b3439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair130.png using Guid(c8b5e28e7c0e897499865874610b3439) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1db183bf7af1a9127858ce5757a54053') in 0.010639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.382893 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair132.png
+  artifactKey: Guid(1c0d0cc851ccf384f83b0ecdfe1fc705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair132.png using Guid(1c0d0cc851ccf384f83b0ecdfe1fc705) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7857621f9b8147a59ec759c43b912b82') in 0.0083086 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.319116 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair134.png
+  artifactKey: Guid(c074c647c6eab654daceeb44e1f4126d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair134.png using Guid(c074c647c6eab654daceeb44e1f4126d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '182406ca00d7b93520b01861b6481323') in 0.0076525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053445 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair136.png
+  artifactKey: Guid(0fee3469f89454b4188a25e140c4b5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair136.png using Guid(0fee3469f89454b4188a25e140c4b5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '040cd86d7a65c7c486a6d2aec4ff03e3') in 0.0089108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.303476 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair138.png
+  artifactKey: Guid(da58082f8dcf33649a0e9e2ed7a90a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair138.png using Guid(da58082f8dcf33649a0e9e2ed7a90a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63270f40b383368116d780149f1456f4') in 0.0177858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.309316 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair140.png
+  artifactKey: Guid(540bae0377facf14d8b5db8992564fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair140.png using Guid(540bae0377facf14d8b5db8992564fa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a24a3ca25f6e12b8b7ce191f8f5e190') in 0.010557 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.060600 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair142.png
+  artifactKey: Guid(991f512ac0de69649b91b3672f1f059e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair142.png using Guid(991f512ac0de69649b91b3672f1f059e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '075b3a8ad770bc40cd3a54e60b4da234') in 0.0099888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.283227 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair144.png
+  artifactKey: Guid(e5f90784fc405714885317feb5355d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair144.png using Guid(e5f90784fc405714885317feb5355d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1403ce7071f698c6889a5e05689d973d') in 0.0089541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.344768 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair146.png
+  artifactKey: Guid(8d17cdf40ad15614daf5e6d592cb2208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair146.png using Guid(8d17cdf40ad15614daf5e6d592cb2208) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ab452e7fe0c9a33b3e41069b1c5818a') in 0.0148954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.326530 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair148.png
+  artifactKey: Guid(811bccc1119a313468f1ca3a7a3f676c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair148.png using Guid(811bccc1119a313468f1ca3a7a3f676c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce6599062b1d195ba17a5152b1955352') in 0.010322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043470 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair150.png
+  artifactKey: Guid(6dfb6cd107e6c234aa00178c2540e54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair150.png using Guid(6dfb6cd107e6c234aa00178c2540e54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e506ef4b7a2d63c5041088bb0dd0d162') in 0.0091279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.335216 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair152.png
+  artifactKey: Guid(da5fcf1a16ac9b44bb0381162ea96f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair152.png using Guid(da5fcf1a16ac9b44bb0381162ea96f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b48ac2499fcb8769d8515f25a53219d5') in 0.0137285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048308 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair154.png
+  artifactKey: Guid(73077fea5f8001440a3d37c8677a6944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair154.png using Guid(73077fea5f8001440a3d37c8677a6944) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49a691af3846699bbda4fa79290568c2') in 0.0106307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.322739 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair156.png
+  artifactKey: Guid(4b6c5e3b406559a42bbe9a8229ec2980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair156.png using Guid(4b6c5e3b406559a42bbe9a8229ec2980) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5fda356db3b9b639fc72713a0f38824e') in 0.0123438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.953285 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair158.png
+  artifactKey: Guid(1260da855978c3e48a54b9f8dd32e0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair158.png using Guid(1260da855978c3e48a54b9f8dd32e0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b62dd8e4d830b65a7e1d17f0d10fd89d') in 0.0183242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.277592 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair160.png
+  artifactKey: Guid(e40842a8f494e2b46b905080698b5807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair160.png using Guid(e40842a8f494e2b46b905080698b5807) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9466ea77d015583b585e66f0571f547d') in 0.010677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030878 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair162.png
+  artifactKey: Guid(0b1ca935608ae894b9071541a793d9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair162.png using Guid(0b1ca935608ae894b9071541a793d9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1089fc43d22fb69a49ef7c19b5f2a559') in 0.0086382 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.350458 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair164.png
+  artifactKey: Guid(7e1173bedf4460d44baf193e17dd7f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair164.png using Guid(7e1173bedf4460d44baf193e17dd7f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a43608be178811ddee145e707024047') in 0.0085199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036633 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair166.png
+  artifactKey: Guid(be4779d84e04cbd47a81c4819e48ee37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair166.png using Guid(be4779d84e04cbd47a81c4819e48ee37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce9c428a85aaf277f6790a20b1ab1026') in 0.012591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.864805 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair168.png
+  artifactKey: Guid(2e8f082cd4713ab4db6036bd0172b01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair168.png using Guid(2e8f082cd4713ab4db6036bd0172b01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18975c295812fe85b544151872f549af') in 0.0254367 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044448 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair170.png
+  artifactKey: Guid(7474c3327fa18684bb22e47ed8bb59a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair170.png using Guid(7474c3327fa18684bb22e47ed8bb59a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a220358e592626f01dad0372231472ee') in 0.0124703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.665790 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair172.png
+  artifactKey: Guid(6e6165d646c62b7459e3fbb65bf04e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair172.png using Guid(6e6165d646c62b7459e3fbb65bf04e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18712dbab313255e5800036f281d1921') in 0.0186665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.107196 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair174.png
+  artifactKey: Guid(33a67dcad43ca794c9dbfeb9b08516dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair174.png using Guid(33a67dcad43ca794c9dbfeb9b08516dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00ac6dcba77bb2836cc54738a2521b8d') in 0.0130619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022401 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair176.png
+  artifactKey: Guid(24d3f685ca127a543a1688f67826181c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair176.png using Guid(24d3f685ca127a543a1688f67826181c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8456432020b37f3f4e3733ee62444de4') in 0.0107885 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.419213 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair178.png
+  artifactKey: Guid(5d0eee0db5c291e4ea7732b7affdcb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair178.png using Guid(5d0eee0db5c291e4ea7732b7affdcb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4039f85ca3e3ee641d384835097cdcb2') in 0.0251828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.386155 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair180.png
+  artifactKey: Guid(a79fc0ea452fc1642a104f48794f757a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair180.png using Guid(a79fc0ea452fc1642a104f48794f757a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad2b31a122ed1444a1804ccad325aa9e') in 0.0106374 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076059 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair182.png
+  artifactKey: Guid(2fcca0ea83487174bb53d828be7311a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair182.png using Guid(2fcca0ea83487174bb53d828be7311a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '921c1fe8507304deb12cbfda54951c29') in 0.0101214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.943628 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair184.png
+  artifactKey: Guid(276b2957bdcf8374282a12218a71338c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair184.png using Guid(276b2957bdcf8374282a12218a71338c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c04ccc44d126cec265cc82319d0de416') in 0.0185987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083710 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair186.png
+  artifactKey: Guid(3217bdf60e68db94ba8c72ae8b3478d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair186.png using Guid(3217bdf60e68db94ba8c72ae8b3478d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a63049b7b0f488be64ad49043da10e54') in 0.0084786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.403862 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair188.png
+  artifactKey: Guid(bed4b79f20762ce438243c8d43073b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair188.png using Guid(bed4b79f20762ce438243c8d43073b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '199d3c1c44aec49134ff3173cdbb10e8') in 0.0084449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021897 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair190.png
+  artifactKey: Guid(e2fa16487a33130479ea02094b51f29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair190.png using Guid(e2fa16487a33130479ea02094b51f29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f30940de2392d6c80b80d89e994fa90b') in 0.008325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.676550 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair192.png
+  artifactKey: Guid(6fa5e8734903c7446852287a9cd234df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair192.png using Guid(6fa5e8734903c7446852287a9cd234df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08c8c6c0ca572a37ef0e263155ad44c4') in 0.007237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.104155 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair194.png
+  artifactKey: Guid(413ac1003d815bb47979cd77cc65d53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair194.png using Guid(413ac1003d815bb47979cd77cc65d53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68527466f6ba1c4bac81a641a127c562') in 0.0159654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.623992 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair196.png
+  artifactKey: Guid(099ac6ddfdf87364aaccbf5abdfde883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair196.png using Guid(099ac6ddfdf87364aaccbf5abdfde883) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9349b2c92a1a7828782d77828c476af') in 0.0182228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.215821 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair198.png
+  artifactKey: Guid(d3f471bdd43bcc241a93243c8b0fa170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair198.png using Guid(d3f471bdd43bcc241a93243c8b0fa170) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eaefb5b8275e4fe1db6efc5755e7a968') in 0.0077451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.397666 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair200.png
+  artifactKey: Guid(a5435e21d3232e44b843bdb44f5d1877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/White Retina/crosshair200.png using Guid(a5435e21d3232e44b843bdb44f5d1877) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f11fddf116de47b228c4f8329d0c08ec') in 0.0072145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.236438 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair005.png
+  artifactKey: Guid(ed979153cec4e00409b2ef269d2f323f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair005.png using Guid(ed979153cec4e00409b2ef269d2f323f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd038d6edb68995a98071ad0690a2c83') in 0.009586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001502 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair009.png
+  artifactKey: Guid(065139cbe8856e24f9700ee888db9a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair009.png using Guid(065139cbe8856e24f9700ee888db9a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82cd92ee5a0e11d8161b52524ed3e798') in 0.0115544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair013.png
+  artifactKey: Guid(d1f63dee1b747424caab4fbee4b75953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair013.png using Guid(d1f63dee1b747424caab4fbee4b75953) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87ab2b90d5c4516f9336c56d3f9e22a7') in 0.0202582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair014.png
+  artifactKey: Guid(c1494304a4000f74180157445456c576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair014.png using Guid(c1494304a4000f74180157445456c576) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '242c718e4da112e4f67f72a74acb3170') in 0.0081106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair012.png
+  artifactKey: Guid(367b6180729b60642bd748c9929268c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair012.png using Guid(367b6180729b60642bd748c9929268c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f25825592251486f51eea6e72f35368') in 0.0116042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.549223 seconds.
+  path: Assets/Sprites/Game logo.JPG
+  artifactKey: Guid(069d01a9deeb45047b55f3298957750b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Game logo.JPG using Guid(069d01a9deeb45047b55f3298957750b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '352423a5f4c569f81cc27e31f20adba1') in 0.0135616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.434680 seconds.
+  path: Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair002.png
+  artifactKey: Guid(d0a1c7965a84d704d824eda5dc5c3840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/Crosshair Pack/PNG/Black Retina/crosshair002.png using Guid(d0a1c7965a84d704d824eda5dc5c3840) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7faaf60c6fa1e60edbfdaec559eddc26') in 0.0096895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -3355182507354069518}
   m_Layer: 0
   m_Name: Spell 1 Projectile Lvl1
-  m_TagString: Untagged
+  m_TagString: Player Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,6 +246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c8abe18248f69419ed5c8d3cb04e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeSpan: 0
+  moveSpeed: 0
+  damage: 0
+  playerStats: {fileID: 0}
 --- !u!54 &-3355182507354069518
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -18,14 +18,58 @@ MonoBehaviour:
   loreText: 
   currentLevel: 1
   maxLevel: 3
-  manaCost: 25
-  damage: 50
-  lifeSpan: 1
-  castDelayTime: 1
-  moveSpeed: 25
+  manaCost: 20
+  damage: 20
+  lifeSpan: 2.5
+  castDelayTime: 0.5
+  moveSpeed: 15
   spawnObjectLvl1: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
-  spawnObjectLvl2: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
-  spawnObjectLvl3: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
+  spawnObjectLvl2: {fileID: 8130310103848262995, guid: 6dc4a640f441e034ebb2764148652d20, type: 3}
+  spawnObjectLvl3: {fileID: 3350832069057150999, guid: 4cce0d7b56d59594d94075dad3ec31a2, type: 3}
   castAnimation: {fileID: 0}
   isUnlocked: 1
-  targetPosition: {x: 12.319885, y: 15.68961, z: -0.0000371933}
+  level1_ManaCost: 20
+  level1_Damage: 20
+  level1_LifeSpan: 2.5
+  level1_CastDelayTime: 0.5
+  level1_MoveSpeed: 15
+  level2_ManaCost: 20
+  level2_Damage: 30
+  level2_LifeSpan: 2.5
+  level2_CastDelayTime: 0.5
+  level2_MoveSpeed: 18
+  level3_ManaCost: 20
+  level3_Damage: 40
+  level3_LifeSpan: 2.5
+  level3_CastDelayTime: 0.5
+  level3_MoveSpeed: 20
+  spellLeveledUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 79c4e592ad271b74989d98bd00d416cc, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  spellLeveledDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: db51cf205e3f10845a3cb3192949df73, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

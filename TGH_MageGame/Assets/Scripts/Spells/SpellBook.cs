@@ -103,7 +103,7 @@ public class SpellBook : MonoBehaviour {
 
     // GETS ACTIVE SPELL TO USE IN UI TEXT
     public string GetSpellUIData() {
-        return $"{spellBook[activeSpell].Name}";
+        return $"{spellBook[activeSpell].Name} Level {spellBook[activeSpell].CurrentLevel}";
     }
 
     // GETTER FOR ACTIVE SPELL ANIMATION

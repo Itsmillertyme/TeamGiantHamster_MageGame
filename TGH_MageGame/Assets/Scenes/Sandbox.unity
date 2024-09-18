@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 292655171}
   - component: {fileID: 292655172}
   m_Layer: 0
-  m_Name: PrimitiveHUD
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3566,7 +3566,7 @@ MonoBehaviour:
   - 'There''s no way to get current health without having a serialized field. Each
     projectile has a hard reference to player stats. '
   - Clamp bottom half of health and mana values. can go negative
-  - 
+  - spell level ui needs to be updated on spell levelup
   - 
   - 
   - 
@@ -6482,8 +6482,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2000962362}
   - component: {fileID: 2000962363}
+  - component: {fileID: 2000962365}
+  - component: {fileID: 2000962364}
   m_Layer: 0
-  m_Name: Spell Switched Event Listener
+  m_Name: Spell-Based Event Listener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6517,6 +6519,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 7e05ee028a4aeb941b428e30ae75ec2a, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2030500254}
+        m_TargetAssemblyTypeName: SpellUI, Assembly-CSharp
+        m_MethodName: GetSpellUIData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2000962364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000962361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788c89774eaf41548886f7bf3faef5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: db51cf205e3f10845a3cb3192949df73, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2030500254}
+        m_TargetAssemblyTypeName: SpellUI, Assembly-CSharp
+        m_MethodName: GetSpellUIData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2000962365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000962361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788c89774eaf41548886f7bf3faef5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 79c4e592ad271b74989d98bd00d416cc, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
