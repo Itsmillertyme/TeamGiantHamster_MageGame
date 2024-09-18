@@ -15,6 +15,8 @@ public class PlayerStats : ScriptableObject
     public UnityEvent<int> currentHealthChangeEvent;
     [System.NonSerializedAttribute]
     public UnityEvent<int> currentManaChangeEvent;
+    [System.NonSerializedAttribute]
+    public UnityEvent manaSpentEvent;
 
     // The base stats the player initially will have at the start of a run.
     public int baseHealth = 100;
@@ -79,6 +81,10 @@ public class PlayerStats : ScriptableObject
         if (currentManaChangeEvent == null)
         {
             currentManaChangeEvent = new UnityEvent<int>();
+        }
+        if(manaSpentEvent == null)
+        {
+            manaSpentEvent = new UnityEvent();
         }
     }
 
@@ -188,6 +194,10 @@ public class PlayerStats : ScriptableObject
         {
             currentHealth = maxHealth;
         }
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+        }
         currentHealthChangeEvent.Invoke(currentHealth);
     }
     public void updateCurrentMana(int amount)
@@ -197,6 +207,14 @@ public class PlayerStats : ScriptableObject
         if (currentMana > maxMana)
         {
             currentMana = maxMana;
+        }
+        if (currentMana < 0)
+        {
+            currentMana = 0;
+        }
+        if (amount < 0)
+        {
+            manaSpentEvent.Invoke();
         }
         currentManaChangeEvent.Invoke(currentMana);
     }

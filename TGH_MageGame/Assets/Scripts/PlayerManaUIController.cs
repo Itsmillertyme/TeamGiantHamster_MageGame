@@ -24,10 +24,10 @@ public class PlayerManaUIController : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKey(KeyCode.N)) {
+        if (Input.GetKeyDown(KeyCode.N)) {
             playerStats.updateCurrentMana(-5);
         }
-        if (Input.GetKey(KeyCode.M)) {
+        if (Input.GetKeyDown(KeyCode.M)) {
             playerStats.updateCurrentMana(5);
         }
     }
