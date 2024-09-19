@@ -9,6 +9,15 @@
 		</type>
 		<type fullname="GameEvent">
 			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+		</type>
+		<type fullname="GameManager">
+			<method name="Quit"/>
 		</type>
 		<type fullname="PlayerStats">
 			<method name="updateCurrentHealth"/>
@@ -19,6 +28,8 @@
 			<method name="LevelUpActiveSpell"/>
 		</type>
 		<type fullname="SpellUI">
+			<method name="GetSpellUIData"/>
+			<method name="GetSpellUIData"/>
 			<method name="GetSpellUIData"/>
 		</type>
 	</assembly>

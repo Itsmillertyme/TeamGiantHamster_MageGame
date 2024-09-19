@@ -73,5 +73,10 @@ public class GameManager : MonoBehaviour {
     public Vector3 GetPlayerPivot() {
         return playerPivot;
     }
+
+    public void Quit() {
+        Application.Quit();
+    }
+
 }
 
