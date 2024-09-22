@@ -15827,6 +15827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wand Ordinary
       objectReference: {fileID: 0}
+    - target: {fileID: 5250544404403953309, guid: 3ca76ec4ef0c2854a8ea22b755594214, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5250544404404241085, guid: 3ca76ec4ef0c2854a8ea22b755594214, type: 3}
       propertyPath: m_RootOrder
       value: 0

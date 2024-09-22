@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     ActionAsset actionAsset;
     CharacterController characterController;
     Animator animator;
+    //AnimatorOverrideController animatorOverrideController;
     [SerializeField] MousePositionTracking mousePositionTracker;
     [SerializeField] GameObject playerModel;
     [SerializeField] Transform projectileSpawn;
@@ -54,12 +55,14 @@ public class PlayerController : MonoBehaviour {
     int walkHash;
     int blockHash;
     int meleeHash;
+    int castHash;
     int dashForwardHash;
     int dashbackwardHash;
     //
     Coroutine turnAnimation;
     Coroutine jumpAnimation;
     Coroutine dashAnimation;
+    Coroutine castAnimation;
 
     //**Unity Methods    
     void Awake() {
@@ -67,6 +70,8 @@ public class PlayerController : MonoBehaviour {
         actionAsset = new ActionAsset();
         characterController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+        //animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        //animator.runtimeAnimatorController = animatorOverrideController;
         //
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
@@ -80,6 +85,7 @@ public class PlayerController : MonoBehaviour {
         walkHash = Animator.StringToHash("Walk");
         blockHash = Animator.StringToHash("Block");
         meleeHash = Animator.StringToHash("Melee");
+        castHash = Animator.StringToHash("Cast");
         dashForwardHash = Animator.StringToHash("Dash_Forward");
         dashbackwardHash = Animator.StringToHash("Dash_Backward");
         //
@@ -240,13 +246,9 @@ public class PlayerController : MonoBehaviour {
     //
     public void OnCast(InputAction.CallbackContext context) {
 
-        GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-
-        if (Vector3.Distance(gm.GetPlayerPivot(), gm.GetMousePositionInWorldSpace()) > Vector3.Distance(gm.GetPlayerPivot(), projectileSpawn.position)) {
-            GetComponent<SpellBook>().Cast();
+        if (castAnimation == null) {
+            castAnimation = StartCoroutine(CastAnim());
         }
-
-
 
     }
     //
@@ -470,4 +472,71 @@ public class PlayerController : MonoBehaviour {
         dashAnimation = null;
     }
 
+    IEnumerator CastAnim() {
+
+        //get reference to spellbook
+        SpellBook spellBook = GetComponent<SpellBook>();
+
+        //get active spell anim clip
+        AnimationClip clip = spellBook.GetSpellAnimation();
+
+        //create Animaotr overide controller - basically a new animation controller for the overrides
+        AnimatorOverrideController aoc = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        //Set animator controller to new override controller
+        animator.runtimeAnimatorController = aoc;
+
+        //Loop through every clip in animator
+        foreach (AnimationClip racClip in animator.runtimeAnimatorController.animationClips) {
+            //test if clip is attack clip
+            if (racClip.name.Contains("Mage@Attack")) {
+                //replace it in override controller with proper clip from spellbook
+                aoc[racClip.name] = clip;
+            }
+        }
+
+        //play animation state
+        animator.CrossFade(castHash, 0.01f);
+
+        //Set anim delay
+        int delayFrame = 0;
+        switch (spellBook.ActiveSpell) {
+            case 0:
+                delayFrame = 15;
+                break;
+            case 1:
+                delayFrame = 11;
+                break;
+            case 2:
+                delayFrame = 9;
+                break;
+        }
+
+        //scale delay based on speed of animation
+        float delay = (delayFrame / 30f) / animator.GetCurrentAnimatorStateInfo(0).speed;
+
+        //wait for delay
+        yield return new WaitForSeconds(delay);
+
+        //FIRE FROM SPELL BOOK
+        GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        //test if cursor is not between player and spawn point
+        if (Vector3.Distance(gm.GetPlayerPivot(), gm.GetMousePositionInWorldSpace()) > Vector3.Distance(gm.GetPlayerPivot(), projectileSpawn.position)) {
+            spellBook.Cast();
+        }
+
+        //Test for spell 2 (DOUBLE FIRE)
+        if (spellBook.ActiveSpell == 1) {
+            yield return new WaitForSeconds(6f / 30f);
+            if (Vector3.Distance(gm.GetPlayerPivot(), gm.GetMousePositionInWorldSpace()) > Vector3.Distance(gm.GetPlayerPivot(), projectileSpawn.position)) {
+                spellBook.Cast();
+            }
+        }
+
+        //Wait for animation to finish
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Cast"));
+
+        //reset cast coroutine variable
+        castAnimation = null;
+    }
 }

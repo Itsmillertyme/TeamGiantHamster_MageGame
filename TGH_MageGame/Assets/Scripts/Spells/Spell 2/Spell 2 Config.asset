@@ -18,15 +18,15 @@ MonoBehaviour:
   loreText: 
   currentLevel: 1
   maxLevel: 3
-  manaCost: 25
+  manaCost: 3
   damage: 50
   lifeSpan: 1
-  castDelayTime: 1
+  castDelayTime: 0.2
   moveSpeed: 20
   spawnObjectLvl1: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
   spawnObjectLvl2: {fileID: 8130310103848262995, guid: 6dc4a640f441e034ebb2764148652d20, type: 3}
   spawnObjectLvl3: {fileID: 3350832069057150999, guid: 4cce0d7b56d59594d94075dad3ec31a2, type: 3}
-  castAnimation: {fileID: 0}
+  castAnimation: {fileID: 7400014, guid: 552a5a0580ffcfb4c926e37b0c1a66c9, type: 3}
   isUnlocked: 1
   level1_ManaCost: 25
   level1_Damage: 50
