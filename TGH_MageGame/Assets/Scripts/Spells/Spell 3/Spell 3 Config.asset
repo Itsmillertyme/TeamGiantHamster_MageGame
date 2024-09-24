@@ -26,6 +26,7 @@ MonoBehaviour:
   spawnObjectLvl2: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
   spawnObjectLvl3: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
   castAnimation: {fileID: 7400000, guid: e0ba9eae5e5fa254885fd371f59f9ca0, type: 3}
+  icon: {fileID: 21300000, guid: dd3885098198d104888439be4c590aba, type: 3}
   isUnlocked: 1
   level1_ManaCost: 5
   level1_Damage: 0

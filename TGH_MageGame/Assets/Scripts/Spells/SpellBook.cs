@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -104,6 +105,12 @@ public class SpellBook : MonoBehaviour {
     // GETS ACTIVE SPELL TO USE IN UI TEXT
     public string GetSpellUIData() {
         return $"{spellBook[activeSpell].Name} Level {spellBook[activeSpell].CurrentLevel}";
+    }
+
+    // GETS ACTIVE SPELL ICON TO USE IN UI
+    public Sprite GetSpellIconData()
+    {
+        return spellBook[activeSpell].SpellIcon;
     }
 
     // GETTER FOR ACTIVE SPELL ANIMATION

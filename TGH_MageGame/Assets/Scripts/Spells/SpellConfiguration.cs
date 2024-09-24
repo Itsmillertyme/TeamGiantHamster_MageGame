@@ -44,8 +44,8 @@ public class Spell : ScriptableObject
     //[SerializeField] private ParticleSystem spawnFX;
     //[SerializeField] private ParticleSystem hitFX;
 
-    //[Header("UI Icon")]
-    //[SerializeField] private Image icon;
+    [Header("UI Icon")]
+    [SerializeField] private Sprite icon;
     //[SerializeField] private enum MoveMethod { Linear, Curvilinear, Fixed }
     //[SerializeField] private enum Element { Air, Earth, Fire, Water }
     [Header("Unlock Status")]
@@ -108,6 +108,7 @@ public class Spell : ScriptableObject
     public GameObject SpawnObjectLvl1 => spawnObjectLvl1;
     public GameObject SpawnObjectLvl2 => spawnObjectLvl2;
     public GameObject SpawnObjectLvl3 => spawnObjectLvl3;
+    public Sprite SpellIcon => icon;
     #endregion
 
     public void LevelUp()
