@@ -27,7 +27,7 @@ public class PlayerManaController : MonoBehaviour
             if (!regenManaReady)
             {
                 regenManaReady = true;
-                yield return new WaitForSeconds(10);
+                yield return new WaitForSeconds(5);
             }
             else
             {

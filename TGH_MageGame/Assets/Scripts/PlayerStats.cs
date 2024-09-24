@@ -16,10 +16,6 @@ public class PlayerStats : ScriptableObject
     [System.NonSerializedAttribute]
     public UnityEvent<int> currentManaChangeEvent;
     [System.NonSerializedAttribute]
-    public UnityEvent<int> experienceChangeEvent;
-    [System.NonSerializedAttribute]
-    public UnityEvent<int> levelChangeEvent;
-    [System.NonSerializedAttribute]
     public UnityEvent manaSpentEvent;
 
     // The base stats the player initially will have at the start of a run.
@@ -70,12 +66,12 @@ public class PlayerStats : ScriptableObject
     private void OnEnable()
     {
         // Initialzes the max value of each stat at the beginning of the game.
-        updateMaxHealth();
-        updateMaxAttackDamage();
-        updateMaxAttackSpeed();
-        updateMaxDefence();
-        updateMaxMovementSpeed();
-        updateMaxMana();
+        maxHealth = baseHealth;
+        maxAttackDamage = baseAttackDamage;
+        maxAttackSpeed = baseAttackSpeed;
+        maxDefence = baseDefence;
+        maxMovementSpeed = baseMovementSpeed;
+        maxMana = baseMana;
         currentHealth = maxHealth;
         currentMana = maxMana;
         if (currentHealthChangeEvent == null)
@@ -89,14 +85,6 @@ public class PlayerStats : ScriptableObject
         if(manaSpentEvent == null)
         {
             manaSpentEvent = new UnityEvent();
-        }
-        if(experienceChangeEvent == null)
-        {
-            experienceChangeEvent = new UnityEvent<int>();
-        }
-        if(levelChangeEvent == null)
-        {
-            levelChangeEvent = new UnityEvent<int>();
         }
     }
 
@@ -250,16 +238,14 @@ public class PlayerStats : ScriptableObject
             {
                 updateExperience(0);
             }
-
-            updateMaxHealth();
-            updateMaxAttackDamage();
-            updateMaxAttackSpeed();
-            updateMaxDefence();
-            updateMaxMovementSpeed();
-            updateMaxMana();
-            levelChangeEvent.Invoke(level);
         }
-        experienceChangeEvent.Invoke(experience);
+
+        updateMaxHealth();
+        updateMaxAttackDamage();
+        updateMaxAttackSpeed();
+        updateMaxDefence();
+        updateMaxMovementSpeed();
+        updateMaxMana();
     }
 
     // Resets all stats to default values

@@ -10,7 +10,6 @@ public class PlayerHealthUIController : MonoBehaviour {
 
     private void Start() {
         currentHealthText.text = "HP:\n" + playerStats.getCurrentHealth();
-        GetComponent<Image>().fillAmount = playerStats.getCurrentHealth() / (float)playerStats.getMaxHealth();
     }
 
     private void OnEnable() {
@@ -22,14 +21,14 @@ public class PlayerHealthUIController : MonoBehaviour {
 
     private void updateCurrentHealthText(int health) {
         currentHealthText.text = "HP:\n" + health;
-        GetComponent<Image>().fillAmount = health / (float)playerStats.getMaxHealth();
+        GetComponent<Image>().fillAmount = health / 100f;
     }
 
     private void Update() {
-        if (Input.GetKey(KeyCode.K)) {
+        if (Input.GetKeyDown(KeyCode.K)) {
             playerStats.updateCurrentHealth(-5);
         }
-        if (Input.GetKey(KeyCode.L)) {
+        if (Input.GetKeyDown(KeyCode.L)) {
             playerStats.updateCurrentHealth(5);
         }
     }

@@ -3,7 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\spells\\spellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,30 +32,7 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\playermanauicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\playermanauicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanauicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\playerhealthuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealthuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|d:\\unityprojects\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\playerexpuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerexpuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|d:\\unityprojects\\teamgianthamster_magegame\\tgh_magegame\\assets\\scripts\\playerleveluicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerleveluicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\assets\\scripts\\playermanacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A5620B5-9C65-B124-F0B5-4D2472CB1D19}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +50,6 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "ProjectileMover.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\ProjectileMover.cs",
@@ -82,61 +57,12 @@
               "ToolTip": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\ProjectileMover.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spells\\ProjectileMover.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
-=======
-              "DocumentIndex": 4,
-              "Title": "PlayerLevelUIController.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerLevelUIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerLevelUIController.cs",
-              "ToolTip": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerLevelUIController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerLevelUIController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T17:00:24.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerExpUIController.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerExpUIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerExpUIController.cs",
-              "ToolTip": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerExpUIController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerExpUIController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:29:03.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerStats.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStats.cs",
-              "ToolTip": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerStats.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowEcAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T20:47:02.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerHealthUIController.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerHealthUIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealthUIController.cs",
-              "ToolTip": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerHealthUIController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerHealthUIController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAYAAAAAAAAAA==",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T17:03:28.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 3,
               "Title": "Spell UI.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\Spell UI.cs",
@@ -144,22 +70,12 @@
               "ToolTip": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\Spell UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spells\\Spell UI.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAIwA8AAAAYAAAA",
-=======
-              "DocumentIndex": 1,
-              "Title": "PlayerManaUIController.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerManaUIController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManaUIController.cs",
-              "ToolTip": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerManaUIController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerManaUIController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwB4AAAAYAAAAAAAAAA==",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T15:55:41.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "SpellBook.cs",
               "DocumentMoniker": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\SpellBook.cs",
@@ -167,19 +83,9 @@
               "ToolTip": "C:\\Users\\corya\\Documents\\GitHub\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\Spells\\SpellBook.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spells\\SpellBook.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAABiAAAA",
-=======
-              "DocumentIndex": 5,
-              "Title": "PlayerManaController.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerManaController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManaController.cs",
-              "ToolTip": "D:\\UnityProjects\\TeamGiantHamster_MageGame\\TGH_MageGame\\Assets\\Scripts\\PlayerManaController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerManaController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wB0AAAAyAAAAAAAAAA==",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T14:55:02.587Z",
               "EditorCaption": ""
-<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -241,8 +147,6 @@
               "ViewState": "AgIAALYAAAAAAAAAAAAqwCcBAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T20:47:02.054Z"
-=======
->>>>>>> Stashed changes
             }
           ]
         }
