@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     Vector3 currentMovement;
     Vector3 currentRunMovement;
     Vector3 currentCrouchMovement;
+    Vector3 appliedMovement;
     bool isMovementPressed;
     bool isRunPressed;
     bool isCrouchPressed;
@@ -33,14 +34,13 @@ public class PlayerController : MonoBehaviour {
     bool isJumping = false;
 
     //Movement Varbiables
-    [SerializeField] float movementSpeed = 1.0f;
-    [SerializeField] float sprintSpeed = 3.0f;
+    [SerializeField] float movementSpeed;
+    [SerializeField] float sprintMultiplier;
     [SerializeField] float dashForce;
 
     //Gravity Variables
     [SerializeField][Range(-0.1f, -20f)] float gravity = -9.8f; //SII
     float groundedGravity = -0.05f;
-
 
     //Animation Variables
     int isWalkingHash;
@@ -127,22 +127,35 @@ public class PlayerController : MonoBehaviour {
 
         //DEV ONLY
         SetupJumpVariables();
+        //Debug.Log(isFacingLeft);
+
+
 
         HandleAnimation();
         mousePositionTracker.GetMousePosition();
 
-        //do controller move with updated movement vector
+        CollisionFlags collisionFlags;
 
         if (isRunPressed) {
-            characterController.Move(currentRunMovement * Time.deltaTime);
+            appliedMovement.x = currentRunMovement.x;
+            appliedMovement.z = currentRunMovement.z;
         }
         else if (isCrouchPressed) {
-            characterController.Move(currentCrouchMovement * Time.deltaTime);
+            appliedMovement.x = currentCrouchMovement.x;
+            appliedMovement.z = currentCrouchMovement.z;
         }
         else {
-            characterController.Move(currentMovement * Time.deltaTime);
+            appliedMovement.x = currentMovement.x;
+            appliedMovement.z = currentMovement.z;
         }
 
+        //stop movement if turning
+        if (turnAnimation != null) {
+            //stop movement of player controller
+            appliedMovement.x = 0;
+        }
+
+        collisionFlags = characterController.Move(appliedMovement * Time.deltaTime);
 
         if (wasFlippedLastFrame) {
             wasFlippedLastFrame = false;
@@ -172,6 +185,14 @@ public class PlayerController : MonoBehaviour {
 
             //not landed
             animator.SetBool(landedHash, true);
+        }
+
+        //test for vertical collisions when jumping (BINARY COMPARE bit mask and above flag, make sure they match (i.e. equal 1 because they are the same))
+        if ((collisionFlags & CollisionFlags.Above) != 0) {
+            currentMovement.y = 0;
+            currentRunMovement.y = 0;
+            currentCrouchMovement.y = 0;
+
         }
 
         //Snap Z coord to 0
@@ -204,7 +225,7 @@ public class PlayerController : MonoBehaviour {
 
         //Setup movement vectors, part by part
         currentMovement.x = currentMovementInput * movementSpeed;
-        currentRunMovement.x = currentMovementInput * sprintSpeed * movementSpeed;
+        currentRunMovement.x = currentMovementInput * sprintMultiplier * movementSpeed;
         currentCrouchMovement.x = currentMovementInput * 0.5f * movementSpeed;
 
         //Set flag
@@ -339,17 +360,48 @@ public class PlayerController : MonoBehaviour {
     }
     //
     void HandleGravity() {
+        bool isFalling = currentMovement.y <= 0f || !isJumpPressed;
+        float fallMultiplier = 2f;
+
         //Sets gravity every frame
         if (characterController.isGrounded) {
             currentMovement.y = groundedGravity;
             currentCrouchMovement.y = groundedGravity;
             currentRunMovement.y = groundedGravity;
+            appliedMovement.y = groundedGravity;
+        }
+        else if (isFalling) {
+            //applies gravity when falling scaled by mult
+            float prevYVelocity = currentMovement.y;
+            currentMovement.y = currentMovement.y + (gravity * fallMultiplier * Time.deltaTime);
+            appliedMovement.y = (prevYVelocity + currentMovement.y) * .5f;
         }
         //applies gravity every frame
         else {
-            currentMovement.y += gravity * Time.deltaTime;
-            currentCrouchMovement.y += gravity * Time.deltaTime;
-            currentRunMovement.y += gravity * Time.deltaTime;
+            //apply velocity verlet intergration
+            float prevYVelocity = currentMovement.y;
+            currentMovement.y = currentMovement.y + (gravity * Time.deltaTime);
+            appliedMovement.y = (prevYVelocity + currentMovement.y) * .5f;
+
+
+            //else if (isFalling) {
+            //    //applies gravity when falling scaled by mult
+            //    float prevYVelocity = currentMovement.y;
+            //    float newYVelocity = currentMovement.y + (gravity * fallMultiplier * Time.deltaTime);
+            //    float nextYVelocity = (prevYVelocity + newYVelocity) * .5f;
+            //    currentMovement.y = nextYVelocity;
+            //    currentCrouchMovement.y = nextYVelocity;
+            //    currentRunMovement.y = nextYVelocity;
+            //}
+            ////applies gravity every frame
+            //else {
+            //    //apply velocity verlet intergration
+            //    float prevYVelocity = currentMovement.y;
+            //    float newYVelocity = currentMovement.y + (gravity * Time.deltaTime);
+            //    float nextYVelocity = (prevYVelocity + newYVelocity) * .5f;
+            //    currentMovement.y = nextYVelocity;
+            //    currentCrouchMovement.y = nextYVelocity;
+            //    currentRunMovement.y = nextYVelocity;
         }
     }
     //
@@ -395,13 +447,46 @@ public class PlayerController : MonoBehaviour {
 
         //set new rotation
         Quaternion newRotation;
+
+        Debug.Log(isMovementPressed);
+
+        Debug.Log(appliedMovement.x);
+
+        //Turn left to right
         if (isFacingLeft) {
             isFacingLeft = false;
             newRotation = Quaternion.Euler(0, -90, 0);
+            //test if walking right
+            if (isMovementPressed && appliedMovement.x < 0) {
+
+                Debug.Log("L -> R turn, walking right");
+                animator.SetBool(isBackwardWalkingHash, false);
+                animator.SetBool(isWalkingHash, true);
+            }
+            //test if walking left
+            else if (isMovementPressed && appliedMovement.x > 0) {
+                Debug.Log("L -> R turn, walking left");
+                animator.SetBool(isWalkingHash, false);
+                animator.SetBool(isBackwardWalkingHash, true);
+            }
+
         }
+        //Turn right to left
         else {
             isFacingLeft = true;
             newRotation = Quaternion.Euler(0, 90, 0);
+            //test if walking right
+            if (isMovementPressed && appliedMovement.x < 0) {
+                Debug.Log("R -> L turn, walking right");
+                animator.SetBool(isWalkingHash, false);
+                animator.SetBool(isBackwardWalkingHash, true);
+            }
+            //test if walking left
+            else if (isMovementPressed && appliedMovement.x > 0) {
+                Debug.Log("R -> L turn, walking left");
+                animator.SetBool(isBackwardWalkingHash, false);
+                animator.SetBool(isWalkingHash, true);
+            }
         }
 
         //Crossfade into animation
@@ -432,6 +517,7 @@ public class PlayerController : MonoBehaviour {
         currentMovement.y = initJumpVelocity;
         currentRunMovement.y = initJumpVelocity;
         currentCrouchMovement.y = initJumpVelocity;
+        appliedMovement.y = initJumpVelocity;
 
         //set animation bool
         animator.SetBool(landedHash, false);
@@ -444,17 +530,18 @@ public class PlayerController : MonoBehaviour {
     }
 
     IEnumerator DashAnim() {
+        float dashX = dashForce;
         animator.CrossFade(dashForwardHash, 0.1f);
 
         //test direction and flip force
         if (!isFacingLeft) {
-            dashForce *= -1;
+            dashX *= -1;
         }
 
         //apply dash force        
-        currentMovement.x = dashForce;
-        currentRunMovement.x = dashForce;
-        currentCrouchMovement.x = dashForce;
+        currentMovement.x = dashX;
+        currentRunMovement.x = dashX;
+        currentCrouchMovement.x = dashX;
 
         //wait for animation
         yield return new WaitForSeconds(0.4f);
@@ -466,7 +553,7 @@ public class PlayerController : MonoBehaviour {
 
         //reset flipped force
         if (!isFacingLeft) {
-            dashForce *= -1;
+            dashX *= -1;
         }
 
         dashAnimation = null;
