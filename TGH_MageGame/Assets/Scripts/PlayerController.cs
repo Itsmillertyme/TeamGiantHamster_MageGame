@@ -448,10 +448,6 @@ public class PlayerController : MonoBehaviour {
         //set new rotation
         Quaternion newRotation;
 
-        Debug.Log(isMovementPressed);
-
-        Debug.Log(appliedMovement.x);
-
         //Turn left to right
         if (isFacingLeft) {
             isFacingLeft = false;
@@ -459,13 +455,11 @@ public class PlayerController : MonoBehaviour {
             //test if walking right
             if (isMovementPressed && appliedMovement.x < 0) {
 
-                Debug.Log("L -> R turn, walking right");
                 animator.SetBool(isBackwardWalkingHash, false);
                 animator.SetBool(isWalkingHash, true);
             }
             //test if walking left
             else if (isMovementPressed && appliedMovement.x > 0) {
-                Debug.Log("L -> R turn, walking left");
                 animator.SetBool(isWalkingHash, false);
                 animator.SetBool(isBackwardWalkingHash, true);
             }
@@ -477,13 +471,11 @@ public class PlayerController : MonoBehaviour {
             newRotation = Quaternion.Euler(0, 90, 0);
             //test if walking right
             if (isMovementPressed && appliedMovement.x < 0) {
-                Debug.Log("R -> L turn, walking right");
                 animator.SetBool(isWalkingHash, false);
                 animator.SetBool(isBackwardWalkingHash, true);
             }
             //test if walking left
             else if (isMovementPressed && appliedMovement.x > 0) {
-                Debug.Log("R -> L turn, walking left");
                 animator.SetBool(isBackwardWalkingHash, false);
                 animator.SetBool(isWalkingHash, true);
             }
