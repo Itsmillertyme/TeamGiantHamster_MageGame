@@ -9,6 +9,7 @@ public class PlayerManaUIController : MonoBehaviour {
 
     private void Start() {
         currentManaText.text = "Mana:\n" + playerStats.getCurrentMana();
+        GetComponent<Image>().fillAmount = playerStats.getCurrentMana() / (float)playerStats.getMaxMana();
     }
 
     private void OnEnable() {
@@ -20,14 +21,14 @@ public class PlayerManaUIController : MonoBehaviour {
 
     private void updateCurrentManaText(int mana) {
         currentManaText.text = "Mana:\n" + mana;
-        GetComponent<Image>().fillAmount = mana / 100f;
+        GetComponent<Image>().fillAmount = mana / (float)playerStats.getMaxMana();
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.N)) {
+        if (Input.GetKey(KeyCode.N)) {
             playerStats.updateCurrentMana(-5);
         }
-        if (Input.GetKeyDown(KeyCode.M)) {
+        if (Input.GetKey(KeyCode.M)) {
             playerStats.updateCurrentMana(5);
         }
     }

@@ -33,9 +33,10 @@ public class Spell : ScriptableObject
     [SerializeField] private GameObject spawnObjectLvl1;
     [SerializeField] private GameObject spawnObjectLvl2;
     [SerializeField] private GameObject spawnObjectLvl3;
-    //[Header("SFX")]
-    //[SerializeField] private AudioClip spawnSFX;
-    //[SerializeField] private AudioClip hitSFX;
+    
+    [Header("SFX")]
+    [SerializeField] private AudioClip spawnSFX;
+    [SerializeField] private AudioClip hitSFX;
 
     [Header("Animation")]
     [SerializeField] private AnimationClip castAnimation;
@@ -44,8 +45,8 @@ public class Spell : ScriptableObject
     //[SerializeField] private ParticleSystem spawnFX;
     //[SerializeField] private ParticleSystem hitFX;
 
-    //[Header("UI Icon")]
-    //[SerializeField] private Image icon;
+    [Header("UI Icon")]
+    [SerializeField] private Sprite icon;
     //[SerializeField] private enum MoveMethod { Linear, Curvilinear, Fixed }
     //[SerializeField] private enum Element { Air, Earth, Fire, Water }
     [Header("Unlock Status")]
@@ -108,6 +109,9 @@ public class Spell : ScriptableObject
     public GameObject SpawnObjectLvl1 => spawnObjectLvl1;
     public GameObject SpawnObjectLvl2 => spawnObjectLvl2;
     public GameObject SpawnObjectLvl3 => spawnObjectLvl3;
+    public Sprite SpellIcon => icon;
+    public AudioClip SpawnSFX => spawnSFX;
+    public AudioClip HitSFX => hitSFX;
     #endregion
 
     public void LevelUp()

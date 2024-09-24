@@ -16,6 +16,10 @@ public class PlayerStats : ScriptableObject
     [System.NonSerializedAttribute]
     public UnityEvent<int> currentManaChangeEvent;
     [System.NonSerializedAttribute]
+    public UnityEvent<int> experienceChangeEvent;
+    [System.NonSerializedAttribute]
+    public UnityEvent<int> levelChangeEvent;
+    [System.NonSerializedAttribute]
     public UnityEvent manaSpentEvent;
 
     // The base stats the player initially will have at the start of a run.
@@ -66,12 +70,12 @@ public class PlayerStats : ScriptableObject
     private void OnEnable()
     {
         // Initialzes the max value of each stat at the beginning of the game.
-        maxHealth = baseHealth;
-        maxAttackDamage = baseAttackDamage;
-        maxAttackSpeed = baseAttackSpeed;
-        maxDefence = baseDefence;
-        maxMovementSpeed = baseMovementSpeed;
-        maxMana = baseMana;
+        updateMaxHealth();
+        updateMaxAttackDamage();
+        updateMaxAttackSpeed();
+        updateMaxDefence();
+        updateMaxMovementSpeed();
+        updateMaxMana();
         currentHealth = maxHealth;
         currentMana = maxMana;
         if (currentHealthChangeEvent == null)
@@ -85,6 +89,14 @@ public class PlayerStats : ScriptableObject
         if(manaSpentEvent == null)
         {
             manaSpentEvent = new UnityEvent();
+        }
+        if(experienceChangeEvent == null)
+        {
+            experienceChangeEvent = new UnityEvent<int>();
+        }
+        if(levelChangeEvent == null)
+        {
+            levelChangeEvent = new UnityEvent<int>();
         }
     }
 
@@ -238,14 +250,19 @@ public class PlayerStats : ScriptableObject
             {
                 updateExperience(0);
             }
-        }
 
-        updateMaxHealth();
-        updateMaxAttackDamage();
-        updateMaxAttackSpeed();
-        updateMaxDefence();
-        updateMaxMovementSpeed();
-        updateMaxMana();
+            updateMaxHealth();
+            updateMaxAttackDamage();
+            updateMaxAttackSpeed();
+            updateMaxDefence();
+            updateMaxMovementSpeed();
+            updateMaxMana();
+            levelChangeEvent.Invoke(level);
+            //Only invokes these to make sure the sliders for current health and mana are correct after a level up
+            currentHealthChangeEvent.Invoke(currentHealth);
+            currentManaChangeEvent.Invoke(currentMana);
+        }
+        experienceChangeEvent.Invoke(experience);
     }
 
     // Resets all stats to default values
