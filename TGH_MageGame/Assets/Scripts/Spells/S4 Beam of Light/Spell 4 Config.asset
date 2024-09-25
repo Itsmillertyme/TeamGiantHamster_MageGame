@@ -17,7 +17,7 @@ MonoBehaviour:
   loreText: 
   currentLevel: 1
   maxLevel: 1
-  manaCost: 0
+  manaCost: 10
   damage: 20
   lifeSpan: 1
   castDelayTime: 0
@@ -32,21 +32,21 @@ MonoBehaviour:
   castAnimation: {fileID: 7400000, guid: 923c3e14b6a36064d867f4530b447b9d, type: 2}
   icon: {fileID: 21300000, guid: 916cbc7dd18d79d439f504fa46087f68, type: 3}
   isUnlocked: 1
-  level1_ManaCost: 0
-  level1_Damage: 0
-  level1_LifeSpan: 0
+  level1_ManaCost: 10
+  level1_Damage: 20
+  level1_LifeSpan: 1
   level1_CastDelayTime: 0
   level1_MoveSpeed: 0
   level1_ProjectileSize: {x: 0, y: 0, z: 0}
-  level2_ManaCost: 0
-  level2_Damage: 0
-  level2_LifeSpan: 0
+  level2_ManaCost: 11
+  level2_Damage: 22
+  level2_LifeSpan: 1
   level2_CastDelayTime: 0
   level2_MoveSpeed: 0
   level2_ProjectileSize: {x: 0, y: 0, z: 0}
-  level3_ManaCost: 0
-  level3_Damage: 0
-  level3_LifeSpan: 0
+  level3_ManaCost: 12
+  level3_Damage: 24
+  level3_LifeSpan: 1
   level3_CastDelayTime: 0
   level3_MoveSpeed: 0
   level3_ProjectileSize: {x: 0, y: 0, z: 0}
