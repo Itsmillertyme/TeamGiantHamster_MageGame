@@ -539,9 +539,20 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(0.4f);
 
         //reset movement i X dimension
-        currentMovement.x = 0;
-        currentRunMovement.x = 0;
-        currentCrouchMovement.x = 0;
+        float temp = 0;
+        if (isMovementPressed) {
+            temp = movementSpeed;
+            if (!isFacingLeft) {
+                temp *= -1;
+            }
+            if (isRunPressed) {
+                temp *= sprintMultiplier;
+            }
+        }
+
+        currentMovement.x = temp;
+        currentRunMovement.x = temp;
+        currentCrouchMovement.x = temp;
 
         //reset flipped force
         if (!isFacingLeft) {
