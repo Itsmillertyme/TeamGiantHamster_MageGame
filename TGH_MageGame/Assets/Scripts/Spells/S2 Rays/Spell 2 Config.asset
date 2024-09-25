@@ -18,32 +18,39 @@ MonoBehaviour:
   loreText: 
   currentLevel: 1
   maxLevel: 3
-  manaCost: 3
-  damage: 50
+  manaCost: 2
+  damage: 5
   lifeSpan: 1
-  castDelayTime: 0.2
+  castDelayTime: 1
   moveSpeed: 20
+  projectileSize: {x: 0, y: 0, z: 0}
+  moveMethod: 0
   spawnObjectLvl1: {fileID: 395013047651984768, guid: ed762d4623fb57948b971a433ead280e, type: 3}
   spawnObjectLvl2: {fileID: 8130310103848262995, guid: 6dc4a640f441e034ebb2764148652d20, type: 3}
   spawnObjectLvl3: {fileID: 3350832069057150999, guid: 4cce0d7b56d59594d94075dad3ec31a2, type: 3}
+  spawnSFX: {fileID: 0}
+  hitSFX: {fileID: 0}
   castAnimation: {fileID: 7400000, guid: 653c1b3e8dcbb8242b1269f433990ab0, type: 2}
   icon: {fileID: 21300000, guid: 4029a9cfeb86f134c9c5af05993eaac8, type: 3}
   isUnlocked: 1
-  level1_ManaCost: 25
-  level1_Damage: 50
+  level1_ManaCost: 2
+  level1_Damage: 5
   level1_LifeSpan: 1
   level1_CastDelayTime: 1
   level1_MoveSpeed: 20
-  level2_ManaCost: 25
-  level2_Damage: 60
+  level1_ProjectileSize: {x: 0, y: 0, z: 0}
+  level2_ManaCost: 3
+  level2_Damage: 7
   level2_LifeSpan: 1
   level2_CastDelayTime: 1
   level2_MoveSpeed: 23
-  level3_ManaCost: 25
-  level3_Damage: 75
+  level2_ProjectileSize: {x: 0, y: 0, z: 0}
+  level3_ManaCost: 4
+  level3_Damage: 9
   level3_LifeSpan: 1.5
   level3_CastDelayTime: 1
   level3_MoveSpeed: 25
+  level3_ProjectileSize: {x: 0, y: 0, z: 0}
   spellLeveledUp:
     m_PersistentCalls:
       m_Calls:
