@@ -18,7 +18,7 @@ public class SpellUI : MonoBehaviour
     public void GetSpellUIData()
     {
         int spellIndex = SpellBook.ActiveSpell;
-        spellBookUIText.text = $"Spell {SpellBook.ActiveSpell + 1}\n{SpellBook.GetSpellUIData()}";
+        spellBookUIText.text = $"{SpellBook.GetSpellUIData()}";
     }
 
     public void GetActiveSpellIcon()

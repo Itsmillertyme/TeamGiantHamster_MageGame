@@ -9,6 +9,13 @@ using UnityEngine.UI;
 
 public class Spell : ScriptableObject
 {
+    public enum MoveMethod
+    {
+        SpawnAtPoint,
+        SpawnAbove,
+        SpawnAndHold
+    }
+
     [Header("Information")]
     [SerializeField] private new string name;
     [SerializeField] private string description;
@@ -28,6 +35,8 @@ public class Spell : ScriptableObject
     [SerializeField] private float moveSpeed;
     //[SerializeField] private float impactForce;
     //[SerializeField] private float range;
+    [SerializeField] private Vector3 projectileSize;
+    [SerializeField] private MoveMethod moveMethod;
 
     [Header("Prefab")]
     [SerializeField] private GameObject spawnObjectLvl1;
@@ -47,7 +56,9 @@ public class Spell : ScriptableObject
 
     [Header("UI Icon")]
     [SerializeField] private Sprite icon;
-    //[SerializeField] private enum MoveMethod { Linear, Curvilinear, Fixed }
+
+    // Projectile Cast Method (can't do headers on Enums)
+
     //[SerializeField] private enum Element { Air, Earth, Fire, Water }
     [Header("Unlock Status")]
     [SerializeField] private bool isUnlocked;
@@ -67,6 +78,7 @@ public class Spell : ScriptableObject
     [SerializeField] private float level1_MoveSpeed;
     //[SerializeField] private float level1_ImpactForce;
     //[SerializeField] private float level1_Range;
+    [SerializeField] private Vector3 level1_ProjectileSize;
 
     [Header("Level 2 Attributes")]
     //[SerializeField] private int level2_ProjectileCount;
@@ -78,6 +90,7 @@ public class Spell : ScriptableObject
     [SerializeField] private float level2_MoveSpeed;
     //[SerializeField] private float level2_ImpactForce;
     //[SerializeField] private float level2_Range;
+    [SerializeField] private Vector3 level2_ProjectileSize;
 
     [Header("Level 3 Attributes")]
     //[SerializeField] private int level3_ProjectileCount;
@@ -89,6 +102,7 @@ public class Spell : ScriptableObject
     [SerializeField] private float level3_MoveSpeed;
     //[SerializeField] private float level3_ImpactForce;
     //[SerializeField] private float level3_Range;
+    [SerializeField] private Vector3 level3_ProjectileSize;
 
     [Header("Unity Events")]
     [SerializeField] private UnityEvent spellLeveledUp;
@@ -148,7 +162,8 @@ public class Spell : ScriptableObject
                 //
                 moveSpeed = level1_MoveSpeed;
                 //
-                //                
+                //
+                projectileSize = level1_ProjectileSize;
                 break;
             case 2:
                 // 
@@ -160,6 +175,7 @@ public class Spell : ScriptableObject
                 moveSpeed = level2_MoveSpeed;
                 //
                 //                
+                projectileSize = level2_ProjectileSize;
                 break;
             case 3:
                 // 
@@ -170,7 +186,8 @@ public class Spell : ScriptableObject
                 //
                 moveSpeed = level3_MoveSpeed;
                 //
-                //                
+                //
+                projectileSize = level3_ProjectileSize;
                 break;
         }
     }

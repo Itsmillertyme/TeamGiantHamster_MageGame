@@ -16,33 +16,40 @@ MonoBehaviour:
   description: 
   loreText: 
   currentLevel: 1
-  maxLevel: 3
-  manaCost: 3
-  damage: 0
-  lifeSpan: 5
-  castDelayTime: 0.1
+  maxLevel: 1
+  manaCost: 0
+  damage: 5
+  lifeSpan: 1
+  castDelayTime: 0
   moveSpeed: 0
-  spawnObjectLvl1: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
-  spawnObjectLvl2: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
-  spawnObjectLvl3: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
+  projectileSize: {x: 0, y: 0, z: 0}
+  moveMethod: 2
+  spawnObjectLvl1: {fileID: 5073809737524065853, guid: aaa23601ea95d144183c350bdc3f2e1a, type: 3}
+  spawnObjectLvl2: {fileID: 8383778108806972086, guid: b67e365d91b5bab45872532a9547412c, type: 3}
+  spawnObjectLvl3: {fileID: 8383778108806972086, guid: b67e365d91b5bab45872532a9547412c, type: 3}
+  spawnSFX: {fileID: 0}
+  hitSFX: {fileID: 0}
   castAnimation: {fileID: 7400000, guid: 70946658bb3dfdd4a86d93329aba96a7, type: 2}
   icon: {fileID: 21300000, guid: dd3885098198d104888439be4c590aba, type: 3}
   isUnlocked: 1
-  level1_ManaCost: 5
+  level1_ManaCost: 0
   level1_Damage: 0
-  level1_LifeSpan: 5
-  level1_CastDelayTime: 0.1
+  level1_LifeSpan: 0
+  level1_CastDelayTime: 0
   level1_MoveSpeed: 0
-  level2_ManaCost: 5
+  level1_ProjectileSize: {x: 0, y: 0, z: 0}
+  level2_ManaCost: 0
   level2_Damage: 0
-  level2_LifeSpan: 7
-  level2_CastDelayTime: 0.1
+  level2_LifeSpan: 0
+  level2_CastDelayTime: 0
   level2_MoveSpeed: 0
-  level3_ManaCost: 5
+  level2_ProjectileSize: {x: 0, y: 0, z: 0}
+  level3_ManaCost: 0
   level3_Damage: 0
-  level3_LifeSpan: 9
-  level3_CastDelayTime: 0.1
+  level3_LifeSpan: 0
+  level3_CastDelayTime: 0
   level3_MoveSpeed: 0
+  level3_ProjectileSize: {x: 0, y: 0, z: 0}
   spellLeveledUp:
     m_PersistentCalls:
       m_Calls:

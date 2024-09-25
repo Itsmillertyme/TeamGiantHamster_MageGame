@@ -1,0 +1,8 @@
+9/25 - Cory
+Created my sandbox.
+Changed code for what spell ui displays.
+Updated Game Events for spells 4-6.
+Added projectiles for spells 3,4,6. These are mainly placeholders.
+Added enum for spawn method. Will utilize later.
+Added the logic to update projectile size. Will utilize later. After doing that there will only be one prefab per spell.
+Locked spell 5. I have to figure out how to do this one still. 
