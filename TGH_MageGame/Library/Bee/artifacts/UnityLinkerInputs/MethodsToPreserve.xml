@@ -15,6 +15,12 @@
 			<method name="Raise"/>
 			<method name="Raise"/>
 			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
+			<method name="Raise"/>
 		</type>
 		<type fullname="GameManager">
 			<method name="Quit"/>
@@ -28,9 +34,9 @@
 			<method name="LevelUpActiveSpell"/>
 		</type>
 		<type fullname="SpellUI">
-			<method name="GetSpellUIData"/>
-			<method name="GetSpellUIData"/>
-			<method name="GetSpellUIData"/>
+			<method name="UpdateSpellUI"/>
+			<method name="UpdateSpellUI"/>
+			<method name="UpdateSpellUI"/>
 		</type>
 	</assembly>
 </linker>

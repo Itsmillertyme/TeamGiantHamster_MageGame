@@ -13,7 +13,9 @@ ScriptsOnlyBuild:
     - MousePositionTracking
     - ObjectHider
     - PlayerController
+    - PlayerExpUIController
     - PlayerHealthUIController
+    - PlayerLevelUIController
     - PlayerManaController
     - PlayerManaUIController
     - PlayerStats
@@ -29,6 +31,7 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineVirtualCamera
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
@@ -52,8 +55,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -141,6 +146,24 @@ ScriptsOnlyBuild:
     fullTypeName: GameEvent
     methodName: Raise
   - assembly: Assembly-CSharp
+    fullTypeName: GameEvent
+    methodName: Raise
+  - assembly: Assembly-CSharp
+    fullTypeName: GameEvent
+    methodName: Raise
+  - assembly: Assembly-CSharp
+    fullTypeName: GameEvent
+    methodName: Raise
+  - assembly: Assembly-CSharp
+    fullTypeName: GameEvent
+    methodName: Raise
+  - assembly: Assembly-CSharp
+    fullTypeName: GameEvent
+    methodName: Raise
+  - assembly: Assembly-CSharp
+    fullTypeName: GameEvent
+    methodName: Raise
+  - assembly: Assembly-CSharp
     fullTypeName: DebugMenuController
     methodName: MoveToLocation
   - assembly: Assembly-CSharp
@@ -172,13 +195,13 @@ ScriptsOnlyBuild:
     methodName: MoveToLocation
   - assembly: Assembly-CSharp
     fullTypeName: SpellUI
-    methodName: GetSpellUIData
+    methodName: UpdateSpellUI
   - assembly: Assembly-CSharp
     fullTypeName: SpellUI
-    methodName: GetSpellUIData
+    methodName: UpdateSpellUI
   - assembly: Assembly-CSharp
     fullTypeName: SpellUI
-    methodName: GetSpellUIData
+    methodName: UpdateSpellUI
   - assembly: Assembly-CSharp
     fullTypeName: SpellBook
     methodName: LevelDownActiveSpell
@@ -229,89 +252,93 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25284}
+      Script: {instanceID: 25288}
     - Class: 114
-      Script: {instanceID: 25344}
-    - Class: 114
-      Script: {instanceID: 25502}
+      Script: {instanceID: 25348}
     - Class: 114
       Script: {instanceID: 25506}
     - Class: 114
-      Script: {instanceID: 25560}
+      Script: {instanceID: 25510}
     - Class: 114
-      Script: {instanceID: 25760}
+      Script: {instanceID: 25564}
     - Class: 114
       Script: {instanceID: 25764}
     - Class: 114
-      Script: {instanceID: 25908}
+      Script: {instanceID: 25768}
     - Class: 114
-      Script: {instanceID: 25986}
+      Script: {instanceID: 25912}
     - Class: 114
-      Script: {instanceID: 26048}
+      Script: {instanceID: 25990}
     - Class: 114
-      Script: {instanceID: 26214}
+      Script: {instanceID: 26052}
     - Class: 114
-      Script: {instanceID: 26302}
+      Script: {instanceID: 26218}
     - Class: 114
-      Script: {instanceID: 26638}
+      Script: {instanceID: 26306}
     - Class: 114
-      Script: {instanceID: 26812}
+      Script: {instanceID: 26642}
     - Class: 114
-      Script: {instanceID: 26980}
+      Script: {instanceID: 26784}
     - Class: 114
-      Script: {instanceID: 27370}
+      Script: {instanceID: 26818}
     - Class: 114
-      Script: {instanceID: 27412}
+      Script: {instanceID: 26986}
     - Class: 114
-      Script: {instanceID: 27476}
+      Script: {instanceID: 27376}
     - Class: 114
-      Script: {instanceID: 27692}
+      Script: {instanceID: 27418}
     - Class: 114
-      Script: {instanceID: 27806}
+      Script: {instanceID: 27482}
     - Class: 114
-      Script: {instanceID: 27938}
+      Script: {instanceID: 27698}
     - Class: 114
-      Script: {instanceID: 28418}
+      Script: {instanceID: 27812}
     - Class: 114
-      Script: {instanceID: 29376}
+      Script: {instanceID: 27944}
+    - Class: 114
+      Script: {instanceID: 28132}
+    - Class: 114
+      Script: {instanceID: 28426}
     - Class: 114
       Script: {instanceID: 29384}
     - Class: 114
-      Script: {instanceID: 29532}
+      Script: {instanceID: 29392}
     - Class: 114
-      Script: {instanceID: 29618}
+      Script: {instanceID: 29540}
     - Class: 114
-      Script: {instanceID: 30072}
+      Script: {instanceID: 29626}
     - Class: 114
-      Script: {instanceID: 30200}
+      Script: {instanceID: 30080}
     - Class: 114
-      Script: {instanceID: 30324}
+      Script: {instanceID: 30208}
     - Class: 114
-      Script: {instanceID: 30456}
+      Script: {instanceID: 30332}
     - Class: 114
-      Script: {instanceID: 30720}
+      Script: {instanceID: 30464}
     - Class: 114
-      Script: {instanceID: 30758}
+      Script: {instanceID: 30728}
     - Class: 114
-      Script: {instanceID: 30820}
+      Script: {instanceID: 30766}
     - Class: 114
-      Script: {instanceID: 31312}
+      Script: {instanceID: 30828}
     - Class: 114
-      Script: {instanceID: 31316}
+      Script: {instanceID: 31320}
     - Class: 114
-      Script: {instanceID: 31386}
+      Script: {instanceID: 31324}
     - Class: 114
-      Script: {instanceID: 31434}
+      Script: {instanceID: 31394}
     - Class: 114
-      Script: {instanceID: 31476}
+      Script: {instanceID: 31442}
     - Class: 114
-      Script: {instanceID: 31866}
+      Script: {instanceID: 31484}
     - Class: 114
-      Script: {instanceID: 31968}
+      Script: {instanceID: 31874}
     - Class: 114
-      Script: {instanceID: 32222}
+      Script: {instanceID: 31976}
     - Class: 114
-      Script: {instanceID: 32482}
+      Script: {instanceID: 32230}
+    - Class: 114
+      Script: {instanceID: 32490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -375,7 +402,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: c14e64179ecdedd285298aef54d3e5e5
+      Hash: 3bb1a2222d37b5ec8e5c46187e0193dc
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SpellUI
@@ -687,6 +714,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 740542f98fe363f21da99a0daafe0caf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerExpUIController
+  - hash:
+      serializedVersion: 2
       Hash: b1df532e5c6f850c8e3a08a7fc75b71d
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -837,7 +870,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 3dc679d4948a65d77169976b23a5ce73
+      Hash: 78e6522cae4135ce870cbb8f93cb7c76
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Spell
@@ -919,6 +952,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine
     namespaceName: Cinemachine
     className: CinemachineSameAsFollowTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 950389bdd8023920b8145414c1deefca
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerLevelUIController
   - hash:
       serializedVersion: 2
       Hash: 4bf8d6f446d3cafb03a885a5cf6f2cd9
@@ -1137,7 +1176,7 @@ ScriptsOnlyBuild:
     className: MouseFollower
   - hash:
       serializedVersion: 2
-      Hash: 6f7ef247f0b07bbaf3d6febbb66b3c4c
+      Hash: fda8009af40ececa8ff79f5de62b134f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1720,4 +1759,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Sandbox.unity
-  playerPath: D:/School/KSU/Digital Media Interaction/_Builds/0.1.1/MageRunner.exe
+  playerPath: D:/School/KSU/Digital Media Interaction/_Builds/0.2/MageRunner.exe
