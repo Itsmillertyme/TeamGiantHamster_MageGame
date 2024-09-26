@@ -27,8 +27,8 @@ MonoBehaviour:
   spawnObjectLvl1: {fileID: 1346664107483407131, guid: bb6a0867ee6ff4f4b82cb5af4f353601, type: 3}
   spawnObjectLvl2: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
   spawnObjectLvl3: {fileID: 5324168845150713380, guid: 9c7b6daa99c28fe4895ef2783054024a, type: 3}
-  spawnSFX: {fileID: 0}
-  hitSFX: {fileID: 0}
+  spawnSFX: {fileID: 8300000, guid: d078d1af61f4b3046b3c112735abdcf9, type: 3}
+  hitSFX: {fileID: 8300000, guid: 4872456dc12dd4d4da6e98de793d365e, type: 3}
   castAnimation: {fileID: 7400000, guid: 923c3e14b6a36064d867f4530b447b9d, type: 2}
   icon: {fileID: 21300000, guid: 916cbc7dd18d79d439f504fa46087f68, type: 3}
   isUnlocked: 1

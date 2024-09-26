@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     ActionAsset actionAsset;
     CharacterController characterController;
     Animator animator;
-    //AnimatorOverrideController animatorOverrideController;
+    AudioSource audioSource;
     [SerializeField] MousePositionTracking mousePositionTracker;
     [SerializeField] GameObject playerModel;
     [SerializeField] Transform projectileSpawn;
@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour {
         actionAsset = new ActionAsset();
         characterController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponent<AudioSource>();
         //animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         //animator.runtimeAnimatorController = animatorOverrideController;
         //
@@ -615,13 +616,6 @@ public class PlayerController : MonoBehaviour {
             spellBook.Cast();
         }
 
-        //Test for spell 2 (DOUBLE FIRE)
-        if (spellBook.ActiveSpell == 1) {
-            yield return new WaitForSeconds(6f / 30f);
-            if (Vector3.Distance(gm.GetPlayerPivot(), gm.GetMousePositionInWorldSpace()) > Vector3.Distance(gm.GetPlayerPivot(), projectileSpawn.position)) {
-                spellBook.Cast();
-            }
-        }
 
         //Wait for animation to finish
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Cast"));

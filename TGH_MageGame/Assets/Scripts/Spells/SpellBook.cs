@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -60,6 +59,9 @@ public class SpellBook : MonoBehaviour {
                     projectile.GetComponent<ProjectileMover>().SetAttributes(spellBook[activeSpell].Damage, spellBook[activeSpell].LifeSpan, spellBook[activeSpell].MoveSpeed, mousePositionTracker.CurrentPosition);
                     break;
             }
+            if (activeSpell == 1) {
+                StartCoroutine(FireSecondRay());
+            }
 
             playerStats.updateCurrentMana(-spellBook[activeSpell].ManaCost);
             castDelay = StartCoroutine(CastDelay());
@@ -108,8 +110,7 @@ public class SpellBook : MonoBehaviour {
     }
 
     // GETS ACTIVE SPELL ICON TO USE IN UI
-    public Sprite GetSpellIconData()
-    {
+    public Sprite GetSpellIconData() {
         return spellBook[activeSpell].SpellIcon;
     }
 
@@ -118,10 +119,26 @@ public class SpellBook : MonoBehaviour {
         return spellBook[activeSpell].CastAnimation;
     }
 
+    // GETTER FOR ACTIVE SPELL SPAWN SOUND
+    public AudioClip GetSpellSpawnSound() {
+        return spellBook[activeSpell].SpawnSFX;
+    }
     public void LevelUpActiveSpell() {
         spellBook[activeSpell].LevelUp();
     }
     public void LevelDownActiveSpell() {
         spellBook[activeSpell].LevelDown();
+    }
+
+
+    //Coroutine for 'Rays' Spell
+    IEnumerator FireSecondRay() {
+        GameObject ray2;
+
+        yield return new WaitForSeconds(6f / 30f);
+
+        ray2 = Instantiate(spellBook[activeSpell].SpawnObjectLvl2, spawnPosition.transform.position, spawnPosition.transform.rotation);
+        ray2.GetComponent<ProjectileMover>().SetAttributes(spellBook[activeSpell].Damage, spellBook[activeSpell].LifeSpan, spellBook[activeSpell].MoveSpeed, mousePositionTracker.CurrentPosition);
+
     }
 }

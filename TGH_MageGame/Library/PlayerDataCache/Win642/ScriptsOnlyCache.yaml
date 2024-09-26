@@ -237,6 +237,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -1759,4 +1763,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Sandbox.unity
-  playerPath: D:/School/KSU/Digital Media Interaction/_Builds/0.2/MageRunner.exe
+  playerPath: D:/School/KSU/Digital Media Interaction/_Builds/0.1.2/MageRunner.exe

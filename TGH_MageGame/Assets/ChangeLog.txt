@@ -17,3 +17,6 @@ Added projectiles for spells 3,4,6. These are mainly placeholders.
 Added enum for spawn method. Will utilize later.
 Added the logic to update projectile size. Will utilize later. After doing that there will only be one prefab per spell.
 Locked spell 5. I have to figure out how to do this one still. 
+
+9/25 - Jacob
+-Added coroutine to SpellBook.cs to handle firing 2nd 'ray' projectile for that spell
